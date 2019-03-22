@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class TakeDamage : MonoBehaviour
 {
-    [SerializeField] private Life _life;
 
     public void Damage(int damageDone)
     {
-        _life.setLife(_life.getLife() - damageDone);
+        Life life = gameObject.GetComponent<Life>();
+        life.setLife(life.getLife() - damageDone);
     }
 
 }

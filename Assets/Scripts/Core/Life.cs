@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Life : MonoBehaviour
 {
-    public int _life = 0;
-    public State _state = State.alive;
+    [SerializeField] private int _life = 0;
 
+    public State _state = State.alive;
     public enum State { dead, alive };
 
     public bool isAlive()

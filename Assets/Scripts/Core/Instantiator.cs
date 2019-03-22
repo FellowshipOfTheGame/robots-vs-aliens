@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class Instantiator : MonoBehaviour
 {
-    public Transform dynamic;
+    [SerializeField] private Transform dynamic;
+
     public Object prefab;
 
-    /*Instantiates object in set position*/
-    public void InstantiateObj(Vector3 position)
+    /*Instantiates object in set position, as dynamic child, and returns it*/
+    public Object InstantiateObj(Vector3 position)
     {
-        Instantiate(prefab, position, Quaternion.identity, dynamic);
+        return Instantiate(prefab, position, Quaternion.identity, dynamic);
     }
 
-    /*Instantiates object at (0, 0, 0)*/
-    public void InstantiateObj()
+    /*Instantiates object at (0, 0, 0), as dynamic child, and returns it*/
+    public Object InstantiateObj()
     {
-        Instantiate(prefab, Vector3.zero, Quaternion.identity, dynamic);
+        return Instantiate(prefab, Vector3.zero, Quaternion.identity, dynamic);
     }
 }

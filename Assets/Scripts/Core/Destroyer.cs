@@ -4,16 +4,14 @@ using UnityEngine;
 
 public class Destroyer : MonoBehaviour
 {
-    [SerializeField] private Object entity;
-
     /*Destroys object passed as parameter*/
     public void DestroyEntity(Object entity)
     {
         Destroy(entity);
     }
-    /*Destroys object passed through Inspector*/
-    public void DestroyEntity()
+    /*Destroys the gameObject with this component*/
+    public void DestroySelf()
     {
-        Destroy(this.entity);
+        Destroy(gameObject);
     }
 }
