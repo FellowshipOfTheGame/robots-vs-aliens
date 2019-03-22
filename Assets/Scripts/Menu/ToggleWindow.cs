@@ -1,0 +1,24 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ToggleWindow : MonoBehaviour
+{
+    private static GameObject CurrentWindow = null;
+    private GameObject OpenedWindow = null;
+
+    public void SetActiveWindow(GameObject newWindow){
+        CurrentWindow = newWindow;
+    }
+
+    public void ChangeActiveWindow(GameObject newWindow){
+        CurrentWindow?.SetActive(false);
+        newWindow?.SetActive(true);
+        CurrentWindow = newWindow;
+    }
+
+    public void OpenWindow(GameObject newWindow){
+        newWindow?.SetActive(true);
+        OpenedWindow = newWindow;
+    }
+}
