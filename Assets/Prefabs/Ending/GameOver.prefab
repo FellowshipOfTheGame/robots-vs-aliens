@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2779653295926543751
 RectTransform:
   m_ObjectHideFlags: 0
@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 2779653296624018595}
   - component: {fileID: 2779653296624018594}
   - component: {fileID: 2779653296624018597}
+  - component: {fileID: 40673024706600300}
   m_Layer: 5
   m_Name: TryAgainButton
   m_TagString: Untagged
@@ -240,6 +241,21 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &40673024706600300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2779653296624018599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3c2da2a378c1ce49a32262a6c0ded76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AddRestartScene: 1
+  AddLoadScene: 0
+  SceneName: 
 --- !u!1 &2779653296728583604
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,7 +271,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2779653296728583605
 RectTransform:
   m_ObjectHideFlags: 0
@@ -285,6 +301,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2779653297110355545}
+  - component: {fileID: 6358318345844994530}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -314,6 +331,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6358318345844994530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2779653297110355544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdd17e9488ade8645ae022dc7e84c5bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameOverWindow: {fileID: 2779653296728583604}
+  MenuButton: {fileID: 2779653297586680777}
 --- !u!1 &2779653297144030736
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,13 +669,14 @@ GameObject:
   - component: {fileID: 2779653297586679861}
   - component: {fileID: 2779653297586679860}
   - component: {fileID: 2779653297586679863}
+  - component: {fileID: 5643909269789388813}
   m_Layer: 5
   m_Name: MenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2779653297586679862
 RectTransform:
   m_ObjectHideFlags: 0
@@ -744,3 +776,18 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &5643909269789388813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2779653297586680777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3c2da2a378c1ce49a32262a6c0ded76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AddRestartScene: 0
+  AddLoadScene: 1
+  SceneName: Menu

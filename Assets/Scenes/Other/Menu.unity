@@ -881,7 +881,7 @@ PrefabInstance:
     - target: {fileID: 1808311998369880107, guid: 37a4293579af2574284ced65d7d2d645,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: GridTest
+      value: EndingTest
       objectReference: {fileID: 0}
     - target: {fileID: 1808311999496814725, guid: 37a4293579af2574284ced65d7d2d645,
         type: 3}
@@ -990,6 +990,27 @@ PrefabInstance:
       objectReference: {fileID: 162468785}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37a4293579af2574284ced65d7d2d645, type: 3}
+--- !u!1 &1808311999383883378 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1808311998369880105, guid: 37a4293579af2574284ced65d7d2d645,
+    type: 3}
+  m_PrefabInstance: {fileID: 1808311999383883377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1808311999383883379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808311999383883378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3c2da2a378c1ce49a32262a6c0ded76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AddRestartScene: 0
+  AddLoadScene: 1
+  SceneName: EndingTest
 --- !u!1001 &3432871791252234141
 PrefabInstance:
   m_ObjectHideFlags: 0
