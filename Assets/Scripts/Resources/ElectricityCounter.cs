@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class ElectricityCounter : MonoBehaviour
 {
     private int electricity = 0;
 

@@ -302,6 +302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2779653297110355545}
   - component: {fileID: 6358318345844994530}
+  - component: {fileID: 8518272811514059765}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -345,6 +346,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameOverWindow: {fileID: 2779653296728583604}
   MenuButton: {fileID: 2779653297586680777}
+--- !u!114 &8518272811514059765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2779653297110355544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a40cc10993127846bf69c0895cc4517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TestKey: 49
 --- !u!1 &2779653297144030736
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Cooldown : MonoBehaviour
 {
-    [SerializeField] private float cooldownTime;
-    private bool isCooldownDone;
+    [SerializeField] private float cooldownTime = 0;
+    private bool isCooldownDone = false;
 
     public bool IsCooldownDone{
         get{return isCooldownDone;}
@@ -13,19 +11,18 @@ public class Cooldown : MonoBehaviour
     }
 
     private float timeLeft;
-    // Start is called before the first frame update
-    void Start()
+
+    void Awake()
     {
-        timeLeft = cooldownTime;
         isCooldownDone = false;
+        timeLeft = cooldownTime;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(!isCooldownDone){
             timeLeft -= Time.deltaTime;
-            if(timeLeft < 0){
+            if(timeLeft <= 0){
                 isCooldownDone = true;
             }
         }
