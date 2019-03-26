@@ -4,24 +4,23 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float speed = 0;
-    public Vector2 direction = Vector2.zero;
-
-    private Rigidbody2D myRigidBody;
-
-    private void Start()
-    {
-        myRigidBody = GetComponent<Rigidbody2D>();
-    }
+    public float _speed = 0;
+    public Vector2 _direction = Vector2.zero;
+    public bool _move = false;
 
     private void FixedUpdate()
     {
-        move();
+        if(_move == true)
+            Move();
     }
 
-    private void move()
+    private void Move()
     {
-        myRigidBody.velocity = direction * speed;
-        Debug.Log(myRigidBody.velocity);
+        transform.Translate(_direction.normalized * _speed * Time.deltaTime, Space.World);
+    }
+
+    public void StartMovement()
+    {
+        _move = true;
     }
 }

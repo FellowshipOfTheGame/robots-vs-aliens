@@ -5,10 +5,12 @@ using UnityEngine;
 public class TakeDamage : MonoBehaviour
 {
 
-    public void Damage(int damageDone)
+    //Damages the object with this component
+    public void Damage(float damageDone)
     {
-        Life life = gameObject.GetComponent<Life>();
-        life.setLife(life.getLife() - damageDone);
+        damageDone = damageDone < 0 ?  -damageDone : damageDone; //Sets damage to positive
+        Life life = gameObject.GetComponent<Life>(); //Gets the Life component of the gameObject
+        life.DecreaseLife(damageDone); //Decreases life by damageDone
     }
 
 }
