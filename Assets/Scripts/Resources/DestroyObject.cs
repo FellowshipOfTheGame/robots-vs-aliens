@@ -2,7 +2,7 @@
 
 public class DestroyObject : MonoBehaviour
 {
-    public void Destroy()
+    public void DestroySelf()
     {
         GameObject.Destroy(gameObject);
     }

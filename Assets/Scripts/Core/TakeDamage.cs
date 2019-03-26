@@ -1,14 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TakeDamage : MonoBehaviour
 {
+    private Life LifeScript = null;
+
+    private void Awake()
+    {
+        LifeScript = GetComponent<Life>();    
+    }
 
     public void Damage(int damageDone)
     {
-        Life life = gameObject.GetComponent<Life>();
-        life.setLife(life.getLife() - damageDone);
+        LifeScript.DecreaseLife(damageDone);
     }
 
 }

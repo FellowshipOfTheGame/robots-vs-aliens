@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Energy : MonoBehaviour
 {
@@ -12,18 +10,18 @@ public class Energy : MonoBehaviour
     }
 
     /*Adds quantity to total of energy*/
-    public void add(int quantity)
+    public void Add(int quantity)
     {
-        setEnergy(getEnergy() + quantity);
+        SetEnergy(GetEnergy() + quantity);
     }
 
     //Energy getter
-    public int getEnergy()
+    public int GetEnergy()
     {
         return energy;
     }
     //Energy setter
-    public void setEnergy(int quantity)
+    public void SetEnergy(int quantity)
     {
         energy = quantity;
     }

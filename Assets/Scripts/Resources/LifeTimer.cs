@@ -39,7 +39,7 @@ public class LifeTimer : MonoBehaviour
         {
             if (TimeElapsed >= TimeUntilDestroyed)
             {
-                DestroyScript.Destroy();
+                DestroyScript.DestroySelf();
             }
             else
             {

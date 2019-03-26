@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class RobotButtonBehaviour : MonoBehaviour
 {
@@ -22,7 +20,6 @@ public class RobotButtonBehaviour : MonoBehaviour
         if(SelectorScript == null)
         {
             SelectorScript = FindObjectOfType<RobotSelector>();
-            if (SelectorScript != null) Debug.Log("Found it! -> " + SelectorScript.name, SelectorScript.gameObject);
         }
         SelectorScript.SelectRobot(RobotIndex);
     }

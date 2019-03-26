@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Life : MonoBehaviour
 {
@@ -9,21 +7,33 @@ public class Life : MonoBehaviour
     public State _state = State.alive;
     public enum State { dead, alive };
 
-    public bool isAlive()
+    public bool IsAlive()
     {
         return _state == State.alive ? true : false;
     }
 
-    public int getLife()
+    public int GetLife()
     {
         return _life;
     }
 
-    public void setLife(int value)
+    public void SetLife(int value)
     {
         _life = value > 0 ? value : 0;
         if (_life <= 0)
             _state = State.dead;
     }
 
+    public void DecreaseLife(int value)
+    {
+        if(_life >= 0)
+        {
+            _life -= value;
+        }
+
+        if(_life <= 0)
+        {
+            _state = State.dead;
+        }
+    }
 }

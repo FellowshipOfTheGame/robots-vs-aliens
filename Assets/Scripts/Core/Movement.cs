@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
@@ -16,10 +14,10 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        move();
+        Move();
     }
 
-    private void move()
+    private void Move()
     {
         myRigidBody.velocity = direction * speed;
         Debug.Log(myRigidBody.velocity);
