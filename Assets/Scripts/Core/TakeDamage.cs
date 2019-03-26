@@ -9,8 +9,10 @@ public class TakeDamage : MonoBehaviour
         LifeScript = GetComponent<Life>();    
     }
 
-    public void Damage(int damageDone)
+    //Damages the object with this component
+    public void Damage(float damageDone)
     {
+        damageDone = damageDone < 0 ?  -damageDone : damageDone; //Sets damage to positive
         LifeScript.DecreaseLife(damageDone);
     }
 
