@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _life: 100
-  _max_life: 0
+  _max_life: 100
   _state: 1
 --- !u!114 &2899846587530240707
 MonoBehaviour:
@@ -140,6 +140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d7be11b602d784468bbf1cb124f67ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 0
-  _direction: {x: 0, y: 0}
-  _move: 0
+  _speed: 0.5
+  _direction: {x: -1, y: 0}
+  _move: 1

@@ -10,6 +10,8 @@ public class Life : MonoBehaviour
     public State _state = State.alive;
     public enum State { dead, alive };
 
+    public delegate void OnDeath();
+
     public bool isAlive()
     {
         return _state == State.alive ? true : false;
@@ -38,6 +40,12 @@ public class Life : MonoBehaviour
     public void Revive()
     {
         _state = State.alive;
+    }
+
+    private void Update()
+    {
+        //if (!isAlive())
+            //OnDeath.invoke(); //uso do delegate para morte
     }
 
 }

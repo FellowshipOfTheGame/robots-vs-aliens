@@ -23,4 +23,10 @@ public class Movement : MonoBehaviour
     {
         _move = true;
     }
+
+    public void setParameters(float speed, Vector2 direction)
+    {
+        _speed = speed;
+        _direction = direction;
+    }
 }
