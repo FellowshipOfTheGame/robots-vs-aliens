@@ -1,0 +1,5 @@
+name=shooter
+life=100
+attack=10
+projectileType=straight
+description=does things

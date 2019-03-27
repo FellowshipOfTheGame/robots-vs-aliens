@@ -1,47 +1,43 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GeneratorBehaviour : MonoBehaviour
 {
-    private Cooldown cooldown;
-    private SpawnObject spawnObject;
-    private GenerateRandom generateRandom;
+    private Transform GUIDynamic = null;
 
-    [SerializeField] private int electricityIndex;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    private Cooldown CooldownScript;
+    private SpawnObject SpawnObjectScript;
+    private RandomElectricitySpawn RandomElectricityScript;
+
+    [SerializeField] private bool IsRobot = false;
+    private Vector2 SpawnPosition = new Vector2(0,0);
+
+    private void Awake(){
+        GUIDynamic = GameObject.Find("_GUIDynamic").transform;
+
+        CooldownScript = GetComponent<Cooldown>();
+        SpawnObjectScript = GetComponent<SpawnObject>();
+        RandomElectricityScript = GetComponent<RandomElectricitySpawn>();
     }
 
-    void Awake(){
-        cooldown = GetComponent<Cooldown>();
-        spawnObject = GetComponent<SpawnObject>();
-        generateRandom = GetComponent<GenerateRandom>();
-    }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         CheckCooldown();
     }
 
     private void CheckCooldown(){
-        if(cooldown.IsCooldownDone){
-            float distanceToInstantiate = 0f;
-            //CASE 0: AUTOMATIC GENERATION - ELECTRICITY OBJECT FALLING
-            if(electricityIndex == 0){
-                distanceToInstantiate = gameObject.transform.position.x + generateRandom.GenerateRandomX();
-            }
-            else if(electricityIndex == 1){     // CASE 1: ROBOT GENERATOR
-                distanceToInstantiate = gameObject.transform.position.x;
-            }
-            spawnObject.Spawn(0, new Vector3(distanceToInstantiate, gameObject.transform.position.y,
-                gameObject.transform.position.z), Quaternion.identity, gameObject.transform);
-            cooldown.ResetCooldown();
+        if(CooldownScript.IsCooldownDone){
+
+            SpawnPosition = RandomElectricityScript.RandomSpawnPosition(IsRobot);
+
+            GameObject obj = SpawnObjectScript.Spawn(SpawnPosition, Quaternion.identity, transform);
             
+            //TEMPORARIO, NÃO SEI COMO FAZER MELHOR
+            obj.transform.localPosition = SpawnPosition;
+            obj.transform.SetParent(GUIDynamic, false);
+            obj.GetComponent<MoveTopToBottom>().StartFall();
+            //TEMPORARIO
+
+            CooldownScript.ResetCooldown();
         }
     }
 }
