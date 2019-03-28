@@ -8,32 +8,29 @@ public class AlienBehavior : MonoBehaviour
     private CollisionControl myCollisionControl;
     private bool willAttack = false;
 
-    private void Start()
+    private void Awake()
     {
         myAttack = gameObject.GetComponent<Attack>();
         myCollisionControl = gameObject.GetComponent<CollisionControl>();
-        InvokeRepeating("PeriodicAttack", 0f, myAttack._attackSpeed); //Start attacking
+        InvokeRepeating("PeriodicAttack", myAttack._attackSpeed, myAttack._attackSpeed); //Start attacking
+
+        myCollisionControl.OnRobotAttackCollision += BeingAttacked;
+        myCollisionControl.OnEnemyCollision += RobotEncounter;
     }
 
     private void Update()
     {
-        BeingAttacked();
         Death();
-        RobotEncounter();
     }
 
-    //For taking damage
-    private void BeingAttacked()
+    public void BeingAttacked()
     {
-        if (myCollisionControl.IsColliding())
+        //If last object collided with was a robot projectile, then take damage
+        GameObject lastCollision = myCollisionControl.LastObjectCollided();
+        if (lastCollision.CompareTag("RobotProjectile"))
         {
-            //If last object collided with was a robot projectile, then take damage
-            GameObject lastCollision = myCollisionControl.LastObjectCollided();
-            if (lastCollision.CompareTag("RobotProjectile"))
-            {
-                gameObject.GetComponent<TakeDamage>().Damage(lastCollision.GetComponent<Projectile>().damage);
-                lastCollision.GetComponent<DestroyObject>().DestroySelf();
-            }
+            gameObject.GetComponent<TakeDamage>().Damage(lastCollision.GetComponent<Projectile>().damage);
+            lastCollision.GetComponent<DestroyObject>().DestroySelf();
         }
     }
 
@@ -53,9 +50,9 @@ public class AlienBehavior : MonoBehaviour
         }
     }
 
-    private void RobotEncounter()
+    public void RobotEncounter()
     {
-        if (myCollisionControl.IsColliding())
+        /*if (myCollisionControl.IsColliding())
         {
             //If last object collided with was a robot, then stop moving and start attacking
             GameObject lastCollision = myCollisionControl.LastObjectCollided();
@@ -69,7 +66,7 @@ public class AlienBehavior : MonoBehaviour
         {
             gameObject.GetComponent<Movement>()._move = true;
             willAttack = false;
-        }
+        }*/
     }
 
 }

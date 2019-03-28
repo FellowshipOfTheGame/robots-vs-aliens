@@ -3,12 +3,17 @@
 public class Cooldown : MonoBehaviour
 {
     [SerializeField] private float cooldownTime = 0;
-    private bool isCooldownDone = false;
+    public delegate void CooldownDelegate();
+    public CooldownDelegate OnCooldownEnded;
 
-    public bool IsCooldownDone{
+    private bool CooldownRunning = false;
+
+    //private bool isCooldownDone = false;
+
+    /*public bool IsCooldownDone{
         get{return isCooldownDone;}
         set{isCooldownDone = value;}
-    }
+    }*/
 
     public float CooldownTime{
         get{return cooldownTime;}
@@ -24,16 +29,17 @@ public class Cooldown : MonoBehaviour
 
     void Update()
     {
-        if(!isCooldownDone){
+        if(CooldownRunning){
             timeLeft -= Time.deltaTime;
             if(timeLeft <= 0){
-                isCooldownDone = true;
+                CooldownRunning = false;
+                OnCooldownEnded.Invoke();
             }
         }
     }
 
     public void ResetCooldown(){
-        isCooldownDone = false;
+        CooldownRunning = true;
         timeLeft = cooldownTime;
     }
 }

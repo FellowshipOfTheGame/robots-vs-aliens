@@ -10,6 +10,7 @@ TagManager:
   - RobotProjectile
   - Robot
   - Alien
+  - Dynamic
   layers:
   - Default
   - TransparentFX

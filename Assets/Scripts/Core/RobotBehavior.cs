@@ -9,7 +9,7 @@ public class RobotBehavior : MonoBehaviour
     private void Start()
     {
         myAttack = gameObject.GetComponent<Attack>();
-        InvokeRepeating("PeriodicAttack", 0f, myAttack._attackSpeed); //Start attacking
+        InvokeRepeating("PeriodicAttack", myAttack._attackSpeed, myAttack._attackSpeed); //Start attacking
     }
 
     private void Update()
@@ -21,7 +21,7 @@ public class RobotBehavior : MonoBehaviour
     private void BeingAttacked()
     {
         CollisionControl myCollision = gameObject.GetComponent<CollisionControl>();
-        if (myCollision.IsColliding())
+        /*if (myCollision.IsColliding())
         {
             //If last object collided with was an enemy projectile, then take damage
             GameObject lastCollision = myCollision.LastObjectCollided();
@@ -30,7 +30,7 @@ public class RobotBehavior : MonoBehaviour
                 gameObject.GetComponent<TakeDamage>().Damage(lastCollision.GetComponent<Projectile>().damage);
                 lastCollision.GetComponent<DestroyObject>().DestroySelf();
             }
-        }
+        }*/
     }
 
     //For doing his attacks

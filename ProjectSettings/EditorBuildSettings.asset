@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/EndingTest.unity
     guid: 00b6622bbfba4b243a5101f6f505b36c
+  - enabled: 1
+    path: Assets/Scenes/Levels/Prototype.unity
+    guid: 0b73de9eda9ce4c43a62329e133aefba
   m_configObjects: {}

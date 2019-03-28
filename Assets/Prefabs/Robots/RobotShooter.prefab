@@ -121,9 +121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 100
-  speed: 20
+  speed: 5
   direction: {x: 1, y: 0}
-  mySpawnObject: {fileID: 6015343130561480872}
   _attackSpeed: 3
 --- !u!114 &1769205710718456128
 MonoBehaviour:
