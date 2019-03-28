@@ -1,11 +1,18 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MeleeAttack : MonoBehaviour
 {
-    public float durabilityTime = 0;
     public bool durability = false;
+
+    private Cooldown CooldownComponent;
+
+    private void Start()
+    {
+        CooldownComponent = gameObject.GetComponent<Cooldown>();
+        CooldownComponent.ResetCooldown();
+    }
 
     private void FixedUpdate()
     {
@@ -17,10 +24,9 @@ public class MeleeAttack : MonoBehaviour
     {
         if (durability)
         {
-            durabilityTime = durabilityTime - 1 * Time.deltaTime;
-            if (durabilityTime < 0)
+            if (CooldownComponent.IsCooldownDone)
             {
-                Destroy(gameObject); //Ser trocada pelo componente de destroy ou spawn.
+                gameObject.GetComponent<DestroyObject>().DestroySelf();
             }
         }
     }

@@ -7,14 +7,18 @@ public class Attack : MonoBehaviour
     [SerializeField] private float damage = 0f;         //Attack Damage
     [SerializeField] private float speed = 0f;          //Projectile speed
     [SerializeField] private Vector2 direction = Vector2.zero;
-    [SerializeField] GameObject projectile = null;
+    [SerializeField] private SpawnObject mySpawnObject;
 
     public float _attackSpeed = 0.5f;  //Seconds per attack
 
+    private void Start()
+    {
+        mySpawnObject = gameObject.GetComponent<SpawnObject>();
+    }
+
     public void ReleaseAttack()
     {
-        //change to Spawn.instantiate(projectile)
-        GameObject attack = Instantiate(projectile);
+        GameObject attack = mySpawnObject.Spawn(0, Vector3.zero, Quaternion.identity, transform);
 
         attack.GetComponent<Projectile>().damage = damage;
         if(attack.GetComponent<Movement>() != null)
