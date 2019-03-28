@@ -36,6 +36,7 @@ public class CollisionControl : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Robot"))
         {
+            //collision.gameObject.GetComponent<DestroyObject>().OnDeath += 
             OnEnemyCollision.Invoke();
         }
         //DEBUG
