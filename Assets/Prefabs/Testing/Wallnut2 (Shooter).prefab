@@ -11,10 +11,13 @@ GameObject:
   - component: {fileID: 8008611813885131626}
   - component: {fileID: 8008611813885131628}
   - component: {fileID: 8008611813885131629}
+  - component: {fileID: 6542816887273488948}
   - component: {fileID: 8153584033609198331}
+  - component: {fileID: 4201053126948910739}
   - component: {fileID: 1769205710718456128}
-  - component: {fileID: 7426256189210110443}
+  - component: {fileID: 6015343130561480872}
   - component: {fileID: 9147649685801727573}
+  - component: {fileID: 7426256189210110443}
   m_Layer: 0
   m_Name: Wallnut2 (Shooter)
   m_TagString: Untagged
@@ -78,6 +81,18 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &6542816887273488948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008611813885131627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b56d3167ab93445ba30beb3becbfeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8153584033609198331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,8 +105,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c14203a075ac2bc40a1c1799259f7af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _life: 300
+  _life: 100
+  _max_life: 100
   _state: 1
+--- !u!114 &4201053126948910739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008611813885131627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1619fea04f9255a428a0531cfeaa07b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100
+  speed: 10
+  direction: {x: 1, y: 0}
+  mySpawnObject: {fileID: 6015343130561480872}
+  _attackSpeed: 3
 --- !u!114 &1769205710718456128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,6 +135,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0457c94dbf8994f4f9be67cfab30ac23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6015343130561480872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008611813885131627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 778c267c91917b34db4f637aed016c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectsToSpawn:
+  - {fileID: 1399694594196858405, guid: 7a5d70f9355c4b94f83c7ff4db2d6a3b, type: 3}
+--- !u!114 &9147649685801727573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008611813885131627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac1abffffd4ac144b9a3053fd3a0ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &7426256189210110443
@@ -116,15 +175,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aebfac3864e0344d817a6a7eb1ee9d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &9147649685801727573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8008611813885131627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ac1abffffd4ac144b9a3053fd3a0ef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  lastCollision: {fileID: 0}
+  isColliding: 0

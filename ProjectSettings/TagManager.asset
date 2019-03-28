@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Electricity
   - Projectile
+  - EnemyProjectile
+  - RobotProjectile
+  - Robot
+  - Alien
+  - Dynamic
   layers:
   - Default
   - TransparentFX

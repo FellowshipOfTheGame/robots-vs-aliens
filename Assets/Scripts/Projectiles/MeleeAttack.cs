@@ -1,27 +1,26 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MeleeAttack : MonoBehaviour
 {
-    public float durabilityTime = 0;
     public bool durability = false;
 
-    private void FixedUpdate()
-    {
-        Durability();
-    }
+    private Cooldown CooldownComponent;
 
-    //Checks if projectile has usefull life(vida util) and destroys it when it ends if so.
-    private void Durability()
+    private void Start()
     {
+        CooldownComponent = gameObject.GetComponent<Cooldown>();
+        CooldownComponent.ResetCooldown();
+
         if (durability)
         {
-            durabilityTime = durabilityTime - 1 * Time.deltaTime;
-            if (durabilityTime < 0)
-            {
-                Destroy(gameObject); //Ser trocada pelo componente de destroy ou spawn.
-            }
+            CooldownComponent.OnCooldownEnded += CooldownEnded;
         }
+    }
+
+    public void CooldownEnded()
+    {
+        gameObject.GetComponent<DestroyObject>().DestroySelf();
     }
 }

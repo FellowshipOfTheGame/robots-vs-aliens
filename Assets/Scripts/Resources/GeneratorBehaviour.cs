@@ -17,27 +17,22 @@ public class GeneratorBehaviour : MonoBehaviour
         CooldownScript = GetComponent<Cooldown>();
         SpawnObjectScript = GetComponent<SpawnObject>();
         RandomElectricityScript = GetComponent<RandomElectricitySpawn>();
+
+        CooldownScript.OnCooldownEnded += CooldownEnded;
     }
 
-    private void Update()
+    public void CooldownEnded()
     {
-        CheckCooldown();
-    }
+        SpawnPosition = RandomElectricityScript.RandomSpawnPosition(IsRobot);
 
-    private void CheckCooldown(){
-        if(CooldownScript.IsCooldownDone){
+        GameObject obj = SpawnObjectScript.Spawn(SpawnPosition, Quaternion.identity, transform);
 
-            SpawnPosition = RandomElectricityScript.RandomSpawnPosition(IsRobot);
+        //TEMPORARIO, NÃO SEI COMO FAZER MELHOR
+        obj.transform.localPosition = SpawnPosition;
+        obj.transform.SetParent(GUIDynamic, false);
+        obj.GetComponent<MoveTopToBottom>().StartFall();
+        //TEMPORARIO
 
-            GameObject obj = SpawnObjectScript.Spawn(SpawnPosition, Quaternion.identity, transform);
-            
-            //TEMPORARIO, NÃO SEI COMO FAZER MELHOR
-            obj.transform.localPosition = SpawnPosition;
-            obj.transform.SetParent(GUIDynamic, false);
-            obj.GetComponent<MoveTopToBottom>().StartFall();
-            //TEMPORARIO
-
-            CooldownScript.ResetCooldown();
-        }
+        CooldownScript.ResetCooldown();
     }
 }
