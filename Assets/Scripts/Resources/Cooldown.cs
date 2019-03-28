@@ -10,12 +10,16 @@ public class Cooldown : MonoBehaviour
         set{isCooldownDone = value;}
     }
 
+    public float CooldownTime{
+        get{return cooldownTime;}
+        set{cooldownTime = value;}
+    }
+
     private float timeLeft;
 
     void Awake()
     {
-        isCooldownDone = false;
-        timeLeft = cooldownTime;
+        ResetCooldown();
     }
 
     void Update()
