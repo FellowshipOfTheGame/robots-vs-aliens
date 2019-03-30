@@ -136,8 +136,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NaturalSpawnHorizontalRange: 0
   NaturalSpawnVerticalRange: 0
-  RobotSpawnHorizontalRange: 10
-  RobotSpawnVerticalRange: 10
+  RobotSpawnHorizontalRange: 0
+  RobotSpawnVerticalRange: 0
   ScreenOffset: 0
 --- !u!114 &5814985537932288367
 MonoBehaviour:

@@ -3,11 +3,15 @@
 public class DestroyObject : MonoBehaviour
 {
     public delegate void DestroyDelegate();
-    public DestroyDelegate OnDeath;
+    public DestroyDelegate OnDestroy;
+
+    public delegate void DestroyObjectDelegate(GameObject obj);
+    public DestroyObjectDelegate OnObjectDestroy;
 
     public void DestroySelf()
     {
-        OnDeath.Invoke();
+        OnDestroy?.Invoke();
+        OnObjectDestroy?.Invoke(gameObject);
         GameObject.Destroy(gameObject);
     }
 }

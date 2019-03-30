@@ -8,6 +8,11 @@ public class TriggerGameOver : MonoBehaviour
     [SerializeField] private GameObject GameOverWindow;
     [SerializeField] private GameObject MenuButton;
 
+    private void Awake()
+    {
+        FindObjectOfType<EnemyCounter>().OnWaveEnd += GameOver;    
+    }
+
     public void GameOver()
     {
         GameOverWindow.SetActive(true);
