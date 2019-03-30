@@ -11,7 +11,7 @@ public class Attack : MonoBehaviour
 
     private Transform GUIDynamic = null;
 
-    public float _attackSpeed = 0.5f;  //Seconds per attack
+    public float _attackSpeed = 0f;  //Seconds per attack
 
 
     private void Awake()
@@ -26,6 +26,15 @@ public class Attack : MonoBehaviour
 
         attack.GetComponent<Projectile>().damage = damage;
         if(attack.GetComponent<Movement>() != null)
+            attack.GetComponent<Movement>().setParameters(speed, direction);
+    }
+    //With Offset
+    public void ReleaseAttack(Vector3 offset)
+    {
+        GameObject attack = mySpawnObject.Spawn(0, transform.position + offset, Quaternion.identity, GUIDynamic);
+
+        attack.GetComponent<Projectile>().damage = damage;
+        if (attack.GetComponent<Movement>() != null)
             attack.GetComponent<Movement>().setParameters(speed, direction);
     }
 
