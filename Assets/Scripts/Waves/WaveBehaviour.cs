@@ -1,9 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class WaveBehaviour : MonoBehaviour
 {
+    [SerializeField] private EnemyCounter CounterScript = null;
+
     private Transform GUIDynamic = null;
 
     [SerializeField] private LevelWavesData levelWavesData;
@@ -25,6 +26,8 @@ public class WaveBehaviour : MonoBehaviour
 
         SpawnObjectScript = GetComponent<SpawnObject>();
         SpawnObjectScript.objectsToSpawn = levelWavesData.Waves[0].Objects;
+
+        CounterScript.SetupWaveInfo(levelWavesData);
 
         CooldownScript.CooldownTime = Random.Range(levelWavesData.Waves[currentWave].OffsetTimeBegin,
                     levelWavesData.Waves[currentWave].OffsetTimeFinish); 

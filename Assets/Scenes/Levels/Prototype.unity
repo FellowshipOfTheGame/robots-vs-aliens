@@ -6747,7 +6747,6 @@ GameObject:
   - component: {fileID: 1015999385}
   - component: {fileID: 1015999384}
   - component: {fileID: 1015999383}
-  - component: {fileID: 1015999386}
   m_Layer: 0
   m_Name: WaveGenerator
   m_TagString: Untagged
@@ -6807,6 +6806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2735e1d21be6831459c107ab5e281d62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CounterScript: {fileID: 1158668975}
   levelWavesData: {fileID: 11400000, guid: 31d937e10d13e6e44acbe4ba542fae2e, type: 2}
   cells:
   - {fileID: 444164510}
@@ -6815,18 +6815,6 @@ MonoBehaviour:
   - {fileID: 1316499158}
   - {fileID: 1806931697}
   - {fileID: 190222417}
---- !u!114 &1015999386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1015999381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94937fe067298bd45acbd47c44732565, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1073027779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7385,6 +7373,24 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 680ad59e4ff1ab645b43c2512e75740a, type: 3}
+--- !u!1 &1158668971 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5521371757678903143, guid: 5876f00b2b6e6f44f927689fbe8e30c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1333528564}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1158668975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158668971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94937fe067298bd45acbd47c44732565, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1199983341
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7956,6 +7962,11 @@ PrefabInstance:
       propertyPath: MenuButton
       value: 
       objectReference: {fileID: 1333528565}
+    - target: {fileID: 5521371758680915854, guid: 5876f00b2b6e6f44f927689fbe8e30c7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5876f00b2b6e6f44f927689fbe8e30c7, type: 3}
 --- !u!1 &1333528565 stripped
@@ -10360,7 +10371,7 @@ PrefabInstance:
     - target: {fileID: 5404710672113927036, guid: 09f5e4fc79635c94dbd18e996da9eb1e,
         type: 3}
       propertyPath: RobotCost
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09f5e4fc79635c94dbd18e996da9eb1e, type: 3}

@@ -26,7 +26,7 @@ public class Life : MonoBehaviour
     {
         _life = (_life - value) > 0 ? _life-value : 0;
         if (_life <= 0)
-            OnDeath.Invoke();//_state = State.dead;
+            OnDeath?.Invoke();//_state = State.dead;
     }
 
     public void IncreaseLife(float value)

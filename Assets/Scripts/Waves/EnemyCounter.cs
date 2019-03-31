@@ -3,23 +3,33 @@ using UnityEngine;
 
 public class EnemyCounter : MonoBehaviour
 {
-    public delegate void EnemyCounterDelegate();
-    public EnemyCounterDelegate OnWaveEnd;
+    private static TriggerVictory VictoryScript = null;
+    private Life LifeScript = null;
 
-    private List<GameObject> EnemyList;
+    private static int EnemyCount = 0;
+    private static int EnemiesKilled = 0;
 
-    public void AddEnemy(GameObject enemy)
+    private void Awake()
     {
-        enemy.GetComponent<DestroyObject>().OnObjectDestroy += RemoveEnemy;
-        EnemyList.Add(enemy);
+        VictoryScript = GetComponent<TriggerVictory>();        
     }
 
-    public void RemoveEnemy(GameObject enemy)
+    public void SetupWaveInfo(LevelWavesData level)
     {
-        EnemyList.Remove(enemy);
-        if(EnemyList.Count == 0)
+        EnemyCount = 0;
+        EnemiesKilled = 0;
+        foreach(WaveData w in level.Waves)
         {
-            OnWaveEnd?.Invoke();
+            EnemyCount += w.NumberOfObjects;
+        }
+    }
+
+    public static void AddEnemyKilled()
+    {
+        EnemiesKilled++;
+        if(EnemiesKilled >= EnemyCount)
+        {
+            VictoryScript.Victory();
         }
     }
 }
