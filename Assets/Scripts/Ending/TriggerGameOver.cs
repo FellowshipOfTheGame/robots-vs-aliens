@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TriggerGameOver : MonoBehaviour
 {
@@ -10,7 +8,7 @@ public class TriggerGameOver : MonoBehaviour
 
     private void Awake()
     {
-        FindObjectOfType<EnemyCounter>().OnWaveEnd += GameOver;    
+        //FindObjectOfType<EnemyCounter>().OnWaveEnd += GameOver;    
     }
 
     public void GameOver()
