@@ -51,7 +51,7 @@ public class WaveBehaviour : MonoBehaviour
 
         CheckTurn();
     }
-
+    
     private void CheckTurn(){
         currentEnemy++;
         //CooldownScript.ResetCooldown();
