@@ -8,19 +8,20 @@ public class MeleeAttack : MonoBehaviour
 
     private Cooldown CooldownComponent;
 
-    private void Start()
+    private void Awake()
     {
         CooldownComponent = gameObject.GetComponent<Cooldown>();
-        CooldownComponent.ResetCooldown();
 
         if (durability)
         {
             CooldownComponent.OnCooldownEnded += CooldownEnded;
         }
+
     }
 
     public void CooldownEnded()
     {
-        gameObject.GetComponent<DestroyObject>().DestroySelf();
+        if(gameObject != null)
+            gameObject.GetComponent<DestroyObject>().DestroySelf();
     }
 }

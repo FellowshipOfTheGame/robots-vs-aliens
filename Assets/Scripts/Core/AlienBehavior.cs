@@ -7,6 +7,7 @@ public class AlienBehavior : MonoBehaviour
     private Attack myAttack;
     private CollisionControl myCollisionControl;
     private bool willAttack = false;
+    private GameObject lastRobotColidedWith = null;
 
     private void Awake()
     {
@@ -14,23 +15,24 @@ public class AlienBehavior : MonoBehaviour
         myCollisionControl = gameObject.GetComponent<CollisionControl>();
         InvokeRepeating("PeriodicAttack", myAttack._attackSpeed, myAttack._attackSpeed); //Start attacking
 
-        myCollisionControl.OnRobotAttackCollision += BeingAttacked;
-        myCollisionControl.OnEnemyCollision += RobotEncounter;
+        gameObject.GetComponent<Life>().OnDeath += Death;
+        myCollisionControl.OnCollision += BeingAttacked;
+        myCollisionControl.OnCollision += RobotEncounter;
+        //myCollisionControl.OnCollisionExit += noRobot;
     }
 
     private void Update()
     {
-        Death();
+        noRobot();
     }
 
-    public void BeingAttacked()
+    public void BeingAttacked(GameObject colided)
     {
         //If last object collided with was a robot projectile, then take damage
-        GameObject lastCollision = myCollisionControl.LastObjectCollided();
-        if (lastCollision.CompareTag("RobotProjectile"))
+        if (colided != null && colided.CompareTag("RobotProjectile"))
         {
-            gameObject.GetComponent<TakeDamage>().Damage(lastCollision.GetComponent<Projectile>().damage);
-            lastCollision.GetComponent<DestroyObject>().DestroySelf();
+            gameObject.GetComponent<TakeDamage>().Damage(colided.GetComponent<Projectile>().damage);
+            colided.GetComponent<DestroyObject>().DestroySelf();
         }
     }
 
@@ -38,35 +40,33 @@ public class AlienBehavior : MonoBehaviour
     private void PeriodicAttack()
     {
         if(willAttack)
-            myAttack.ReleaseAttack();
+            myAttack.ReleaseAttack(Vector3.left);
     }
 
     //Destroys Object when dead
     private void Death()
     {
-        if (!gameObject.GetComponent<Life>().isAlive())
+       gameObject.GetComponent<DestroyObject>().DestroySelf();
+    }
+
+    public void RobotEncounter(GameObject colided)
+    {
+        //If last object collided with was a robot, then stop moving and start attacking
+        if (colided != null && colided.CompareTag("Robot"))
         {
-            gameObject.GetComponent<DestroyObject>().DestroySelf();
+            lastRobotColidedWith = colided;
+            gameObject.GetComponent<Movement>()._move = false;
+            willAttack = true;
         }
     }
 
-    public void RobotEncounter()
+    private void noRobot()
     {
-        /*if (myCollisionControl.IsColliding())
+        if (lastRobotColidedWith == null)
         {
-            //If last object collided with was a robot, then stop moving and start attacking
-            GameObject lastCollision = myCollisionControl.LastObjectCollided();
-            if (lastCollision.CompareTag("Robot"))
-            {
-                gameObject.GetComponent<Movement>()._move = false;
-                willAttack = true;
-            }
-        }
-        else
-        {
-            gameObject.GetComponent<Movement>()._move = true;
             willAttack = false;
-        }*/
+            gameObject.GetComponent<Movement>()._move = true;
+        }
     }
 
 }
