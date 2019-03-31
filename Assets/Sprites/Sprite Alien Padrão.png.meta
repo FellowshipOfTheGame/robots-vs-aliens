@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 074121290071c9943a4de83ba2239670
+guid: 06db44f2e69b86047acc02b217801a3e
 TextureImporter:
   fileIDToRecycleName:
-    21300000: robo atirador (1)_0
+    21300000: "Sprite Alien Padr\xE3o_0"
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -107,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: robo atirador (1)_0
+      name: "Sprite Alien Padr\xE3o_0"
       rect:
         serializedVersion: 2
-        x: 24
-        y: 24
-        width: 79
-        height: 77
+        x: 51
+        y: 60
+        width: 155
+        height: 138
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,7 +121,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 347507466e3e3054292b5a146893d056
+      spriteID: fb68ef41a5cae044ab727cde27440116
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 20f2b041daa3c9f4fb52b2672f73402c
+    spriteID: d960447ab02195443b21180fd552835c
     vertices: []
     indices: 
     edges: []
