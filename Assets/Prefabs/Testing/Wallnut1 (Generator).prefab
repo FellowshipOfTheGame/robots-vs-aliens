@@ -136,8 +136,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NaturalSpawnHorizontalRange: 0
   NaturalSpawnVerticalRange: 0
-  RobotSpawnHorizontalRange: 10
-  RobotSpawnVerticalRange: 10
+  RobotSpawnHorizontalRange: 0
+  RobotSpawnVerticalRange: 0
   ScreenOffset: 0
 --- !u!114 &5814985537932288367
 MonoBehaviour:
@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _life: 300
+  _max_life: 300
   _state: 1
 --- !u!114 &7561434060060429520
 MonoBehaviour:
@@ -177,6 +178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aebfac3864e0344d817a6a7eb1ee9d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastCollision: {fileID: 0}
+  isColliding: 0
 --- !u!114 &5558629987794358534
 MonoBehaviour:
   m_ObjectHideFlags: 0

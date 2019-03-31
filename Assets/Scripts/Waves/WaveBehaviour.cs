@@ -29,33 +29,27 @@ public class WaveBehaviour : MonoBehaviour
         CooldownScript.CooldownTime = Random.Range(levelWavesData.Waves[currentWave].OffsetTimeBegin,
                     levelWavesData.Waves[currentWave].OffsetTimeFinish); 
         CooldownScript.ResetCooldown();
+
+        CooldownScript.OnCooldownEnded += CooldownEnded;
     }
 
-    void Update()
+    public void CooldownEnded()
     {
-        if(!isWaveGenerationDone)
-            CheckCooldown();
-    }
+        // Define random cell
+        int idCell = Random.Range(0, cells.Count);
+        Vector3 positionToSpawn = cells[idCell].transform.position;
 
-    private void CheckCooldown()
-    {
-        if(CooldownScript.IsCooldownDone){
-            // Define random cell
-            int idCell = Random.Range(0, cells.Count);
-            Vector3 positionToSpawn = cells[idCell].transform.position;
+        // Set enemy type and Instantiate
+        int objId = Random.Range(0, levelWavesData.Waves[currentWave].Objects.Length);
 
-            // Set enemy type and Instantiate
-            int objId = Random.Range(0, levelWavesData.Waves[currentWave].Objects.Length);
+        GameObject obj = SpawnObjectScript.Spawn(objId, positionToSpawn, Quaternion.identity, GUIDynamic);
 
-            GameObject obj = SpawnObjectScript.Spawn(objId, positionToSpawn, Quaternion.identity, GUIDynamic);
+        // Temporary
+        //obj.transform.localPosition = positionToSpawn;
+        //obj.transform.SetParent(GUIDynamic, false);
+        //
 
-            // Temporary
-            //obj.transform.localPosition = positionToSpawn;
-            //obj.transform.SetParent(GUIDynamic, false);
-            //
-
-            CheckTurn();
-        }
+        CheckTurn();
     }
 
     private void CheckTurn(){
@@ -69,7 +63,8 @@ public class WaveBehaviour : MonoBehaviour
 
             // If all waves are done
             if(currentWave >= levelWavesData.Waves.Count){
-                isWaveGenerationDone = true;
+                //isWaveGenerationDone = true;
+                CooldownScript.OnCooldownEnded -= CooldownEnded;
             }
             else{       // Reset values
                 CooldownScript.CooldownTime = Random.Range(levelWavesData.Waves[currentWave].OffsetTimeBegin,

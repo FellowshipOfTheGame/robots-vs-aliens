@@ -9,7 +9,7 @@ public class GeneratorBehaviour : MonoBehaviour
     private RandomElectricitySpawn RandomElectricityScript;
 
     [SerializeField] private bool IsRobot = false;
-    private Vector2 SpawnPosition = new Vector2(0,0);
+    private Vector2 SpawnOffset = new Vector2(0,0);
 
     private void Awake(){
         GUIDynamic = GameObject.Find("_GUIDynamic").transform;
@@ -17,27 +17,17 @@ public class GeneratorBehaviour : MonoBehaviour
         CooldownScript = GetComponent<Cooldown>();
         SpawnObjectScript = GetComponent<SpawnObject>();
         RandomElectricityScript = GetComponent<RandomElectricitySpawn>();
+
+        CooldownScript.OnCooldownEnded += CooldownEnded;
     }
 
-    private void Update()
+    public void CooldownEnded()
     {
-        CheckCooldown();
-    }
+        SpawnOffset = RandomElectricityScript.RandomSpawnPosition(IsRobot);
 
-    private void CheckCooldown(){
-        if(CooldownScript.IsCooldownDone){
+        GameObject obj = SpawnObjectScript.Spawn(transform.position+(Vector3)SpawnOffset, Quaternion.identity, GUIDynamic);
+        obj.GetComponent<MoveTopToBottom>().StartFall();
 
-            SpawnPosition = RandomElectricityScript.RandomSpawnPosition(IsRobot);
-
-            GameObject obj = SpawnObjectScript.Spawn(SpawnPosition, Quaternion.identity, transform);
-            
-            //TEMPORARIO, NÃO SEI COMO FAZER MELHOR
-            obj.transform.localPosition = SpawnPosition;
-            obj.transform.SetParent(GUIDynamic, false);
-            obj.GetComponent<MoveTopToBottom>().StartFall();
-            //TEMPORARIO
-
-            CooldownScript.ResetCooldown();
-        }
+        CooldownScript.ResetCooldown();
     }
 }
