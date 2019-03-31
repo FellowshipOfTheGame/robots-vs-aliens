@@ -6,31 +6,23 @@ public class RobotBehavior : MonoBehaviour
 {
     private Attack myAttack;
 
-    private void Start()
+    private void Awake()
     {
         myAttack = gameObject.GetComponent<Attack>();
         InvokeRepeating("PeriodicAttack", myAttack._attackSpeed, myAttack._attackSpeed); //Start attacking
-    }
-
-    private void Update()
-    {
-        BeingAttacked();
+        gameObject.GetComponent<CollisionControl>().OnCollision += BeingAttacked;
+        gameObject.GetComponent<Life>().OnDeath += Death;
     }
 
     //For taking damage
-    private void BeingAttacked()
+    private void BeingAttacked(GameObject collided)
     {
-        CollisionControl myCollision = gameObject.GetComponent<CollisionControl>();
-        /*if (myCollision.IsColliding())
+        //If object collided with was an alien projectile, then take damage
+        if (collided != null && collided.CompareTag("AlienProjectile"))
         {
-            //If last object collided with was an enemy projectile, then take damage
-            GameObject lastCollision = myCollision.LastObjectCollided();
-            if (lastCollision.CompareTag("EnemyProjectile"))
-            {
-                gameObject.GetComponent<TakeDamage>().Damage(lastCollision.GetComponent<Projectile>().damage);
-                lastCollision.GetComponent<DestroyObject>().DestroySelf();
-            }
-        }*/
+            gameObject.GetComponent<TakeDamage>().Damage(collided.GetComponent<Projectile>().damage);
+            collided.GetComponent<DestroyObject>().DestroySelf();
+        }
     }
 
     //For doing his attacks
@@ -42,10 +34,7 @@ public class RobotBehavior : MonoBehaviour
     //Destroys Object when dead
     private void Death()
     {
-        if (!gameObject.GetComponent<Life>().isAlive())
-        {
-            gameObject.GetComponent<DestroyObject>().DestroySelf();
-        }
+        gameObject.GetComponent<DestroyObject>().DestroySelf();
     }
 
 }

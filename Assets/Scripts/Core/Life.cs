@@ -8,7 +8,9 @@ public class Life : MonoBehaviour
     public State _state = State.alive;
     public enum State { dead, alive };
 
-    public delegate void OnDeath();
+    public delegate void LifeDelegate();
+    public LifeDelegate OnDeath;
+
 
     public bool isAlive()
     {
@@ -24,7 +26,7 @@ public class Life : MonoBehaviour
     {
         _life = (_life - value) > 0 ? _life-value : 0;
         if (_life <= 0)
-            _state = State.dead;
+            OnDeath.Invoke();//_state = State.dead;
     }
 
     public void IncreaseLife(float value)

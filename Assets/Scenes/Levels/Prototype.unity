@@ -1528,7 +1528,7 @@ PrefabInstance:
     - target: {fileID: 4842326458484497332, guid: 8890afc520f6bcc4984c946a5e7bbfc7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1343342294263750271, guid: 8890afc520f6bcc4984c946a5e7bbfc7,
         type: 3}
@@ -1634,6 +1634,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844807181611272902, guid: 8890afc520f6bcc4984c946a5e7bbfc7,
+        type: 3}
+      propertyPath: NaturalSpawnHorizontalRange
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844807181611272902, guid: 8890afc520f6bcc4984c946a5e7bbfc7,
+        type: 3}
+      propertyPath: NaturalSpawnVerticalRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844807181611272902, guid: 8890afc520f6bcc4984c946a5e7bbfc7,
+        type: 3}
+      propertyPath: ScreenOffsetY
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844807181611272902, guid: 8890afc520f6bcc4984c946a5e7bbfc7,
+        type: 3}
+      propertyPath: ScreenOffsetX
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844807181611272902, guid: 8890afc520f6bcc4984c946a5e7bbfc7,
+        type: 3}
+      propertyPath: RobotSpawnHorizontalRange
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844807181611272902, guid: 8890afc520f6bcc4984c946a5e7bbfc7,
+        type: 3}
+      propertyPath: RobotSpawnVerticalRange
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8890afc520f6bcc4984c946a5e7bbfc7, type: 3}
@@ -3802,6 +3832,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 5b7e1d058d30f404b8ac879e8b96d04f,
         type: 3}
+    - target: {fileID: 7856387722492496643, guid: 680ad59e4ff1ab645b43c2512e75740a,
+        type: 3}
+      propertyPath: ObjectsToSpawn.Array.data[2]
+      value: 
+      objectReference: {fileID: 8008611813885131627, guid: d2894dd554637ab47ba6988bb170b62e,
+        type: 3}
     - target: {fileID: 4856522242203456748, guid: 680ad59e4ff1ab645b43c2512e75740a,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
@@ -3832,12 +3868,6 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 7856387722492496643, guid: 680ad59e4ff1ab645b43c2512e75740a,
-        type: 3}
-      propertyPath: ObjectsToSpawn.Array.data[2]
-      value: 
-      objectReference: {fileID: 8008611813885131627, guid: d2894dd554637ab47ba6988bb170b62e,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 680ad59e4ff1ab645b43c2512e75740a, type: 3}
 --- !u!114 &670478161 stripped
@@ -4432,6 +4462,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 709459187}
     m_Modifications:
+    - target: {fileID: 8617167387977896331, guid: 8dccb0c8f8a84b34993fa90456f1b357,
+        type: 3}
+      propertyPath: m_Text
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617167387977896331, guid: 8dccb0c8f8a84b34993fa90456f1b357,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723912792645398609, guid: 8dccb0c8f8a84b34993fa90456f1b357,
+        type: 3}
+      propertyPath: ElectricityCounterScript
+      value: 
+      objectReference: {fileID: 1787723489}
+    - target: {fileID: 4185868506024725438, guid: 8dccb0c8f8a84b34993fa90456f1b357,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 42.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185868506024725438, guid: 8dccb0c8f8a84b34993fa90456f1b357,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -84.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943047441677198093, guid: 8dccb0c8f8a84b34993fa90456f1b357,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 378.80005
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943047441677198093, guid: 8dccb0c8f8a84b34993fa90456f1b357,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -31.799927
+      objectReference: {fileID: 0}
     - target: {fileID: 4957839157682609056, guid: 8dccb0c8f8a84b34993fa90456f1b357,
         type: 3}
       propertyPath: m_Name
@@ -6677,6 +6742,7 @@ GameObject:
   - component: {fileID: 1015999385}
   - component: {fileID: 1015999384}
   - component: {fileID: 1015999383}
+  - component: {fileID: 1015999386}
   m_Layer: 0
   m_Name: WaveGenerator
   m_TagString: Untagged
@@ -6744,6 +6810,18 @@ MonoBehaviour:
   - {fileID: 1316499158}
   - {fileID: 1806931697}
   - {fileID: 190222417}
+--- !u!114 &1015999386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015999381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94937fe067298bd45acbd47c44732565, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1073027779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10422,6 +10500,18 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 680ad59e4ff1ab645b43c2512e75740a, type: 3}
+--- !u!114 &1787723489 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4772219135296524375, guid: fa0689d6fc1ab2743b8d56e7d85dd7a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 185019098}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbae80e553e737e4685556cf55ca26d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1806931696
 PrefabInstance:
   m_ObjectHideFlags: 0

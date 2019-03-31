@@ -3,14 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class OutOfBorder : MonoBehaviour
-{
+{   
+
+    //PLACEHOLDER CLASS
     [SerializeField] private Vector3 border;
-    public bool OutOfBorders()
+
+    private void Update()
+    {
+        OutOfBorders();
+    }
+
+    public void OutOfBorders()
     {
         if (transform.position.x > border.x)
         {
-            return true;
+            gameObject.GetComponent<DestroyObject>().DestroySelf();
         }
-        else return false;
     }
 }
