@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8008611813885131626}
   - component: {fileID: 8008611813885131628}
   - component: {fileID: 8917370207743191810}
-  - component: {fileID: 3568308891002123422}
-  - component: {fileID: 377573129212709067}
   - component: {fileID: 9222624959338395029}
+  - component: {fileID: 377573129212709067}
+  - component: {fileID: 3568308891002123422}
   - component: {fileID: 2781442339828215625}
   - component: {fileID: 5814985537932288367}
   - component: {fileID: 7561434060060429520}
@@ -82,32 +82,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &3568308891002123422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8008611813885131627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9773ca0d8633a048bf4de4ad1a5187e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsRobot: 1
---- !u!114 &377573129212709067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8008611813885131627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 555b9451e980f0d4c949ac799da1c1dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cooldownTime: 3
 --- !u!114 &9222624959338395029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,6 +96,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectsToSpawn:
   - {fileID: 2722090748028849998, guid: eb9926f48fb80574c804adb029a3f39a, type: 3}
+--- !u!114 &377573129212709067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008611813885131627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555b9451e980f0d4c949ac799da1c1dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 3
+--- !u!114 &3568308891002123422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008611813885131627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9773ca0d8633a048bf4de4ad1a5187e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsRobot: 1
 --- !u!114 &2781442339828215625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,8 +178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aebfac3864e0344d817a6a7eb1ee9d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastCollision: {fileID: 0}
-  isColliding: 0
 --- !u!114 &5558629987794358534
 MonoBehaviour:
   m_ObjectHideFlags: 0
