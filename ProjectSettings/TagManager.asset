@@ -12,6 +12,7 @@ TagManager:
   - Dynamic
   - AlienProjectile
   - EnemyProjectile
+  - GameOver
   layers:
   - Default
   - TransparentFX

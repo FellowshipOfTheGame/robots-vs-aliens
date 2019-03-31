@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class RobotSelector : MonoBehaviour
 {
-    private int SelectedIndex;
+    private int SelectedIndex = 0;
+    private int SelectedCost = 0;
 
-    public void SelectRobot(int index)
+    public void SelectRobot(int index, int cost)
     {
         SelectedIndex = index;
+        SelectedCost = cost;
     }
 
     public void DeselectRobot()
@@ -19,5 +21,10 @@ public class RobotSelector : MonoBehaviour
     public int GetSelectedRobot()
     {
         return SelectedIndex;
+    }
+
+    public int GetSelectedCost()
+    {
+        return SelectedCost;
     }
 }

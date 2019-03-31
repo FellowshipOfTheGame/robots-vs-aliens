@@ -1,9 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AlienBehavior : MonoBehaviour
 {
+
+    private static TriggerGameOver GameOverScript = null;
+
     private Attack myAttack;
     private CollisionControl myCollisionControl;
     private bool willAttack = false;
@@ -18,6 +19,8 @@ public class AlienBehavior : MonoBehaviour
         gameObject.GetComponent<Life>().OnDeath += Death;
         myCollisionControl.OnCollision += BeingAttacked;
         myCollisionControl.OnCollision += RobotEncounter;
+        myCollisionControl.OnCollision += ReachedEndOfScreen;
+
         //myCollisionControl.OnCollisionExit += noRobot;
     }
 
@@ -26,13 +29,26 @@ public class AlienBehavior : MonoBehaviour
         noRobot();
     }
 
-    public void BeingAttacked(GameObject colided)
+    public void ReachedEndOfScreen(GameObject collided)
+    {
+        if(GameOverScript == null)
+        {
+            GameOverScript = FindObjectOfType<TriggerGameOver>();
+        }
+        //If collided with the end of screen, triggers game over
+        if (collided != null && collided.CompareTag("GameOver"))
+        {
+            GameOverScript.GameOver();
+        }
+    }
+
+    public void BeingAttacked(GameObject collided)
     {
         //If last object collided with was a robot projectile, then take damage
-        if (colided != null && colided.CompareTag("RobotProjectile"))
+        if (collided != null && collided.CompareTag("RobotProjectile"))
         {
-            gameObject.GetComponent<TakeDamage>().Damage(colided.GetComponent<Projectile>().damage);
-            colided.GetComponent<DestroyObject>().DestroySelf();
+            gameObject.GetComponent<TakeDamage>().Damage(collided.GetComponent<Projectile>().damage);
+            collided.GetComponent<DestroyObject>().DestroySelf();
         }
     }
 

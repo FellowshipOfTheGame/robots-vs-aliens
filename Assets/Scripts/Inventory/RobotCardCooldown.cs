@@ -24,6 +24,11 @@ public class RobotCardCooldown : MonoBehaviour
         StartCoroutine(Cooldown(cooldownDelay));
     }
 
+    public bool IsAvailable()
+    {
+        return Available;
+    }
+
     private IEnumerator Cooldown(float cooldownDelay)
     {
         FillAmount = 1;

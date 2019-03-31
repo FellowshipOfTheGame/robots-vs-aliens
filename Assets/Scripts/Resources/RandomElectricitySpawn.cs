@@ -30,7 +30,6 @@ public class RandomElectricitySpawn : MonoBehaviour
             position += Camera.main.ScreenToWorldPoint(new Vector3(ScreenOffsetX, ScreenOffsetY, 0));
         }
 
-        Debug.Log(position);
         return position;
     }
 
