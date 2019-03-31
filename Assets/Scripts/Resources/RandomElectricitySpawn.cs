@@ -8,16 +8,18 @@ public class RandomElectricitySpawn : MonoBehaviour
     [SerializeField] private float RobotSpawnHorizontalRange;
     [SerializeField] private float RobotSpawnVerticalRange;
 
-    [SerializeField] private float ScreenOffset = 0;
+    [SerializeField] private float ScreenOffsetY = 0;
+    [SerializeField] private float ScreenOffsetX = 0;
 
     private void Awake()
     {
-        ScreenOffset += (float)Screen.height / 2f;
+        ScreenOffsetY += (float)Screen.height;
+        ScreenOffsetX += (float)Screen.width / 2f;
     }
 
     public Vector2 RandomSpawnPosition(bool IsRobot)
     {
-        Vector2 position = new Vector2(0, 0);
+        Vector3 position = new Vector3(0, 0, 0);
         if (IsRobot)
         {
             position = GetRandomSpawnPosition(RobotSpawnHorizontalRange, RobotSpawnVerticalRange);
@@ -25,9 +27,10 @@ public class RandomElectricitySpawn : MonoBehaviour
         else
         {
             position = GetRandomSpawnPosition(NaturalSpawnHorizontalRange, NaturalSpawnVerticalRange);
-            position += new Vector2(0, ScreenOffset);
+            position += Camera.main.ScreenToWorldPoint(new Vector3(ScreenOffsetX, ScreenOffsetY, 0));
         }
 
+        Debug.Log(position);
         return position;
     }
 

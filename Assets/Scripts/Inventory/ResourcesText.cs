@@ -4,17 +4,13 @@ using UnityEngine.UI;
 
 public class ResourcesText : MonoBehaviour
 {
-    [SerializeField] private Text txtResources;
+    private Text txtResources;
     [SerializeField] private ElectricityCounter ElectricityCounterScript;
 
     private void Awake()
     {
+        txtResources = GetComponent<Text>();
         ElectricityCounterScript.OnElectricityChanged += UpdateTextValue;
-    }
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public void UpdateTextValue(string value)

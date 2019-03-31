@@ -23,15 +23,15 @@ public class ElectricityCounter : MonoBehaviour
     
     }
 
-    public void AddElectricity(int electricity){
-        this.electricity += electricity;
-        OnElectricityChanged.Invoke(electricity.ToString());
+    public void AddElectricity(int value){
+        this.electricity += value;
+        OnElectricityChanged?.Invoke(this.electricity.ToString());
         //Debug.Log("electricity = " + this.electricity.ToString());
     }
 
-    public void SubtractElectricity(int electricity){
-        this.electricity -= electricity;
-        OnElectricityChanged.Invoke(electricity.ToString());
+    public void SubtractElectricity(int value){
+        this.electricity -= value;
+        OnElectricityChanged?.Invoke(this.electricity.ToString());
         //Debug.Log("electricity = " + this.electricity.ToString());
     }
 }
