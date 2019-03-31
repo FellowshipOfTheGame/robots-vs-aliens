@@ -11,13 +11,17 @@ GameObject:
   - component: {fileID: 8008611813885131626}
   - component: {fileID: 8008611813885131628}
   - component: {fileID: 8008611813885131629}
+  - component: {fileID: 109459189227440995}
+  - component: {fileID: 3949304028348656649}
   - component: {fileID: 6542816887273488948}
   - component: {fileID: 8153584033609198331}
-  - component: {fileID: 4201053126948910739}
   - component: {fileID: 1769205710718456128}
   - component: {fileID: 6015343130561480872}
   - component: {fileID: 9147649685801727573}
   - component: {fileID: 7426256189210110443}
+  - component: {fileID: 733572595313890041}
+  - component: {fileID: 8845521067682603028}
+  - component: {fileID: 4692344051660695323}
   m_Layer: 0
   m_Name: Robot Generator
   m_TagString: Robot
@@ -42,7 +46,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1, y: 1}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8008611813885131628
 CanvasRenderer:
@@ -65,14 +69,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23584908, g: 0.19246174, b: 0.22856964, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a1270f19b15b79048b35ca40e612ea9e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 563da0fbe8052b9498994768977555c7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -81,6 +85,53 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!50 &109459189227440995
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008611813885131627}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &3949304028348656649
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008611813885131627}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 100, y: 100}
+  m_EdgeRadius: 0
 --- !u!114 &6542816887273488948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,23 +159,6 @@ MonoBehaviour:
   _life: 100
   _max_life: 100
   _state: 1
---- !u!114 &4201053126948910739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8008611813885131627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1619fea04f9255a428a0531cfeaa07b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 100
-  speed: 20
-  direction: {x: 1, y: 0}
-  mySpawnObject: {fileID: 6015343130561480872}
-  _attackSpeed: 3
 --- !u!114 &1769205710718456128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,5 +209,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aebfac3864e0344d817a6a7eb1ee9d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastCollision: {fileID: 0}
-  isColliding: 0
+--- !u!114 &733572595313890041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008611813885131627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e77efb561a4f2742b89edbb7f3973ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NaturalSpawnHorizontalRange: 0
+  NaturalSpawnVerticalRange: 0
+  RobotSpawnHorizontalRange: 10
+  RobotSpawnVerticalRange: 10
+  ScreenOffset: 0
+--- !u!114 &8845521067682603028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008611813885131627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555b9451e980f0d4c949ac799da1c1dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 3
+--- !u!114 &4692344051660695323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008611813885131627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9773ca0d8633a048bf4de4ad1a5187e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsRobot: 1

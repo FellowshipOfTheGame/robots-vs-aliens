@@ -42,10 +42,4 @@ public class Life : MonoBehaviour
         _state = State.alive;
     }
 
-    private void Update()
-    {
-        //if (!isAlive())
-            //OnDeath.invoke(); //uso do delegate para morte
-    }
-
 }
