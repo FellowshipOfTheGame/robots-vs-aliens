@@ -3,7 +3,7 @@
 public class Explode : MonoBehaviour
 {
     private Cooldown myCooldown;
-    [SerializeField] private Transform _Dynamic;
+    private Transform _Dynamic;
 
     private void Start()
     {
@@ -15,6 +15,7 @@ public class Explode : MonoBehaviour
     public void ExplodeObject()
     {
         gameObject.GetComponent<SpawnObject>().Spawn(transform.position, Quaternion.identity, _Dynamic);
+        gameObject.GetComponent<DestroyObject>().DestroySelf();
         Debug.Log("Exploding...");
     }
 }
