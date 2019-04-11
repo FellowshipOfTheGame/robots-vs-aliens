@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectsToSpawn:
-  - {fileID: 1399694594196858405, guid: 7a5d70f9355c4b94f83c7ff4db2d6a3b, type: 3}
+  - {fileID: 2722090748028849998, guid: eb9926f48fb80574c804adb029a3f39a, type: 3}
 --- !u!114 &9147649685801727573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,8 +223,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NaturalSpawnHorizontalRange: 0
   NaturalSpawnVerticalRange: 0
-  RobotSpawnHorizontalRange: 10
-  RobotSpawnVerticalRange: 10
+  RobotSpawnHorizontalRange: 0
+  RobotSpawnVerticalRange: 0
   ScreenOffsetY: 0
   ScreenOffsetX: 0
 --- !u!114 &8845521067682603028

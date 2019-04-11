@@ -7,6 +7,11 @@ public class RobotSelector : MonoBehaviour
     private int SelectedIndex = 0;
     private int SelectedCost = 0;
 
+    private void Start()
+    {
+        DeselectRobot();
+    }
+
     public void SelectRobot(int index, int cost)
     {
         SelectedIndex = index;
