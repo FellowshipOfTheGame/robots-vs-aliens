@@ -1,29 +1,34 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class CellBehaviour : MonoBehaviour
 {
-    [SerializeField] private static RobotSelector SelectorScript;
+    private static RobotSelector SelectorScript;
+    private static ElectricityCounter ElectricityScript;
 
-    [SerializeField] private static ElectricityCounter ElectricityScript;
+    [SerializeField] private Sprite OriginalSprite;
+    [SerializeField] private Sprite HoveredSprite;
 
     private SpawnObject SpawnScript;
     private CellOccupation OccupationScript;
+    private Image ImageComponent;
 
     void Awake()
     {
         SpawnScript = GetComponent<SpawnObject>();
         OccupationScript = GetComponent<CellOccupation>();
-    }
+        ImageComponent = GetComponent<Image>();
 
-    public void InteractWithCell()
-    {
         //Debug.Log("Interacting", gameObject);
         if (SelectorScript == null)
         {
             SelectorScript = FindObjectOfType<RobotSelector>();
             //if (SelectorScript != null) Debug.Log("Found it! -> " + SelectorScript.name, SelectorScript.gameObject);
         }
+    }
 
+    public void InteractWithCell()
+    {
         if (ElectricityScript == null)
         {
             ElectricityScript = FindObjectOfType<ElectricityCounter>();
@@ -41,7 +46,23 @@ public class CellBehaviour : MonoBehaviour
                 OccupationScript.UpdateCellOccupation(true);
 
                 ElectricityScript.SubtractElectricity(SelectorScript.GetSelectedCost());
+
+                PointerExited();
             }
         }
     }
+
+    public void PointerEntered()
+    {
+        if (SelectorScript.GetSelectedRobot() >= 0)
+        {
+            ImageComponent.sprite = HoveredSprite;
+        }
+    }
+
+    public void PointerExited()
+    {
+        ImageComponent.sprite = OriginalSprite;
+    }
+
 }

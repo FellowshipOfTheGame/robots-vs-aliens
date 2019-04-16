@@ -78,7 +78,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Planta
+  m_Text: Gerador
 --- !u!1 &1868577014105125730
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,7 +178,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -237,7 +237,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RobotIndex: 0
-  RobotCost: 50
+  RobotCost: 25
+  OriginalSprite: {fileID: 21300000, guid: bad05d45af5287d4d8329acaeec77bd8, type: 3}
+  PressedSprite: {fileID: 21300000, guid: 5b7e1d058d30f404b8ac879e8b96d04f, type: 3}
 --- !u!114 &3348991936539940109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,7 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e30022e98869fa24aac4c78b7eec5327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TransparentFill: {fileID: 0}
+  TransparentFill: {fileID: 835773006547781718}
 --- !u!114 &3436451094774875140
 MonoBehaviour:
   m_ObjectHideFlags: 0
