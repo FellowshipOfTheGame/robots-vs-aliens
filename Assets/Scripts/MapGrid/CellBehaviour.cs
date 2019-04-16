@@ -42,6 +42,7 @@ public class CellBehaviour : MonoBehaviour
             if (index >= 0)
             {
                 SpawnScript.Spawn(index, Vector3.zero, Quaternion.identity, transform);
+                SelectorScript.TriggerRobotCooldown();
                 SelectorScript.DeselectRobot();
                 OccupationScript.UpdateCellOccupation(true);
 

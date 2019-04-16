@@ -11658,6 +11658,11 @@ PrefabInstance:
       propertyPath: RobotCost
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 5404710672113927036, guid: 09f5e4fc79635c94dbd18e996da9eb1e,
+        type: 3}
+      propertyPath: CooldownTime
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1868577013712684552, guid: 09f5e4fc79635c94dbd18e996da9eb1e,
         type: 3}
       propertyPath: m_Text

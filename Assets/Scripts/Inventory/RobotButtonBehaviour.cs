@@ -12,6 +12,7 @@ public class RobotButtonBehaviour : MonoBehaviour
     [SerializeField] private int RobotIndex;
     [SerializeField] private int RobotCost = 0;
     [SerializeField] private static ElectricityCounter ElectricityCounterScript;
+    [SerializeField] private float CooldownTime = 0;
 
     [SerializeField] private Sprite OriginalSprite;
     [SerializeField] private Sprite PressedSprite;
@@ -65,5 +66,10 @@ public class RobotButtonBehaviour : MonoBehaviour
     public void MarkButtonDeselected()
     {
         ImageComponent.sprite = OriginalSprite;
+    }
+
+    public void StartCooldown()
+    {
+        CooldownScript.StartCooldown(CooldownTime);
     }
 }

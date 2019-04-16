@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class RobotSelector : MonoBehaviour
 {
@@ -42,5 +40,10 @@ public class RobotSelector : MonoBehaviour
     public RobotButtonBehaviour GetSelectedButton()
     {
         return SelectedButton;
+    }
+
+    public void TriggerRobotCooldown()
+    {
+        SelectedButton?.StartCooldown();
     }
 }
