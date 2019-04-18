@@ -18,9 +18,9 @@ public class EnemyCounter : MonoBehaviour
     {
         EnemyCount = 0;
         EnemiesKilled = 0;
-        foreach(WaveData w in level.Waves)
+        foreach(FixedWaveData w in level.Waves)
         {
-            EnemyCount += w.NumberOfObjects;
+            EnemyCount += w.EnemiesIndexes.Length;
         }
     }
 
