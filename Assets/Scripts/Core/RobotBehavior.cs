@@ -9,7 +9,8 @@ public class RobotBehavior : MonoBehaviour
     private void Awake()
     {
         myAttack = gameObject.GetComponent<Attack>();
-        InvokeRepeating("PeriodicAttack", myAttack._attackSpeed, myAttack._attackSpeed); //Start attacking
+        if(myAttack != null)
+            InvokeRepeating("PeriodicAttack", myAttack._attackSpeed, myAttack._attackSpeed); //Start attacking
         gameObject.GetComponent<CollisionControl>().OnCollision += BeingAttacked;
         gameObject.GetComponent<Life>().OnDeath += Death;
     }

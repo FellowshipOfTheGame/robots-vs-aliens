@@ -136,6 +136,27 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3608554314860355483}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &316362898 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1808311998369880105, guid: 37a4293579af2574284ced65d7d2d645,
+    type: 3}
+  m_PrefabInstance: {fileID: 1808311999383883377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &316362900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316362898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3c2da2a378c1ce49a32262a6c0ded76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AddRestartScene: 0
+  AddLoadScene: 1
+  SceneName: Prototype
 --- !u!1001 &336021088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -558,6 +579,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808311998369880107, guid: 37a4293579af2574284ced65d7d2d645,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1808311998369880107, guid: 37a4293579af2574284ced65d7d2d645,
         type: 3}

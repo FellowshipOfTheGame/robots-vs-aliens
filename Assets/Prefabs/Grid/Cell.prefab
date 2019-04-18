@@ -71,7 +71,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 2f9fd710fb6d8bc4eb8b4ef266580de6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -121,6 +121,40 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2933989041718703114}
+          m_MethodName: PointerEntered
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2933989041718703114}
+          m_MethodName: PointerExited
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
 --- !u!114 &579761668880160296
 MonoBehaviour:
@@ -147,11 +181,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectsToSpawn:
-  - {fileID: 8008611813885131627, guid: aab7bbd2c1ddc8546b7e41bba3f62240, type: 3}
-  - {fileID: 8008611813885131627, guid: 2580f0433673aeb4b82894da227095b8, type: 3}
-  - {fileID: 8008611813885131627, guid: a90b401a86f77bf4190d573eff03917d, type: 3}
-  - {fileID: 8008611813885131627, guid: b1b1e325738f82c4aa0127f580228435, type: 3}
-  - {fileID: 8008611813885131627, guid: cdc0060e29630374aa9cbdae2e203c57, type: 3}
+  - {fileID: 8008611813885131627, guid: 72327ea321b19914485fe80c2380ec6e, type: 3}
+  - {fileID: 8008611813885131627, guid: b467c182612c3144bbf3ab64a1e697bb, type: 3}
 --- !u!114 &7466976104679328577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,6 +207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7480163f87796b41a38849172e8c509, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OriginalSprite: {fileID: 21300000, guid: 2f9fd710fb6d8bc4eb8b4ef266580de6, type: 3}
+  HoveredSprite: {fileID: 21300000, guid: 5b7e1d058d30f404b8ac879e8b96d04f, type: 3}
 --- !u!114 &2360198768708905531
 MonoBehaviour:
   m_ObjectHideFlags: 0
