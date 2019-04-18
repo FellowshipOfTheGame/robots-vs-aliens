@@ -48,7 +48,7 @@ public class FixedWaveBehaviour : MonoBehaviour
         //int objId = Random.Range(0, levelWavesData.Waves[currentWave].Objects.Length);
 
         GameObject obj = SpawnObjectScript.Spawn(objId, positionToSpawn, Quaternion.identity, GUIDynamic);
-
+        CounterScript.AddSpawnedEnemy();
         // Temporary
         //obj.transform.localPosition = positionToSpawn;
         //obj.transform.SetParent(GUIDynamic, false);
