@@ -4435,6 +4435,23 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7856387722492496643, guid: 680ad59e4ff1ab645b43c2512e75740a,
+        type: 3}
+      propertyPath: ObjectsToSpawn.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856387722492496643, guid: 680ad59e4ff1ab645b43c2512e75740a,
+        type: 3}
+      propertyPath: ObjectsToSpawn.Array.data[1]
+      value: 
+      objectReference: {fileID: 8008611813885131627, guid: b467c182612c3144bbf3ab64a1e697bb,
+        type: 3}
+    - target: {fileID: 7856387722492496643, guid: 680ad59e4ff1ab645b43c2512e75740a,
+        type: 3}
+      propertyPath: ObjectsToSpawn.Array.data[2]
+      value: 
+      objectReference: {fileID: 8008611813885131627, guid: aa4086fc18fdacf4c81c6b1052879e4f,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 680ad59e4ff1ab645b43c2512e75740a, type: 3}
 --- !u!1001 &687119742
@@ -11937,11 +11954,6 @@ PrefabInstance:
         type: 3}
       propertyPath: RobotCost
       value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5404710672113927036, guid: 09f5e4fc79635c94dbd18e996da9eb1e,
-        type: 3}
-      propertyPath: CooldownTime
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1868577013712684552, guid: 09f5e4fc79635c94dbd18e996da9eb1e,
         type: 3}
