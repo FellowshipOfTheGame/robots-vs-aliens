@@ -156,8 +156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c14203a075ac2bc40a1c1799259f7af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _life: 100
-  _max_life: 100
+  _life: 300
+  _max_life: 300
   _state: 1
 --- !u!114 &4201053126948910739
 MonoBehaviour:
@@ -171,10 +171,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1619fea04f9255a428a0531cfeaa07b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 35
+  damage: 20
   speed: 10
   direction: {x: 1, y: 0}
-  _attackSpeed: 3
+  _attackSpeed: 5
 --- !u!114 &1769205710718456128
 MonoBehaviour:
   m_ObjectHideFlags: 0
