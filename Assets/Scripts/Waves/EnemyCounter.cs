@@ -24,10 +24,16 @@ public class EnemyCounter : MonoBehaviour
         VictoryScript = GetComponent<TriggerVictory>();        
     }
 
-    public void SetupWaveInfo(LevelWavesData level)
+    private void ResetCounters()
     {
         EnemyCountTotal = 0;
         EnemiesKilled = 0;
+        enemiesSpawned = 0;
+    }
+
+    public void SetupWaveInfo(LevelWavesData level)
+    {
+        ResetCounters();
         foreach(FixedWaveData w in level.Waves)
         {
             EnemyCountTotal += w.EnemiesIndexes.Length;
