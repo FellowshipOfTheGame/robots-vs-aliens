@@ -50,11 +50,12 @@ public class CellBehaviour : MonoBehaviour
             {
                 SpawnScript.Spawn(index, Vector3.zero, Quaternion.identity, transform);
                 SelectorScript.TriggerRobotCooldown();
-                SelectorScript.DeselectRobot();
-                RemoveScript.SelectedOff(); //TEMPORARY
-                OccupationScript.UpdateCellOccupation(true);
 
                 ElectricityScript.SubtractElectricity(SelectorScript.GetSelectedCost());
+                SelectorScript.DeselectRobot();
+
+                RemoveScript.SelectedOff(); //TEMPORARY
+                OccupationScript.UpdateCellOccupation(true);
 
                 PointerExited();
             }
