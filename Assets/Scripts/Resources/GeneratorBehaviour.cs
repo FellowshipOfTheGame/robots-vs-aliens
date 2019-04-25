@@ -5,6 +5,8 @@ public class GeneratorBehaviour : MonoBehaviour
     private Transform GUIDynamic = null;
 
     private Cooldown CooldownScript;
+    private Cooldown AnimationCooldown;
+    private Animation AnimationScript;
     private SpawnObject SpawnObjectScript;
     private RandomElectricitySpawn RandomElectricityScript;
 
@@ -14,9 +16,12 @@ public class GeneratorBehaviour : MonoBehaviour
     private void Awake(){
         GUIDynamic = GameObject.Find("_GUIDynamic").transform;
 
+        AnimationScript = GetComponent<Animation>();
         CooldownScript = GetComponent<Cooldown>();
         SpawnObjectScript = GetComponent<SpawnObject>();
         RandomElectricityScript = GetComponent<RandomElectricitySpawn>();
+
+        if (AnimationScript != null) InvokeRepeating("PlayAnimation", CooldownScript.CooldownTime - AnimationScript.animationTime, CooldownScript.CooldownTime);
 
         CooldownScript.OnCooldownEnded += CooldownEnded;
     }
@@ -29,5 +34,10 @@ public class GeneratorBehaviour : MonoBehaviour
         obj.GetComponent<MoveTopToBottom>().StartFall();
 
         CooldownScript.ResetCooldown();
+    }
+
+    public void PlayAnimation()
+    {
+        AnimationScript.PlayTriggerAnimation("Generate");
     }
 }
