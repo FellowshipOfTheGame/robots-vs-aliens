@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 02c89376307a8da4295e1ba67c492942
+guid: ed7b0182c53dd1e46b001003eadc3e38
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ApiraDog IDLE_0
-    21300002: ApiraDog IDLE_1
-    21300004: ApiraDog IDLE_2
-    21300006: ApiraDog IDLE_3
+    21300000: "Rob\xF4 Gerador Gera\xE7\xE3o-Sheet_0"
+    21300002: "Rob\xF4 Gerador Gera\xE7\xE3o-Sheet_1"
+    21300004: "Rob\xF4 Gerador Gera\xE7\xE3o-Sheet_2"
+    21300006: "Rob\xF4 Gerador Gera\xE7\xE3o-Sheet_3"
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -99,81 +99,81 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ApiraDog IDLE_0
+      name: "Rob\xF4 Gerador Gera\xE7\xE3o-Sheet_0"
       rect:
         serializedVersion: 2
-        x: 17
-        y: 25
-        width: 92
-        height: 78
+        x: 9
+        y: 10
+        width: 110
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6cadcec0df640d4ba70433f43c178f6
+      spriteID: 3dd4a402c0998f64c91007da1e728f30
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ApiraDog IDLE_1
+      name: "Rob\xF4 Gerador Gera\xE7\xE3o-Sheet_1"
       rect:
         serializedVersion: 2
-        x: 145
-        y: 25
-        width: 92
-        height: 78
+        x: 137
+        y: 10
+        width: 110
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85481fd7a4844234185795920429462d
+      spriteID: 0d4d668b1598376429534928d9448e7c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ApiraDog IDLE_2
+      name: "Rob\xF4 Gerador Gera\xE7\xE3o-Sheet_2"
       rect:
         serializedVersion: 2
-        x: 275
-        y: 25
-        width: 92
-        height: 78
+        x: 265
+        y: 10
+        width: 110
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 550b3096fba5d2547801206729b9fd68
+      spriteID: 60850ee327b8046478df2f11421c7563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ApiraDog IDLE_3
+      name: "Rob\xF4 Gerador Gera\xE7\xE3o-Sheet_3"
       rect:
         serializedVersion: 2
-        x: 401
-        y: 25
-        width: 92
-        height: 78
+        x: 393
+        y: 10
+        width: 110
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63395b322dff3504c93a5fc24d683f4e
+      spriteID: 3f08de8fd275a6148b98130b54b515f7
       vertices: []
       indices: 
       edges: []
@@ -181,7 +181,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e09cc1e70c1fc5a48a11b44b4c59279a
+    spriteID: f16a37a6d3497b3449416c5b8f13e3da
     vertices: []
     indices: 
     edges: []

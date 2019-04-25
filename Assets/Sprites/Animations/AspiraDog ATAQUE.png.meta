@@ -1,11 +1,16 @@
 fileFormatVersion: 2
-guid: ed7b0182c53dd1e46b001003eadc3e38
+guid: b0f178db424534c42bf7c05b7db753de
 TextureImporter:
   fileIDToRecycleName:
-    21300000: "Rob\xF4 Gerador Gera\xE7\xE3o-Sheet_0"
-    21300002: "Rob\xF4 Gerador Gera\xE7\xE3o-Sheet_1"
-    21300004: "Rob\xF4 Gerador Gera\xE7\xE3o-Sheet_2"
-    21300006: "Rob\xF4 Gerador Gera\xE7\xE3o-Sheet_3"
+    21300000: AspiraDog ATAQUE_0
+    21300002: AspiraDog ATAQUE_1
+    21300004: AspiraDog ATAQUE_2
+    21300006: AspiraDog ATAQUE_3
+    21300008: AspiraDog ATAQUE_4
+    21300010: AspiraDog ATAQUE_5
+    21300012: AspiraDog ATAQUE_6
+    21300014: AspiraDog ATAQUE_7
+    21300016: AspiraDog ATAQUE_8
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -35,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -99,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Rob\xF4 Gerador Gera\xE7\xE3o-Sheet_0"
+      name: AspiraDog ATAQUE_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 128
+        x: 9
+        y: 10
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,19 +118,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3dd4a402c0998f64c91007da1e728f30
+      spriteID: 2f2083545700ad54ca04cb2ba18e0ee0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Rob\xF4 Gerador Gera\xE7\xE3o-Sheet_1"
+      name: AspiraDog ATAQUE_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
+        x: 137
+        y: 10
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,19 +138,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d4d668b1598376429534928d9448e7c
+      spriteID: 49e62f40a4a519a46b56488bb1e8e6d4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Rob\xF4 Gerador Gera\xE7\xE3o-Sheet_2"
+      name: AspiraDog ATAQUE_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 128
+        x: 265
+        y: 10
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,19 +158,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60850ee327b8046478df2f11421c7563
+      spriteID: b41fde39791491b478b063fe5d71ee51
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Rob\xF4 Gerador Gera\xE7\xE3o-Sheet_3"
+      name: AspiraDog ATAQUE_3
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
-        height: 128
+        x: 391
+        y: 10
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,7 +178,107 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f08de8fd275a6148b98130b54b515f7
+      spriteID: cea4799b17fee1049b6d23709a224ab6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AspiraDog ATAQUE_4
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 10
+        width: 110
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c786127efca01344a4bc5dd4638bbcd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AspiraDog ATAQUE_5
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 10
+        width: 110
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd984cef3c930249aa4fab4587ab4dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AspiraDog ATAQUE_6
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 10
+        width: 110
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472632be3d6c85d4297be11dfb082aea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AspiraDog ATAQUE_7
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 10
+        width: 110
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb912f65346e7d4ebaae06f884be465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AspiraDog ATAQUE_8
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 10
+        width: 110
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e658e0befa9aec94789686c642b7fb92
       vertices: []
       indices: 
       edges: []
@@ -181,7 +286,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f16a37a6d3497b3449416c5b8f13e3da
+    spriteID: c20aef19bc13e2f4292e8cc814fa20e7
     vertices: []
     indices: 
     edges: []
