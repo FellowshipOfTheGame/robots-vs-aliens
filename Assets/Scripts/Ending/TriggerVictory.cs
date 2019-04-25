@@ -8,6 +8,9 @@ public class TriggerVictory : MonoBehaviour
 
     public void Victory()
     {
+        SaveData.AddProgressData(SaveData._data.Progress + 1);
+        //SaveData.Save(SaveData._data);
+
         BlackScreen.SetActive(true);
         VictoryText.SetActive(true);
         MenuButton.SetActive(true);
