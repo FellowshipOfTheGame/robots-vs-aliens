@@ -10,9 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f68a92675ddcab443b41c0a9570c5402, type: 3}
-  m_Name: New FixedWaveData
+  m_Name: 1-1Wave0
   m_EditorClassIdentifier: 
-  intervals: []
-  enemiesIndexes: 
-  cellsIndexes: 
-  objects: []
+  intervals:
+  - 3.45
+  - 8.49
+  - 9.57
+  - 9.6
+  - 0.5
+  enemiesIndexes: 0000000000000000000000000000000000000000
+  cellsIndexes: 0200000002000000020000000200000002000000
+  objects:
+  - {fileID: 410261781127882037, guid: 0679a78a4fcc7cd4cbb7bfe2d7696ab3, type: 3}
