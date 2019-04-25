@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class CellBehaviour : MonoBehaviour
 {
     private static RobotSelector SelectorScript;
+    private static RemoveSelector RemoveScript;
     private static ElectricityCounter ElectricityScript;
 
     [SerializeField] private Sprite OriginalSprite;
@@ -25,6 +26,12 @@ public class CellBehaviour : MonoBehaviour
             SelectorScript = FindObjectOfType<RobotSelector>();
             //if (SelectorScript != null) Debug.Log("Found it! -> " + SelectorScript.name, SelectorScript.gameObject);
         }
+
+        if (RemoveScript == null)
+        {
+            RemoveScript = FindObjectOfType<RemoveSelector>();
+            //if (SelectorScript != null) Debug.Log("Found it! -> " + SelectorScript.name, SelectorScript.gameObject);
+        }
     }
 
     public void InteractWithCell()
@@ -43,19 +50,35 @@ public class CellBehaviour : MonoBehaviour
             {
                 SpawnScript.Spawn(index, Vector3.zero, Quaternion.identity, transform);
                 SelectorScript.TriggerRobotCooldown();
-                SelectorScript.DeselectRobot();
-                OccupationScript.UpdateCellOccupation(true);
 
                 ElectricityScript.SubtractElectricity(SelectorScript.GetSelectedCost());
+                SelectorScript.DeselectRobot();
+
+                RemoveScript.SelectedOff(); //TEMPORARY
+                OccupationScript.UpdateCellOccupation(true);
 
                 PointerExited();
             }
         }
+
+        //CASE 2 - REMOVING A ROBOT
+        else if(OccupationScript.CheckCellOccupation() == true)
+        {
+            if (RemoveScript.isSelected())
+            {
+                GetComponentInChildren<DestroyObject>().DestroySelf();
+                OccupationScript.UpdateCellOccupation(false);
+                RemoveScript.SelectedOff();
+
+                PointerExited();
+            }
+        }
+
     }
 
     public void PointerEntered()
     {
-        if (SelectorScript.GetSelectedRobot() >= 0)
+        if (SelectorScript.GetSelectedRobot() >= 0 || RemoveScript.isSelected())
         {
             ImageComponent.sprite = HoveredSprite;
         }

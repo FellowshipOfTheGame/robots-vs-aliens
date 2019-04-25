@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class WaveBehaviour : MonoBehaviour
 {
+    /*
     [SerializeField] private EnemyCounter CounterScript = null;
 
     private Transform GUIDynamic = null;
@@ -80,4 +81,5 @@ public class WaveBehaviour : MonoBehaviour
             CooldownScript.ResetCooldown();
         }
     }
+    */
 }

@@ -7,9 +7,9 @@ public class LevelWavesData : ScriptableObject
 {
     [SerializeField] private int level;
 
-    [SerializeField] private List <WaveData> waves = new List<WaveData>();
+    [SerializeField] private List <FixedWaveData> waves = new List<FixedWaveData>();
 
-    public List<WaveData> Waves{
+    public List<FixedWaveData> Waves{
         get{return waves;}
     }
 }

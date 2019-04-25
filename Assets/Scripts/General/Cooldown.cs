@@ -33,7 +33,7 @@ public class Cooldown : MonoBehaviour
             timeLeft -= Time.deltaTime;
             if(timeLeft <= 0){
                 CooldownRunning = false;
-                OnCooldownEnded.Invoke();
+                OnCooldownEnded?.Invoke();
             }
         }
     }
