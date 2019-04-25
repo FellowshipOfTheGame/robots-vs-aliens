@@ -7,6 +7,8 @@ public class LevelLoader : MonoBehaviour
 
     private CurrentScene CurrentSceneScript;
 
+    [SerializeField] private int LevelsStartIndex = 0;
+
     private void Awake(){
         if(instance == null){
             instance = this;
@@ -21,6 +23,11 @@ public class LevelLoader : MonoBehaviour
     
     public void LoadScene(string sceneName){
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void LoadLevel(int levelNumber)
+    {
+        SceneManager.LoadScene(LevelsStartIndex + levelNumber);
     }
 
     public void RestartCurrentScene(){
