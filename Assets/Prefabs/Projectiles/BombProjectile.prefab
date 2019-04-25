@@ -111,8 +111,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 100
-  destroyObjectComponent: {fileID: 0}
-  outOfBorderComponent: {fileID: 0}
+  destroyObjectComponent: {fileID: 5542123141451380065}
+  outOfBorderComponent: {fileID: 4696598066899958530}
 --- !u!114 &1530296443080593355
 MonoBehaviour:
   m_ObjectHideFlags: 0

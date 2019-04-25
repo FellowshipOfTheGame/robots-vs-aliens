@@ -6585,7 +6585,7 @@ PrefabInstance:
     - target: {fileID: 5404710672113927036, guid: 09f5e4fc79635c94dbd18e996da9eb1e,
         type: 3}
       propertyPath: RobotCost
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1868577013712684552, guid: 09f5e4fc79635c94dbd18e996da9eb1e,
         type: 3}
@@ -8544,7 +8544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94937fe067298bd45acbd47c44732565, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveProgressBar: {fileID: 0}
+  waveProgressBar: {fileID: 1274355153}
 --- !u!1001 &1199983341
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8854,6 +8854,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa2ac593d333afd44aeebc423ca01f0c, type: 3}
+--- !u!114 &1274355153 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 809271661644009079, guid: fa2ac593d333afd44aeebc423ca01f0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1274355152}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7352945b176a51f4eaf63de0f640908a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1278336675
 PrefabInstance:
   m_ObjectHideFlags: 0
