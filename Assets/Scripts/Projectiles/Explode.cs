@@ -15,7 +15,8 @@ public class Explode : MonoBehaviour
     public void ExplodeObject()
     {
         gameObject.GetComponent<SpawnObject>().Spawn(transform.position, Quaternion.identity, _Dynamic);
-        gameObject.GetComponent<DestroyObject>().DestroySelf();
+        Life life = GetComponent<Life>();
+        life.DecreaseLife(life.getLife());
         Debug.Log("Exploding...");
     }
 }

@@ -301,18 +301,6 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 625011776}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &642269366 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 277635911663023083, guid: e758aa58bedb4b748bc89f9a49bc3470,
-    type: 3}
-  m_PrefabInstance: {fileID: 277635911984804214}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1cc25c89f762fb49a22bdb43eb52cfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1378790197
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,6 +313,7 @@ GameObject:
   - component: {fileID: 1378790201}
   - component: {fileID: 1378790200}
   - component: {fileID: 1378790199}
+  - component: {fileID: 1378790202}
   m_Layer: 0
   m_Name: TEMP ResetProgressButton
   m_TagString: Untagged
@@ -392,7 +381,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 642269366}
+      - m_Target: {fileID: 1378790202}
         m_MethodName: ResetSave
         m_Mode: 1
         m_Arguments:
@@ -442,6 +431,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378790197}
   m_CullTransparentMesh: 0
+--- !u!114 &1378790202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378790197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17fd13e9118b200498fe3c9f92b3f9bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1709858860 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7896875518585419362, guid: deffa942f65136c49acc0e3addce9451,

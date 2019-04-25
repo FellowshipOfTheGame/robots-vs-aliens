@@ -6,11 +6,13 @@ public class RobotBehavior : MonoBehaviour
 {
     private Attack myAttack;
     private Animation animationScript;
+    private CellOccupation occupiedCell;
 
     private void Awake()
     {
         myAttack = gameObject.GetComponent<Attack>();
         animationScript = GetComponent<Animation>();
+        occupiedCell = transform.parent.GetComponent<CellOccupation>();
         if(myAttack != null)
         {
             InvokeRepeating("PeriodicAttack", myAttack._attackSpeed, myAttack._attackSpeed); //Start attacking
@@ -45,6 +47,7 @@ public class RobotBehavior : MonoBehaviour
     //Destroys Object when dead
     private void Death()
     {
+        occupiedCell.UpdateCellOccupation(false);
         gameObject.GetComponent<DestroyObject>().DestroySelf();
     }
 
