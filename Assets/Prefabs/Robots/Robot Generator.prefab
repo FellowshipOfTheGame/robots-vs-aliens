@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 733572595313890041}
   - component: {fileID: 8845521067682603028}
   - component: {fileID: 4692344051660695323}
+  - component: {fileID: 7875504815820601374}
+  - component: {fileID: 286140400}
   m_Layer: 0
   m_Name: Robot Generator
   m_TagString: Robot
@@ -253,3 +255,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsRobot: 1
+--- !u!114 &7875504815820601374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008611813885131627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2e7d0efd4ea06419641261134682a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationTime: 0.4
+--- !u!95 &286140400
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008611813885131627}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f9177c1f096fbe147901b12672629571, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

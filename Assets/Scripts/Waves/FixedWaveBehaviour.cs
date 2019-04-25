@@ -7,7 +7,8 @@ public class FixedWaveBehaviour : MonoBehaviour
 
     private Transform GUIDynamic = null;
 
-    [SerializeField] private LevelWavesData levelWavesData;
+    [SerializeField] private LevelWavesData[] AllLevels;
+    private LevelWavesData CurrentLevel = null;
     private Cooldown CooldownScript;
     private SpawnObject SpawnObjectScript;
 
@@ -25,13 +26,16 @@ public class FixedWaveBehaviour : MonoBehaviour
         CooldownScript = GetComponent<Cooldown>();
 
         SpawnObjectScript = GetComponent<SpawnObject>();
-        SpawnObjectScript.objectsToSpawn = levelWavesData.Waves[0].Objects;
 
-        CounterScript.SetupWaveInfo(levelWavesData);
+        CurrentLevel = AllLevels[CheckCurrentLevel()];
 
-        CooldownScript.CooldownTime = levelWavesData.Waves[currentWave].Intervals[currentEnemy];
-        //CooldownScript.CooldownTime = Random.Range(levelWavesData.Waves[currentWave].OffsetTimeBegin,
-          //          levelWavesData.Waves[currentWave].OffsetTimeFinish);
+        SpawnObjectScript.objectsToSpawn = CurrentLevel.Waves[0].Objects;
+
+        CounterScript.SetupWaveInfo(CurrentLevel);
+
+        CooldownScript.CooldownTime = CurrentLevel.Waves[currentWave].Intervals[currentEnemy];
+        //CooldownScript.CooldownTime = Random.Range(CurrentLevel.Waves[currentWave].OffsetTimeBegin,
+          //          CurrentLevel.Waves[currentWave].OffsetTimeFinish);
         CooldownScript.ResetCooldown();
 
         CooldownScript.OnCooldownEnded += CooldownEnded;
@@ -40,12 +44,12 @@ public class FixedWaveBehaviour : MonoBehaviour
     public void CooldownEnded()
     {
         // Get the respective cell to instantiate
-        int idCell = levelWavesData.Waves[currentWave].CellsIndexes[currentEnemy];
+        int idCell = CurrentLevel.Waves[currentWave].CellsIndexes[currentEnemy];
         Vector3 positionToSpawn = cells[idCell].transform.position;
 
         // Set enemy type and Instantiate
-        int objId = levelWavesData.Waves[currentWave].EnemiesIndexes[currentEnemy];
-        //int objId = Random.Range(0, levelWavesData.Waves[currentWave].Objects.Length);
+        int objId = CurrentLevel.Waves[currentWave].EnemiesIndexes[currentEnemy];
+        //int objId = Random.Range(0, CurrentLevel.Waves[currentWave].Objects.Length);
 
         GameObject obj = SpawnObjectScript.Spawn(objId, positionToSpawn, Quaternion.identity, GUIDynamic);
         CounterScript.AddSpawnedEnemy();
@@ -63,28 +67,34 @@ public class FixedWaveBehaviour : MonoBehaviour
         //CooldownScript.ResetCooldown();
 
         // If the current wave is over
-        if (currentEnemy >= levelWavesData.Waves[currentWave].EnemiesIndexes.Length)
+        if (currentEnemy >= CurrentLevel.Waves[currentWave].EnemiesIndexes.Length)
         {
             currentWave++;
             currentEnemy = 0;
 
             // If all waves are done
-            if (currentWave >= levelWavesData.Waves.Count)
+            if (currentWave >= CurrentLevel.Waves.Count)
             {
                 //isWaveGenerationDone = true;
                 CooldownScript.OnCooldownEnded -= CooldownEnded;
             }
             else
             {       // Reset values
-                CooldownScript.CooldownTime = levelWavesData.Waves[currentWave].Intervals[currentEnemy];
-                SpawnObjectScript.objectsToSpawn = levelWavesData.Waves[currentWave].Objects;
+                CooldownScript.CooldownTime = CurrentLevel.Waves[currentWave].Intervals[currentEnemy];
+                SpawnObjectScript.objectsToSpawn = CurrentLevel.Waves[currentWave].Objects;
                 CooldownScript.ResetCooldown();
             }
         }
         else
         {   // Reset enemy spawn time counter
-            CooldownScript.CooldownTime = levelWavesData.Waves[currentWave].Intervals[currentEnemy];
+            CooldownScript.CooldownTime = CurrentLevel.Waves[currentWave].Intervals[currentEnemy];
             CooldownScript.ResetCooldown();
         }
+    }
+
+    private int CheckCurrentLevel()
+    {
+        Debug.Log("Progress" + SaveData._data.Progress);
+        return SaveData._data.Progress;
     }
 }
