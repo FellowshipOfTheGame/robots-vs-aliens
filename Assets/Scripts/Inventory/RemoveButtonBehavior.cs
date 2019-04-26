@@ -7,10 +7,10 @@ public class RemoveButtonBehavior : MonoBehaviour
 {
     private RemoveSelector RemoveScript;
 
-    [SerializeField] Image ImageComponent;
-    [SerializeField] private MouseEvents MouseScript;
-    [SerializeField] private Sprite ActiveImage;
-    [SerializeField] private Sprite DeactiveImage;
+    [SerializeField] Image ImageComponent = null;
+    [SerializeField] private MouseEvents MouseScript = null;
+    [SerializeField] private Sprite ActiveImage = null;
+    [SerializeField] private Sprite DeactiveImage = null;
 
     // Start is called before the first frame update
     private void Awake()

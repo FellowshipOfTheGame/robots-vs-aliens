@@ -7,8 +7,8 @@ public class CellBehaviour : MonoBehaviour
     private static RemoveSelector RemoveScript;
     private static ElectricityCounter ElectricityScript;
 
-    [SerializeField] private Sprite OriginalSprite;
-    [SerializeField] private Sprite HoveredSprite;
+    [SerializeField] private Sprite OriginalSprite = null;
+    [SerializeField] private Sprite HoveredSprite = null;
 
     private SpawnObject SpawnScript;
     private CellOccupation OccupationScript;
