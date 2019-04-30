@@ -26,7 +26,8 @@ public class SFXController : MonoBehaviour
     // PRIVATE ATTRIBUTES
     private static Dictionary<string, AudioClip> Clips = null;
 
-    private static string PrefsString = "SFXMute";
+    private static string PrefsVolumeString = "SFXVolume";
+    private static string PrefsMuteString = "SFXMute";
 
     void Awake()
     {
@@ -45,10 +46,11 @@ public class SFXController : MonoBehaviour
             DontDestroyOnLoad(obj);
         }
 
-        if (PlayerPrefs.GetInt(PrefsString, 0) == 1)
+        if (PlayerPrefs.GetInt(PrefsMuteString, 0) == 1)
         {
             Source.mute = true;
         }
+        ChangeSFXVolume(PlayerPrefs.GetFloat(PrefsVolumeString, 1));
     }
 
     void AddListenerToMuteButton(Scene scene, LoadSceneMode mode)
@@ -89,9 +91,37 @@ public class SFXController : MonoBehaviour
         }
     }
 
-    public void ToggleMuteSFX(bool mute)
+    public static void ToggleMuteSFX(bool mute)
     {
         Source.mute = mute;
-        PlayerPrefs.SetInt(PrefsString, mute ? 1 : 0);
+        //PlayerPrefs.SetInt(PrefsString, mute ? 1 : 0);
+    }
+
+    public static void ChangeSFXVolume(float volume)
+    {
+        Source.volume = volume;
+    }
+
+    public static void SavePlayerPrefs()
+    {
+        PlayerPrefs.SetInt(PrefsMuteString, Source.mute ? 1 : 0);
+        PlayerPrefs.SetFloat(PrefsVolumeString, Source.volume);
+    }
+
+    public static float GetVolume()
+    {
+        return PlayerPrefs.GetFloat(PrefsVolumeString, 1);
+    }
+
+    public static bool GetMute()
+    {
+        if (PlayerPrefs.GetInt(PrefsMuteString, 0) == 1)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

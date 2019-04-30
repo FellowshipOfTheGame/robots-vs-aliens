@@ -28,11 +28,12 @@ public class MusicController : MonoBehaviour
     private bool IsFading = false;
     private bool IsBlending = false;
 
-    private static string PrefsString = "MusicMute";
+    private static string PrefsMuteString = "MusicMute";
+    private static string PrefsVolumeString = "MusicVolume";
 
     // --- MONOBEHAVIOUR METHODS ---
 
-     private void Start()
+    private void Start()
     {
         if (Source1 == null && Source2 == null)
         {
@@ -50,11 +51,12 @@ public class MusicController : MonoBehaviour
             StartCoroutine(LoopTrackAtTime(MusicTrack, Source1, Source2, LoopDuration));
         }
 
-        if (PlayerPrefs.GetInt(PrefsString, 0) == 1)
+        if (PlayerPrefs.GetInt(PrefsMuteString, 0) == 1)
         {
             Source1.mute = true;
             Source2.mute = true;
         }
+        ChangeMusicVolume(PlayerPrefs.GetFloat(PrefsVolumeString, 1));
     }
 
     // --- PUBLIC METHODS --
@@ -104,11 +106,40 @@ public class MusicController : MonoBehaviour
 
     // --- MUSIC MANIPULATION METHODS ---
 
+    public static void ChangeMusicVolume(float volume)
+    {
+        Source1.volume = volume;
+        Source2.volume = volume;
+        //PlayerPrefs.SetFloat(PrefsVolumeString, volume);
+    }
+
     public static void ToggleMuteMusic(bool mute)
     {
         Source1.mute = mute;
         Source2.mute = mute;
-        PlayerPrefs.SetInt(PrefsString, mute ? 1 : 0);
+        //PlayerPrefs.SetInt(PrefsMuteString, mute ? 1 : 0);
+    }
+
+    public static void SavePlayerPrefs()
+    {
+        PlayerPrefs.SetFloat(PrefsVolumeString, Source1.volume);
+        PlayerPrefs.SetInt(PrefsMuteString, Source1.mute ? 1 : 0);
+    }
+
+    public static float GetVolume()
+    {
+        return PlayerPrefs.GetFloat(PrefsVolumeString, Source1.volume);
+    }
+
+    public static bool GetMute()
+    {
+        if(PlayerPrefs.GetInt(PrefsMuteString, 0) == 1){
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
    
     IEnumerator FadeOutTrack(AudioSource Source)
