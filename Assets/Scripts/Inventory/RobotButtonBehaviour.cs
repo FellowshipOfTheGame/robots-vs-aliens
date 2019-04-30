@@ -9,13 +9,13 @@ public class RobotButtonBehaviour : MonoBehaviour
     private ToggleButtonActivation ToggleButtonScript;
     private Image ImageComponent;
 
-    [SerializeField] private int RobotIndex;
+    [SerializeField] private int RobotIndex = 0;
     [SerializeField] private int RobotCost = 0;
-    [SerializeField] private static ElectricityCounter ElectricityCounterScript;
+    [SerializeField] private static ElectricityCounter ElectricityCounterScript = null;
     [SerializeField] private float CooldownTime = 0;
 
-    [SerializeField] private Sprite OriginalSprite;
-    [SerializeField] private Sprite PressedSprite;
+    [SerializeField] private Sprite OriginalSprite = null;
+    [SerializeField] private Sprite PressedSprite = null;
 
     private void Awake()
     {

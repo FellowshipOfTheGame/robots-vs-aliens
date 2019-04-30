@@ -5,12 +5,12 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New WaveData", menuName = "Wave Data", order = 51)]
 public class WaveData : ScriptableObject
 {
-    [SerializeField] private float offsetTimeBegin;
-    [SerializeField] private float offsetTimeFinish;
+    [SerializeField] private float offsetTimeBegin = 0;
+    [SerializeField] private float offsetTimeFinish = 0;
 
-    [SerializeField] private int numberOfObjects;
+    [SerializeField] private int numberOfObjects = 0;
 
-    [SerializeField] private GameObject[] objects;
+    [SerializeField] private GameObject[] objects = null;
 
     public float OffsetTimeBegin{
         get{return offsetTimeBegin;}

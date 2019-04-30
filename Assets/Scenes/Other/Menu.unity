@@ -897,6 +897,109 @@ PrefabInstance:
       objectReference: {fileID: 162468785}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37a4293579af2574284ced65d7d2d645, type: 3}
+--- !u!1001 &2781759448908135827
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2781759448509423071, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: m_Name
+      value: SoundManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781759448509423043, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.34118927
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781759448509423043, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.33692306
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781759448509423043, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 190.23438
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781759448509423043, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781759448509423043, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781759448509423043, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781759448509423043, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781759448509423043, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781759448509423043, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781759448509423043, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781759448509423043, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781759448509423068, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: SourcePrefab
+      value: 
+      objectReference: {fileID: 2824242451443408920, guid: 36ae6dee755940b44ac6ac47dd2508ea,
+        type: 3}
+    - target: {fileID: 2781759448509423068, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: MusicTrack
+      value: 
+      objectReference: {fileID: 8300000, guid: c4e543c595878f94c9411ada583f5cf0, type: 3}
+    - target: {fileID: 2781759448509423068, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: LoopDuration
+      value: 148.323
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781759448509423068, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: MusicSourcePrefab
+      value: 
+      objectReference: {fileID: 2824242451443408920, guid: 36ae6dee755940b44ac6ac47dd2508ea,
+        type: 3}
+    - target: {fileID: 2781759448509423069, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: SourcePrefab
+      value: 
+      objectReference: {fileID: 1001666450753581463, guid: 778b424ec6c759748bbbe622017e00c2,
+        type: 3}
+    - target: {fileID: 2781759448509423069, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: SFXSourcePrefab
+      value: 
+      objectReference: {fileID: 1001666450753581463, guid: 778b424ec6c759748bbbe622017e00c2,
+        type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c0a1a711473b8fa41890ee66e1a3c5b9, type: 3}
 --- !u!1001 &3432871791252234141
 PrefabInstance:
   m_ObjectHideFlags: 0

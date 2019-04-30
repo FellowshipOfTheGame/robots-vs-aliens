@@ -6,7 +6,7 @@ public class OutOfBorder : MonoBehaviour
 {   
 
     //PLACEHOLDER CLASS
-    [SerializeField] private Vector3 border;
+    [SerializeField] private Vector3 border = Vector3.zero;
 
     private void Update()
     {
