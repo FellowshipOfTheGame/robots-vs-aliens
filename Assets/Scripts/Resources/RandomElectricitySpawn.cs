@@ -2,11 +2,11 @@
 
 public class RandomElectricitySpawn : MonoBehaviour
 {
-    [SerializeField] private float NaturalSpawnHorizontalRange;
-    [SerializeField] private float NaturalSpawnVerticalRange;
+    [SerializeField] private float NaturalSpawnHorizontalRange = 0;
+    [SerializeField] private float NaturalSpawnVerticalRange = 0;
 
-    [SerializeField] private float RobotSpawnHorizontalRange;
-    [SerializeField] private float RobotSpawnVerticalRange;
+    [SerializeField] private float RobotSpawnHorizontalRange = 0;
+    [SerializeField] private float RobotSpawnVerticalRange = 0;
 
     [SerializeField] private float ScreenOffsetY = 0;
     [SerializeField] private float ScreenOffsetX = 0;

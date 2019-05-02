@@ -18,7 +18,7 @@ public class FixedWaveBehaviour : MonoBehaviour
     private int currentWave = 0;
     private int currentEnemy = 0;
 
-    private bool isWaveGenerationDone = false;
+    //private bool isWaveGenerationDone = false;
 
     void Awake()
     {
