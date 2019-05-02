@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class ResourcesText : MonoBehaviour
 {
     private Text txtResources;
-    [SerializeField] private ElectricityCounter ElectricityCounterScript;
+    [SerializeField] private ElectricityCounter ElectricityCounterScript = null;
 
     private void Awake()
     {

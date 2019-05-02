@@ -48,7 +48,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 64, y: 75}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8008611813885131628
 CanvasRenderer:
@@ -121,7 +121,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 35, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -132,7 +132,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 100, y: 100}
+  m_Size: {x: 30, y: 100}
   m_EdgeRadius: 0
 --- !u!114 &6542816887273488948
 MonoBehaviour:
@@ -158,8 +158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c14203a075ac2bc40a1c1799259f7af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _life: 100
-  _max_life: 100
+  _life: 300
+  _max_life: 300
   _state: 1
 --- !u!114 &1769205710718456128
 MonoBehaviour:
@@ -241,7 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555b9451e980f0d4c949ac799da1c1dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 3
+  cooldownTime: 7
 --- !u!114 &4692344051660695323
 MonoBehaviour:
   m_ObjectHideFlags: 0

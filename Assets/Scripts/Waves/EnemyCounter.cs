@@ -4,7 +4,6 @@ using UnityEngine;
 public class EnemyCounter : MonoBehaviour
 {
     private static TriggerVictory VictoryScript = null;
-    private Life LifeScript = null;
     public WaveProgressBar waveProgressBar;
 
     private static int EnemyCountTotal = 0;

@@ -55,8 +55,11 @@ public class AlienBehavior : MonoBehaviour
     //For doing his attacks
     private void PeriodicAttack()
     {
-        if(willAttack)
-            myAttack.ReleaseAttack(Vector3.left);
+        if (willAttack)
+        {
+            if (lastRobotColidedWith != null) myAttack.ReleaseAttack(lastRobotColidedWith.transform.localPosition);
+            else myAttack.ReleaseAttack(Vector3.left);
+        }
     }
 
     //Destroys Object when dead

@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class RemoveSelector : MonoBehaviour
 {
-    private int RemovedIndex = 0;
-    private int RemovedCost = 0;
+    //private int RemovedIndex = 0;
+    //private int RemovedCost = 0;
     private bool RemoveSelected = false;
 
     [SerializeField] private MouseEvents MouseScript;
