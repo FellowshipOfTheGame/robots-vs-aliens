@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 584120250525276214}
   - component: {fileID: 332632496110605292}
   - component: {fileID: 7410626367063200398}
+  - component: {fileID: 300673311295003263}
   m_Layer: 0
   m_Name: Robot Bomb
   m_TagString: Robot
@@ -247,3 +248,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationTime: 0
+--- !u!114 &300673311295003263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008611813885131627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a113bbdc9b34bd94faadeccff3c6ed4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  destroyObjectComponent: {fileID: 0}
+  outOfBorderComponent: {fileID: 0}

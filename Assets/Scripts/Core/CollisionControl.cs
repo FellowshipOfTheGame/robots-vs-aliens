@@ -20,5 +20,4 @@ public class CollisionControl : MonoBehaviour
         //DEBUG
         //Debug.Log("Nao colido mais com" + collision.gameObject);
     }
-
 }

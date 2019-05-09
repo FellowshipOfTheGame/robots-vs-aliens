@@ -6,7 +6,7 @@ public class Cooldown : MonoBehaviour
     public delegate void CooldownDelegate();
     public CooldownDelegate OnCooldownEnded;
 
-    private bool CooldownRunning = false;
+    public bool CooldownRunning = false;
 
     //private bool isCooldownDone = false;
 
