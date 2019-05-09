@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a113bbdc9b34bd94faadeccff3c6ed4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 100
+  damage: 1800
   destroyObjectComponent: {fileID: 5542123141451380065}
   outOfBorderComponent: {fileID: 4696598066899958530}
 --- !u!114 &1530296443080593355

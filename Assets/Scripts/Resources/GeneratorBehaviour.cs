@@ -11,6 +11,7 @@ public class GeneratorBehaviour : MonoBehaviour
     private RandomElectricitySpawn RandomElectricityScript;
 
     [SerializeField] private bool IsRobot = false;
+    [SerializeField] private float secondCooldown = 0f;
     private Vector2 SpawnOffset = new Vector2(0,0);
 
     private void Awake(){
@@ -33,6 +34,15 @@ public class GeneratorBehaviour : MonoBehaviour
         GameObject obj = SpawnObjectScript.Spawn(transform.position+(Vector3)SpawnOffset, Quaternion.identity, GUIDynamic);
         obj.GetComponent<MoveTopToBottom>().StartFall();
 
+        if (IsRobot)
+        {
+            CooldownScript.CooldownTime = secondCooldown;
+            if (AnimationScript != null)
+            {
+                CancelInvoke("PlayAnimation");
+                InvokeRepeating("PlayAnimation", CooldownScript.CooldownTime - AnimationScript.animationTime, CooldownScript.CooldownTime);
+            }
+        }
         CooldownScript.ResetCooldown();
     }
 

@@ -1679,11 +1679,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: NaturalGenerator
       objectReference: {fileID: 0}
-    - target: {fileID: 4842326458484497332, guid: 8890afc520f6bcc4984c946a5e7bbfc7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1343342294263750271, guid: 8890afc520f6bcc4984c946a5e7bbfc7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1788,36 +1783,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1844807181611272902, guid: 8890afc520f6bcc4984c946a5e7bbfc7,
-        type: 3}
-      propertyPath: NaturalSpawnHorizontalRange
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1844807181611272902, guid: 8890afc520f6bcc4984c946a5e7bbfc7,
-        type: 3}
-      propertyPath: NaturalSpawnVerticalRange
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1844807181611272902, guid: 8890afc520f6bcc4984c946a5e7bbfc7,
-        type: 3}
-      propertyPath: ScreenOffsetY
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 1844807181611272902, guid: 8890afc520f6bcc4984c946a5e7bbfc7,
-        type: 3}
-      propertyPath: ScreenOffsetX
-      value: -40
-      objectReference: {fileID: 0}
-    - target: {fileID: 1844807181611272902, guid: 8890afc520f6bcc4984c946a5e7bbfc7,
-        type: 3}
-      propertyPath: RobotSpawnHorizontalRange
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1844807181611272902, guid: 8890afc520f6bcc4984c946a5e7bbfc7,
-        type: 3}
-      propertyPath: RobotSpawnVerticalRange
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8890afc520f6bcc4984c946a5e7bbfc7, type: 3}
@@ -2817,6 +2782,11 @@ PrefabInstance:
         type: 3}
       propertyPath: RobotCost
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404710672113927036, guid: 09f5e4fc79635c94dbd18e996da9eb1e,
+        type: 3}
+      propertyPath: CooldownTime
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09f5e4fc79635c94dbd18e996da9eb1e, type: 3}
@@ -6324,6 +6294,11 @@ PrefabInstance:
         type: 3}
       propertyPath: RobotCost
       value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404710672113927036, guid: 09f5e4fc79635c94dbd18e996da9eb1e,
+        type: 3}
+      propertyPath: CooldownTime
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 1868577014105125743, guid: 09f5e4fc79635c94dbd18e996da9eb1e,
         type: 3}
@@ -11407,6 +11382,11 @@ PrefabInstance:
         type: 3}
       propertyPath: RobotCost
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404710672113927036, guid: 09f5e4fc79635c94dbd18e996da9eb1e,
+        type: 3}
+      propertyPath: CooldownTime
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1868577014105125743, guid: 09f5e4fc79635c94dbd18e996da9eb1e,
         type: 3}

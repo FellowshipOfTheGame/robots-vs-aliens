@@ -255,6 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsRobot: 1
+  secondCooldown: 24
 --- !u!114 &7875504815820601374
 MonoBehaviour:
   m_ObjectHideFlags: 0

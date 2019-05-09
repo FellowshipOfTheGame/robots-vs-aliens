@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 7410626367063200398}
   m_Layer: 0
   m_Name: Robot Bomb
-  m_TagString: Robot
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,8 +156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c14203a075ac2bc40a1c1799259f7af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _life: 30
-  _max_life: 30
+  _life: 1000
+  _max_life: 1000
   _state: 1
 --- !u!114 &1769205710718456128
 MonoBehaviour:
@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555b9451e980f0d4c949ac799da1c1dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 2
+  cooldownTime: 1.2
 --- !u!114 &332632496110605292
 MonoBehaviour:
   m_ObjectHideFlags: 0

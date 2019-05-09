@@ -57,8 +57,9 @@ public class AlienBehavior : MonoBehaviour
     {
         if (willAttack)
         {
-            if (lastRobotColidedWith != null) myAttack.ReleaseAttack(lastRobotColidedWith.transform.localPosition);
-            else myAttack.ReleaseAttack(Vector3.left);
+            Debug.Log(lastRobotColidedWith.name + " Health: " + lastRobotColidedWith.GetComponent<Life>().getLife());//DEBUG
+            if (lastRobotColidedWith != null) myAttack.ReleaseAttack(lastRobotColidedWith.transform.position);
+            else myAttack.ReleaseAttack(transform.position + Vector3.left);
         }
     }
 

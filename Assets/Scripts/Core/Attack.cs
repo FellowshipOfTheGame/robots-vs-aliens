@@ -28,10 +28,11 @@ public class Attack : MonoBehaviour
         if(attack.GetComponent<Movement>() != null)
             attack.GetComponent<Movement>().setParameters(speed, direction);
     }
-    //With Offset
-    public void ReleaseAttack(Vector3 offset)
+
+    //With Specified location
+    public void ReleaseAttack(Vector3 local)
     {
-        GameObject attack = mySpawnObject.Spawn(0, transform.position + offset, Quaternion.identity, GUIDynamic);
+        GameObject attack = mySpawnObject.Spawn(0, local, Quaternion.identity, GUIDynamic);
 
         attack.GetComponent<Projectile>().damage = damage;
         if (attack.GetComponent<Movement>() != null)
