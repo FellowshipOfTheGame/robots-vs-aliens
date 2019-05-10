@@ -27,7 +27,9 @@ public class FixedWaveBehaviour : MonoBehaviour
 
         SpawnObjectScript = GetComponent<SpawnObject>();
 
-        CurrentLevel = AllLevels[CheckCurrentLevel()];
+        //CurrentLevel = AllLevels[CheckCurrentLevel()];
+
+        CurrentLevel = AllLevels[0];
 
         SpawnObjectScript.objectsToSpawn = CurrentLevel.Waves[0].Objects;
 

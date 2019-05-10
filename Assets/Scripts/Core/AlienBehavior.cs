@@ -64,7 +64,7 @@ public class AlienBehavior : MonoBehaviour
     }
 
     //Destroys Object when dead
-    private void Death()
+    public void Death()
     {
         EnemyCounter.AddEnemyKilled();
         gameObject.GetComponent<DestroyObject>().DestroySelf();
