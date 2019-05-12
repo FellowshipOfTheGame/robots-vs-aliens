@@ -173,7 +173,7 @@ MonoBehaviour:
   damage: 100
   speed: 1
   direction: {x: -1, y: 0}
-  _attackSpeed: 2
+  _attackSpeed: 3
 --- !u!114 &3537339611990128034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d7be11b602d784468bbf1cb124f67ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 2
+  _speed: 0.05
   _direction: {x: -1, y: 0}
   _move: 1
 --- !u!114 &2228490934214937527
