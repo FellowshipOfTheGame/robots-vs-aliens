@@ -7,15 +7,16 @@ public class RobotButtonBehaviour : MonoBehaviour
 
     private RobotCardCooldown CooldownScript;
     private ToggleButtonActivation ToggleButtonScript;
-    private Image ImageComponent;
+    private FlashButtonBorder BorderScript;
+    //private Image ImageComponent;
 
     [SerializeField] private int RobotIndex = 0;
     [SerializeField] private int RobotCost = 0;
     [SerializeField] private static ElectricityCounter ElectricityCounterScript = null;
     [SerializeField] private float CooldownTime = 0;
 
-    [SerializeField] private Sprite OriginalSprite = null;
-    [SerializeField] private Sprite PressedSprite = null;
+    //[SerializeField] private Sprite OriginalSprite = null;
+    //[SerializeField] private Sprite PressedSprite = null;
 
     private void Awake()
     {
@@ -23,7 +24,9 @@ public class RobotButtonBehaviour : MonoBehaviour
 
         ToggleButtonScript = GetComponent<ToggleButtonActivation>();
 
-        ImageComponent = GetComponent<Image>();
+        BorderScript = GetComponent<FlashButtonBorder>();
+
+        //ImageComponent = GetComponent<Image>();
 
         if (SelectorScript == null)
         {
@@ -46,6 +49,7 @@ public class RobotButtonBehaviour : MonoBehaviour
             else
             {
                 //NOT ENOUGH MONEY
+                //FLASH A NEGATIVE IMAGE ONCE
                 Debug.Log("Not enough energy!", gameObject);
                 SelectorScript.DeselectRobot();
             }
@@ -60,12 +64,14 @@ public class RobotButtonBehaviour : MonoBehaviour
 
     public void MarkButtonSelected()
     {
-        ImageComponent.sprite = PressedSprite;
+        BorderScript.ToggleActive(true);
+        //ImageComponent.sprite = PressedSprite;
     }
 
     public void MarkButtonDeselected()
     {
-        ImageComponent.sprite = OriginalSprite;
+        BorderScript.ToggleActive(false);
+        //ImageComponent.sprite = OriginalSprite;
     }
 
     public void StartCooldown()

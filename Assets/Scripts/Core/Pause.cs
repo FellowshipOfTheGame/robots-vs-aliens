@@ -4,27 +4,30 @@ using UnityEngine;
 
 public class Pause : MonoBehaviour
 {
-
-    [SerializeField] private static bool isPaused = false;
+    private static bool isPaused = false;
+    [SerializeField] private GameObject pauseWindow = null;
+    [SerializeField] private Animator pauseAnimator = null;
 
     private void Awake()
     {
-        UnpauseGame();   
+        if(isPaused) UnpauseGame();   
     }
 
     public void PauseGame()
     {
         isPaused = true;
+        pauseAnimator?.SetTrigger("OpenWindow");
         Time.timeScale = 0;
     }
     
     public void UnpauseGame()
     {
         isPaused = false;
+        pauseAnimator?.SetTrigger("CloseWindow");
         Time.timeScale = 1;
     }
 
-    public void SwitchPause()
+    public void TogglePause()
     {
         if (isPaused) UnpauseGame();
         else PauseGame();
