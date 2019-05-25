@@ -21,4 +21,10 @@ public class ToggleWindow : MonoBehaviour
         newWindow?.SetActive(true);
         OpenedWindow = newWindow;
     }
+
+    public void CloseWindow(GameObject openedWindow)
+    {
+        OpenedWindow = null;
+        openedWindow?.SetActive(false);
+    }
 }

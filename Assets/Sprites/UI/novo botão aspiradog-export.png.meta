@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 5aab057fdfa501e469bb9138df9391a7
+guid: 48ccef8092ac42b4ea5c595fa83ac4aa
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Resource blue shine_0
+    21300000: "novo bot\xE3o aspiradog-export_0"
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -64,7 +64,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -86,7 +86,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,7 +97,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Resource blue shine_0
+      name: "novo bot\xE3o aspiradog-export_0"
       rect:
         serializedVersion: 2
-        x: 43
-        y: 33
-        width: 43
-        height: 62
+        x: 58
+        y: 93
+        width: 140
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,7 +121,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5c85b2cb6ddcf14eaeab57d35e3fc19
+      spriteID: a923914cced4dca47a37d0f32f5adac2
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3b4db5ff993a582469589cd9c2c4585a
+    spriteID: 13b849febbb11b84fb0fb33e16bf0fcb
     vertices: []
     indices: 
     edges: []
