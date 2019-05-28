@@ -16,4 +16,9 @@ public class Animation : MonoBehaviour
     {
         animator.SetTrigger(name);
     }
+
+    public void ChangeAnimationBool(string name, bool value)
+    {
+        animator.SetBool(name, value);
+    }
 }

@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 3084093239861119606}
   - component: {fileID: 6350855706229313737}
   - component: {fileID: 3618342647897173745}
+  - component: {fileID: 8420977700695883151}
+  - component: {fileID: 4967821138633132322}
   m_Layer: 0
   m_Name: Armor Alien
   m_TagString: Alien
@@ -239,3 +241,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2dfa568dd7dfb547bddf218cb8dfafa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8420977700695883151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410261781127882037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2e7d0efd4ea06419641261134682a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationTime: 0
+--- !u!95 &4967821138633132322
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410261781127882037}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949d06b953860ab42a04f7e5bb5ede6e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

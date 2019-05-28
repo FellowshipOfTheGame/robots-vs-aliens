@@ -9,10 +9,12 @@ public class AlienBehavior : MonoBehaviour
     private CollisionControl myCollisionControl;
     private bool willAttack = false;
     private GameObject lastRobotColidedWith = null;
+    private Animation myAnimation;
 
     private void Awake()
     {
         myAttack = gameObject.GetComponent<Attack>();
+        myAnimation = gameObject.GetComponent<Animation>();
         myCollisionControl = gameObject.GetComponent<CollisionControl>();
         InvokeRepeating("PeriodicAttack", myAttack._attackSpeed, myAttack._attackSpeed); //Start attacking
 
@@ -78,6 +80,7 @@ public class AlienBehavior : MonoBehaviour
             lastRobotColidedWith = colided;
             gameObject.GetComponent<Movement>()._move = false;
             willAttack = true;
+            myAnimation.ChangeAnimationBool("willAttack", willAttack);
         }
     }
 
@@ -87,6 +90,7 @@ public class AlienBehavior : MonoBehaviour
         {
             willAttack = false;
             gameObject.GetComponent<Movement>()._move = true;
+            myAnimation.ChangeAnimationBool("willAttack", willAttack);
         }
     }
 
