@@ -14,9 +14,16 @@ public class FixedWaveBehaviour : MonoBehaviour
 
     [SerializeField]
     private List<GameObject> cells = new List<GameObject>();
-
+    
     private int currentWave = 0;
     private int currentEnemy = 0;
+
+    private bool onHold = false;
+
+    public bool OnHold
+    {
+        get { return onHold; }
+    }
 
     //private bool isWaveGenerationDone = false;
 
@@ -41,6 +48,8 @@ public class FixedWaveBehaviour : MonoBehaviour
         CooldownScript.ResetCooldown();
 
         CooldownScript.OnCooldownEnded += CooldownEnded;
+
+        //CounterScript.OnEnemiesKilled += StartWave;
     }
 
     public void CooldownEnded()
@@ -72,8 +81,9 @@ public class FixedWaveBehaviour : MonoBehaviour
         if (currentEnemy >= CurrentLevel.Waves[currentWave].EnemiesIndexes.Length)
         {
             currentWave++;
-            currentEnemy = 0;
 
+            
+            currentEnemy = 0;
             // If all waves are done
             if (currentWave >= CurrentLevel.Waves.Count)
             {
@@ -82,9 +92,10 @@ public class FixedWaveBehaviour : MonoBehaviour
             }
             else
             {       // Reset values
-                CooldownScript.CooldownTime = CurrentLevel.Waves[currentWave].Intervals[currentEnemy];
-                SpawnObjectScript.objectsToSpawn = CurrentLevel.Waves[currentWave].Objects;
-                CooldownScript.ResetCooldown();
+                if (!CurrentLevel.Waves[currentWave].IsHuge)
+                    StartWave();
+                else
+                    onHold = true;
             }
         }
         else
@@ -98,5 +109,13 @@ public class FixedWaveBehaviour : MonoBehaviour
     {
         Debug.Log("Progress" + SaveData._data.Progress);
         return SaveData._data.Progress;
+    }
+
+    public void StartWave()
+    {
+        CooldownScript.CooldownTime = CurrentLevel.Waves[currentWave].Intervals[currentEnemy];
+        SpawnObjectScript.objectsToSpawn = CurrentLevel.Waves[currentWave].Objects;
+        CooldownScript.ResetCooldown();
+        onHold = false;
     }
 }

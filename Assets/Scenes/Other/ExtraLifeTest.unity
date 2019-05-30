@@ -10116,6 +10116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveProgressBar: {fileID: 31720402}
+  fixedWaveBehaviour: {fileID: 1334182300}
 --- !u!1001 &1669224497
 PrefabInstance:
   m_ObjectHideFlags: 0

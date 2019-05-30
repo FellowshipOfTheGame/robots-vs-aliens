@@ -8,6 +8,7 @@ public class FixedWaveData : ScriptableObject
     [SerializeField] private float[] intervals;
     [SerializeField] private int[] enemiesIndexes;
     [SerializeField] private int[] cellsIndexes;
+    [SerializeField] private bool isHuge = false;
 
     //[SerializeField] private int numberOfObjects = enemiesIndexes.Length;
 
@@ -37,5 +38,10 @@ public class FixedWaveData : ScriptableObject
     public GameObject[] Objects
     {
         get { return objects; }
+    }
+
+    public bool IsHuge
+    {
+        get { return isHuge; }
     }
 }
