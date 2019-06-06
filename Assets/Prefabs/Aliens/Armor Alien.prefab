@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 3618342647897173745}
   - component: {fileID: 8420977700695883151}
   - component: {fileID: 4967821138633132322}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Armor Alien
   m_TagString: Alien
   m_Icon: {fileID: 0}
