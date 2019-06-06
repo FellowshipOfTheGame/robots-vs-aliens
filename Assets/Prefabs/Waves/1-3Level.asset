@@ -15,3 +15,4 @@ MonoBehaviour:
   level: 13
   waves:
   - {fileID: 11400000, guid: 2b4b570abe0178148a2fc4b4f7ad8ad1, type: 2}
+  - {fileID: 11400000, guid: 3a970d934e6be2d41941ec22509689a2, type: 2}

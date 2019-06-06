@@ -10,26 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f68a92675ddcab443b41c0a9570c5402, type: 3}
-  m_Name: 1-4Wave0
+  m_Name: TestHugeWave
   m_EditorClassIdentifier: 
   intervals:
-  - 21.32
-  - 26.82
-  - 19.01
-  - 22.6
-  - 21.84
-  - 0.5
-  - 12.84
-  - 3.62
-  - 9.67
-  - 0.5
-  - 12.59
-  - 0.4
-  - 10.55
-  - 0.5
-  enemiesIndexes: 0000000000000000000000000100000000000000000000000000000000000000010000000000000001000000000000000000000001000000
-  cellsIndexes: 0000000002000000030000000100000004000000020000000300000000000000040000000100000003000000000000000200000001000000
+  - 3
+  enemiesIndexes: 00000000
+  cellsIndexes: 00000000
   isHuge: 0
   objects:
-  - {fileID: 410261781127882037, guid: 0679a78a4fcc7cd4cbb7bfe2d7696ab3, type: 3}
   - {fileID: 410261781127882037, guid: 0679a78a4fcc7cd4cbb7bfe2d7696ab3, type: 3}

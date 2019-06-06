@@ -4,13 +4,17 @@ using UnityEngine;
 public class EnemyCounter : MonoBehaviour
 {
     private static TriggerVictory VictoryScript = null;
-    public WaveProgressBar waveProgressBar;
+    private WaveProgressBar waveProgressBar;
+    private static FixedWaveBehaviour fixedWaveBehaviour;
 
     private static int EnemyCountTotal = 0;
     private static int EnemiesKilled = 0;
     private static int enemiesSpawned = 0;
 
     private static float progress = 0.0f;
+
+    public delegate void DelegateEnemyCounter();
+    public static DelegateEnemyCounter OnEnemiesKilled;
 
     public int EnemiesSpawned
     {
@@ -20,6 +24,8 @@ public class EnemyCounter : MonoBehaviour
     private void Awake()
     {
         waveProgressBar = GameObject.Find("WaveProgressBar").GetComponent<WaveProgressBar>();
+        fixedWaveBehaviour = GameObject.Find("WaveGenerator").GetComponent<FixedWaveBehaviour>();
+
         VictoryScript = GetComponent<TriggerVictory>();        
     }
 
@@ -45,6 +51,12 @@ public class EnemyCounter : MonoBehaviour
         if(EnemiesKilled >= EnemyCountTotal)
         {
             VictoryScript.Victory();
+        }
+        else if((EnemiesKilled == enemiesSpawned) && fixedWaveBehaviour.OnHold)
+        {
+            //OnEnemiesKilled?.Invoke();
+            fixedWaveBehaviour.StartWave();
+            Debug.Log("A huge wave is coming!");
         }
     }
 
