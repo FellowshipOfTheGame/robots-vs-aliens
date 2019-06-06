@@ -1,7 +1,9 @@
 fileFormatVersion: 2
-guid: b5698b6135ce49d488136accdc22e187
+guid: 86bcf03e8b5751046ab6cfd6adf77f53
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: texto-Sheet_0
+    21300002: texto-Sheet_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -104,11 +106,51 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: texto-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 82
+        width: 174
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d19ba2951299424e8a61e6023292975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 76
+        width: 113
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8cbc893b290174bab9c46901084b66
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b9047be7c8d94844ea6f48909ba02e48
+    spriteID: bc9adfe8e670368418f1869e62800926
     vertices: []
     indices: 
     edges: []
