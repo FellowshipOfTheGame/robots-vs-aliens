@@ -91,8 +91,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e77efb561a4f2742b89edbb7f3973ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NaturalSpawnHorizontalRange: 300
-  NaturalSpawnVerticalRange: 200
-  RobotSpawnHorizontalRange: 10
-  RobotSpawnVerticalRange: 10
-  ScreenOffset: 40
+  NaturalSpawnHorizontalRange: 4
+  NaturalSpawnVerticalRange: 7
+  RobotSpawnHorizontalRange: 0
+  RobotSpawnVerticalRange: 0
+  ScreenOffsetY: 0
+  ScreenOffsetX: 0

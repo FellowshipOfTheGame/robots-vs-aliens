@@ -142,6 +142,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26b56d3167ab93445ba30beb3becbfeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackCooldown: {fileID: 0}
+  animationCooldown: {fileID: 0}
+  hasAttacked: 1
 --- !u!114 &8153584033609198331
 MonoBehaviour:
   m_ObjectHideFlags: 0

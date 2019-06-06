@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 332632496110605292}
   - component: {fileID: 7410626367063200398}
   - component: {fileID: 300673311295003263}
+  - component: {fileID: 2217965931792779564}
   m_Layer: 0
   m_Name: Robot Bomb
-  m_TagString: Robot
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,6 +146,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26b56d3167ab93445ba30beb3becbfeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackCooldown: {fileID: 0}
+  animationCooldown: {fileID: 0}
+  hasAttacked: 1
 --- !u!114 &8153584033609198331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,8 +161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c14203a075ac2bc40a1c1799259f7af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _life: 30
-  _max_life: 30
+  _life: 1000
+  _max_life: 1000
   _state: 1
 --- !u!114 &1769205710718456128
 MonoBehaviour:
@@ -222,7 +226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555b9451e980f0d4c949ac799da1c1dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 2
+  cooldownTime: 0.6
+  CooldownRunning: 0
 --- !u!114 &332632496110605292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,7 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b2e7d0efd4ea06419641261134682a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationTime: 0
+  animationTime: 0.6
 --- !u!114 &300673311295003263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,3 +268,22 @@ MonoBehaviour:
   damage: 0
   destroyObjectComponent: {fileID: 0}
   outOfBorderComponent: {fileID: 0}
+--- !u!95 &2217965931792779564
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008611813885131627}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e9eb4802bb904e84ca7c65cbbcfe173f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -5,6 +5,7 @@ public class TriggerGameOver : MonoBehaviour
     private GameObject GameOverText;
     [SerializeField] private GameObject GameOverWindow = null;
     [SerializeField] private GameObject MenuButton = null;
+    [SerializeField] private Pause PauseManager = null;
 
     private void Awake()
     {
@@ -15,5 +16,6 @@ public class TriggerGameOver : MonoBehaviour
     {
         GameOverWindow.SetActive(true);
         MenuButton.SetActive(true);
+        PauseManager.PauseGame();
     }
 }
