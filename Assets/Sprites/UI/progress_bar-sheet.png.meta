@@ -4,8 +4,9 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: progress_bar-sheet_0
     21300002: progress_bar-sheet_1
+    21300004: progress_bar-sheet_2
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -116,7 +117,7 @@ TextureImporter:
         width: 420
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -136,13 +137,33 @@ TextureImporter:
         width: 420
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 0835d5102214fd044a22a8b6a0d9d438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: progress_bar-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 57
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536b0aedbdc995a4c8b56c18e0b95e5c
       vertices: []
       indices: 
       edges: []

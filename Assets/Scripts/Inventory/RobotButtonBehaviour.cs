@@ -76,6 +76,7 @@ public class RobotButtonBehaviour : MonoBehaviour
 
     public void StartCooldown()
     {
+        print(CooldownTime);
         CooldownScript.StartCooldown(CooldownTime);
     }
 }
