@@ -1044,17 +1044,29 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -243.6
       objectReference: {fileID: 0}
+    - target: {fileID: 1808311998369880106, guid: 37a4293579af2574284ced65d7d2d645,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dcf061dca31353c4ab78780b6a342c4c,
+        type: 3}
     - target: {fileID: 1808311999496814724, guid: 37a4293579af2574284ced65d7d2d645,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: b8e0bc4976ce2e24db0b56fe222f5eef,
+      objectReference: {fileID: 21300000, guid: dc15b388188011a4fa8fcb605bfa015d,
         type: 3}
     - target: {fileID: 1808311999496814724, guid: 37a4293579af2574284ced65d7d2d645,
         type: 3}
       propertyPath: m_Type
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1808312000374584531, guid: 37a4293579af2574284ced65d7d2d645,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 928719d0315214143a97a3944636655c,
+        type: 3}
     - target: {fileID: 5738705956131239939, guid: 37a4293579af2574284ced65d7d2d645,
         type: 3}
       propertyPath: m_FontData.m_Font
