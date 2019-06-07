@@ -1,9 +1,7 @@
 fileFormatVersion: 2
-guid: f4f3eea94707ea3498c1b073322bf9b5
+guid: dcf061dca31353c4ab78780b6a342c4c
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: toogle-Sheet_0
-    21300002: toogle-Sheet_1
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -42,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,51 +104,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: toogle-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 2
-        width: 60
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 363b4275dc1f2274f9dbb9899e8b03e8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toogle-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 2
-        width: 60
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ccf1279b19379bd43b610ce11b7edb34
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7bb7181a6d2927648a74e1d95624cfa5
+    spriteID: 628ea3376a82af14293e5e08a13b50b5
     vertices: []
     indices: 
     edges: []

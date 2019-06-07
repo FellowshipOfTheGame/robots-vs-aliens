@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: f4f3eea94707ea3498c1b073322bf9b5
+guid: 6a456f5ed6a68ca4b8b856d9f5c03a4d
 TextureImporter:
   fileIDToRecycleName:
-    21300000: toogle-Sheet_0
-    21300002: toogle-Sheet_1
+    21300000: toogle 2-Sheet_0
+    21300002: toogle 2-Sheet_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -108,7 +108,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: toogle-Sheet_0
+      name: toogle 2-Sheet_0
       rect:
         serializedVersion: 2
         x: 2
@@ -122,13 +122,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 363b4275dc1f2274f9dbb9899e8b03e8
+      spriteID: 79827f37f4aeb6947a576328c888e733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toogle-Sheet_1
+      name: toogle 2-Sheet_1
       rect:
         serializedVersion: 2
         x: 66
@@ -142,7 +142,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccf1279b19379bd43b610ce11b7edb34
+      spriteID: 20157d6328e5b914b85d78bcf7ba48de
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7bb7181a6d2927648a74e1d95624cfa5
+    spriteID: d490b4f441f8b064ebbf60827afb1f68
     vertices: []
     indices: 
     edges: []
