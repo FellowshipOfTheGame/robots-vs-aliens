@@ -22,6 +22,14 @@ public class SFXController : MonoBehaviour
     [SerializeField] private AudioClip PageClip = null;*/
     [SerializeField]
     private AudioClip SelectButtonClip = null;
+    [SerializeField]
+    private AudioClip BackButtonClip = null;
+    [SerializeField]
+    private AudioClip SlidersAndCheckboxInteractionClip = null;
+    [SerializeField]
+    private AudioClip PlaceRobotClip = null;
+    [SerializeField]
+    private AudioClip RobotShotClip = null;
 
     private Toggle SFXMuteToggle = null;
 
@@ -74,6 +82,10 @@ public class SFXController : MonoBehaviour
         Clips.Add("WrongAnswer", WrongClip);
         Clips.Add("FlipPage", PageClip);*/
         Clips.Add("SelectButton", SelectButtonClip);
+        Clips.Add("BackButton", BackButtonClip);
+        Clips.Add("SlidersAndCheckboxInteraction", SlidersAndCheckboxInteractionClip);
+        Clips.Add("PlaceRobot", PlaceRobotClip);
+        Clips.Add("RobotShot", RobotShotClip);
     }
 
     public static void PlayClip(string key)
@@ -82,6 +94,7 @@ public class SFXController : MonoBehaviour
         AudioClip clip;
         if(Clips.TryGetValue(key, out clip))
         {
+            print("Play");
             Source.PlayOneShot(clip);
         }
         else
@@ -93,6 +106,13 @@ public class SFXController : MonoBehaviour
     public static void ToggleMuteSFX(bool mute)
     {
         Source.mute = mute;
+        if (mute)
+        {
+            print("BackButton");
+            SFXController.PlayClip("BackButton");
+        }
+        else
+            SFXController.PlayClip("SelectButton");
         //PlayerPrefs.SetInt(PrefsString, mute ? 1 : 0);
     }
 

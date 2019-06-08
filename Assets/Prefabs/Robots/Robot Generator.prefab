@@ -148,7 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: {fileID: 0}
   animationCooldown: {fileID: 0}
-  hasAttacked: 1
+  robotId: 1
 --- !u!114 &8153584033609198331
 MonoBehaviour:
   m_ObjectHideFlags: 0
