@@ -33,7 +33,7 @@ public class GeneratorBehaviour : MonoBehaviour
 
         GameObject obj = SpawnObjectScript.Spawn(transform.position+(Vector3)SpawnOffset, Quaternion.identity, GUIDynamic);
         obj.GetComponent<MoveTopToBottom>().StartFall();
-
+        SFXController.PlayClip("Electricity");
         if (IsRobot)
         {
             CooldownScript.CooldownTime = secondCooldown;
