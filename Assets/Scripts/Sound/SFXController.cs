@@ -20,6 +20,8 @@ public class SFXController : MonoBehaviour
     [SerializeField] private AudioClip RightClip = null;
     [SerializeField] private AudioClip WrongClip = null;
     [SerializeField] private AudioClip PageClip = null;*/
+    [SerializeField]
+    private AudioClip SelectButtonClip = null;
 
     private Toggle SFXMuteToggle = null;
 
@@ -76,6 +78,7 @@ public class SFXController : MonoBehaviour
         Clips.Add("CorrectAnswer", RightClip);
         Clips.Add("WrongAnswer", WrongClip);
         Clips.Add("FlipPage", PageClip);*/
+        Clips.Add("SelectButton", SelectButtonClip);
     }
 
     public static void PlayClip(string key)

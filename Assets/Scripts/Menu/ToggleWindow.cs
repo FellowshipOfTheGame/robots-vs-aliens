@@ -12,6 +12,7 @@ public class ToggleWindow : MonoBehaviour
     }
 
     public void ChangeActiveWindow(GameObject newWindow){
+        SFXController.PlayClip("SelectButton");
         CurrentWindow?.SetActive(false);
         newWindow?.SetActive(true);
         CurrentWindow = newWindow;

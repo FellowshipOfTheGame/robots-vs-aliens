@@ -26,8 +26,6 @@ public class HugeWaveIcon : MonoBehaviour
 
     public void SetIconPosition(int hugeIndex, int enemyCount)
     {
-        hugeIndex = 2;
-        enemyCount = 4;
         //float width = GetComponent<RectTransform>().offsetMin.x - transform.GetComponent<RectTransform>().offsetMax.x;
         /*
         //print("width = " + width);

@@ -15,6 +15,7 @@ public class Pause : MonoBehaviour
 
     public void PauseGame()
     {
+        SFXController.PlayClip("SelectButton");
         isPaused = true;
         pauseAnimator?.SetTrigger("OpenWindow");
         Time.timeScale = 0;
