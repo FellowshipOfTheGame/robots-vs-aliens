@@ -52,7 +52,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9773ca0d8633a048bf4de4ad1a5187e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  electricityIndex: 1
+  IsRobot: 1
+  secondCooldown: 0
 --- !u!114 &5829747011414049501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,6 +67,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownTime: 5
+  CooldownRunning: 0
 --- !u!114 &3037497967063482243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,10 +94,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e77efb561a4f2742b89edbb7f3973ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xStart: 0
-  xEnd: 0
-  yStart: 0
-  yEnd: 0
+  NaturalSpawnHorizontalRange: 0
+  NaturalSpawnVerticalRange: 0
+  RobotSpawnHorizontalRange: 0
+  RobotSpawnVerticalRange: 0
+  ScreenOffsetY: 0
+  ScreenOffsetX: 0
 --- !u!222 &5531664545498847362
 CanvasRenderer:
   m_ObjectHideFlags: 0

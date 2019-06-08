@@ -34,6 +34,8 @@ public class SFXController : MonoBehaviour
     private AudioClip BombClip = null;
     [SerializeField]
     private AudioClip PickEnergyClip = null;
+    [SerializeField]
+    private AudioClip ElectricityClip = null;
 
     private Toggle SFXMuteToggle = null;
 
@@ -92,6 +94,7 @@ public class SFXController : MonoBehaviour
         Clips.Add("RobotShot", RobotShotClip);
         Clips.Add("Bomb", BombClip);
         Clips.Add("PickEnergy", PickEnergyClip);
+        Clips.Add("Electricity", ElectricityClip);
     }
 
     public static void PlayClip(string key)

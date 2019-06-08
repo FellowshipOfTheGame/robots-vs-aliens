@@ -13873,6 +13873,11 @@ PrefabInstance:
       propertyPath: PickEnergyClip
       value: 
       objectReference: {fileID: 8300000, guid: 60ff0eb468b3b9a4b905de3feb5479d8, type: 3}
+    - target: {fileID: 2781759448509423069, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: ElectricityClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 73e44b7086a826a4da618891a6797fd6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0a1a711473b8fa41890ee66e1a3c5b9, type: 3}
 --- !u!4 &1647470908 stripped

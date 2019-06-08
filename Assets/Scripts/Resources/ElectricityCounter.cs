@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ElectricityCounter : MonoBehaviour
 {
-    private int electricity = 0;
+    private int electricity = 10000;
 
     public delegate void ElectricityCounterDelegate(string text);
     public ElectricityCounterDelegate OnElectricityChanged;
