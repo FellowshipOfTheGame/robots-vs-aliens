@@ -103,18 +103,18 @@ TextureImporter:
       name: alien movimento-Sheet_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 40
-        width: 175
-        height: 175
+        x: 48
+        y: 58
+        width: 155
+        height: 146
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c77ec0f4c98c9964b87f1a859ee048b4
+      spriteID: 78726ad46262cae42bb23cc19fc7272f
       vertices: []
       indices: 
       edges: []
@@ -123,18 +123,18 @@ TextureImporter:
       name: alien movimento-Sheet_1
       rect:
         serializedVersion: 2
-        x: 297
-        y: 40
-        width: 175
-        height: 175
+        x: 306
+        y: 60
+        width: 155
+        height: 146
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5358141b65064cc4391426a4c671a5cc
+      spriteID: d480b9ccd35446749ae7f9fb8856db7f
       vertices: []
       indices: 
       edges: []
@@ -143,18 +143,18 @@ TextureImporter:
       name: alien movimento-Sheet_2
       rect:
         serializedVersion: 2
-        x: 553
-        y: 41
-        width: 175
-        height: 175
+        x: 563
+        y: 58
+        width: 155
+        height: 146
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a664f311fd79cd442b0920b68c6158d2
+      spriteID: f30a78696e712ae4da8955954db1a028
       vertices: []
       indices: 
       edges: []
@@ -163,18 +163,18 @@ TextureImporter:
       name: alien movimento-Sheet_3
       rect:
         serializedVersion: 2
-        x: 808
-        y: 39
-        width: 175
-        height: 175
+        x: 818
+        y: 58
+        width: 155
+        height: 146
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a26804b4975b93645a7bf49351a9d689
+      spriteID: 302a02886dd0c9e4d83954293df90465
       vertices: []
       indices: 
       edges: []
@@ -183,18 +183,18 @@ TextureImporter:
       name: alien movimento-Sheet_4
       rect:
         serializedVersion: 2
-        x: 1065
-        y: 40
-        width: 175
-        height: 175
+        x: 1073
+        y: 60
+        width: 155
+        height: 146
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d19485a648ca15a4fbc47fd216cb535c
+      spriteID: 446c93d463953244e841485ce219e27b
       vertices: []
       indices: 
       edges: []
