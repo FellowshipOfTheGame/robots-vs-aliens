@@ -57,16 +57,11 @@ public class SFXController : MonoBehaviour
 
     void AddListenerToMuteButton(Scene scene, LoadSceneMode mode)
     {
-        if(scene.name == "MenuFinal")
+        if(scene.name == "Prototype")
         {
-            SFXMuteToggle = Resources.FindObjectsOfTypeAll<Toggle>()[0];
+            SFXMuteToggle = Resources.FindObjectsOfTypeAll<Toggle>()[1];
             SFXMuteToggle.onValueChanged.AddListener((bool mute) => ToggleMuteSFX(mute));
 
-        }
-        else if (scene.name == "GameFinal")
-        {
-            SFXMuteToggle = Resources.FindObjectsOfTypeAll<Toggle>()[2];
-            SFXMuteToggle.onValueChanged.AddListener((bool mute) => ToggleMuteSFX(mute));
         }
     }
 
@@ -83,6 +78,7 @@ public class SFXController : MonoBehaviour
 
     public static void PlayClip(string key)
     {
+        print(key);
         AudioClip clip;
         if(Clips.TryGetValue(key, out clip))
         {

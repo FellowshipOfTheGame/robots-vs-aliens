@@ -24,12 +24,12 @@ public class EnemyCounter : MonoBehaviour
 
     private void Start()
     {
-        hugeWaveIcon = GameObject.Find("HugeWaveIcon").GetComponent<HugeWaveIcon>();
+        //hugeWaveIcon = GameObject.Find("HugeWaveIcon").GetComponent<HugeWaveIcon>();
     }
 
     void Awake()
     {
-        hugeWaveIcon = GameObject.Find("HugeWaveIcon").GetComponent<HugeWaveIcon>();
+        hugeWaveIcon = GameObject.Find("HugeWaveIcon")?.GetComponent<HugeWaveIcon>();
         waveProgressBar = GameObject.Find("WaveProgressBar").GetComponent<WaveProgressBar>();
         fixedWaveBehaviour = GameObject.Find("WaveGenerator").GetComponent<FixedWaveBehaviour>();
         
@@ -53,7 +53,7 @@ public class EnemyCounter : MonoBehaviour
                 hugeIndex = EnemyCountTotal;
             EnemyCountTotal += w.EnemiesIndexes.Length;
         }
-        //Sprint(hugeWaveIcon.name);
+
         hugeWaveIcon.SetIconPosition(hugeIndex, EnemyCountTotal);
     }
 
