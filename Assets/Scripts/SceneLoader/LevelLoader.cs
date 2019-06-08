@@ -7,6 +7,14 @@ public class LevelLoader : MonoBehaviour
 
     private CurrentScene CurrentSceneScript;
 
+    //temporary
+    public MusicController musicController;
+    public AudioClip gameMusic;
+    public float gameMusicLoopTime;
+
+    public AudioClip menuMusic;
+    public float menuMusicLoopTime;
+
     private void Awake(){
         if(instance == null){
             instance = this;
@@ -21,6 +29,15 @@ public class LevelLoader : MonoBehaviour
     
     public void LoadScene(string sceneName){
         SaveData.Save(SaveData._data);
+
+        if (sceneName == "Prototype")
+        {
+            musicController.ChangeTrackInstantly(gameMusic, gameMusicLoopTime);
+        }
+        else if(sceneName == "Menu")
+        {
+            musicController.ChangeTrackInstantly(menuMusic, menuMusicLoopTime);
+        }
 
         SceneManager.LoadScene(sceneName);
     }

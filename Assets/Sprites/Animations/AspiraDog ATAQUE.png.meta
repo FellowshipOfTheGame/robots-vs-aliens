@@ -107,10 +107,10 @@ TextureImporter:
       name: AspiraDog ATAQUE_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 10
-        width: 110
-        height: 100
+        x: 16
+        y: 25
+        width: 84
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,7 +118,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f2083545700ad54ca04cb2ba18e0ee0
+      spriteID: 5aed583ec8b907f498beab898a949801
       vertices: []
       indices: 
       edges: []
@@ -127,10 +127,10 @@ TextureImporter:
       name: AspiraDog ATAQUE_1
       rect:
         serializedVersion: 2
-        x: 137
-        y: 10
-        width: 110
-        height: 100
+        x: 147
+        y: 25
+        width: 82
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,7 +138,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49e62f40a4a519a46b56488bb1e8e6d4
+      spriteID: 260c98ab65d987a4ea62d7a1a45c7e14
       vertices: []
       indices: 
       edges: []
@@ -147,10 +147,10 @@ TextureImporter:
       name: AspiraDog ATAQUE_2
       rect:
         serializedVersion: 2
-        x: 265
-        y: 10
-        width: 110
-        height: 100
+        x: 274
+        y: 25
+        width: 84
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,7 +158,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b41fde39791491b478b063fe5d71ee51
+      spriteID: 103127efe6b37e44bb6ad3b3b87d99f6
       vertices: []
       indices: 
       edges: []
@@ -167,10 +167,10 @@ TextureImporter:
       name: AspiraDog ATAQUE_3
       rect:
         serializedVersion: 2
-        x: 391
-        y: 10
-        width: 110
-        height: 100
+        x: 405
+        y: 25
+        width: 82
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,7 +178,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cea4799b17fee1049b6d23709a224ab6
+      spriteID: 07ac04bc8e7aa6f4d8522e509a1d9bf9
       vertices: []
       indices: 
       edges: []
@@ -187,10 +187,10 @@ TextureImporter:
       name: AspiraDog ATAQUE_4
       rect:
         serializedVersion: 2
-        x: 521
-        y: 10
-        width: 110
-        height: 100
+        x: 532
+        y: 25
+        width: 84
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,7 +198,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c786127efca01344a4bc5dd4638bbcd
+      spriteID: 222b15c3b98ed3f4cbdfee19b9b3b32d
       vertices: []
       indices: 
       edges: []
@@ -207,10 +207,10 @@ TextureImporter:
       name: AspiraDog ATAQUE_5
       rect:
         serializedVersion: 2
-        x: 649
-        y: 10
-        width: 110
-        height: 100
+        x: 662
+        y: 25
+        width: 82
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,7 +218,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfd984cef3c930249aa4fab4587ab4dd
+      spriteID: 398d58c8590b780438e46091572ae16e
       vertices: []
       indices: 
       edges: []
@@ -227,10 +227,10 @@ TextureImporter:
       name: AspiraDog ATAQUE_6
       rect:
         serializedVersion: 2
-        x: 777
-        y: 10
-        width: 110
-        height: 100
+        x: 792
+        y: 25
+        width: 84
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,7 +238,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 472632be3d6c85d4297be11dfb082aea
+      spriteID: 828d267d97d0924459d0d7e12373161c
       vertices: []
       indices: 
       edges: []
@@ -247,10 +247,10 @@ TextureImporter:
       name: AspiraDog ATAQUE_7
       rect:
         serializedVersion: 2
-        x: 905
-        y: 10
-        width: 110
-        height: 100
+        x: 909
+        y: 25
+        width: 93
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,7 +258,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbb912f65346e7d4ebaae06f884be465
+      spriteID: 04568a0f3dda6a04aad6c87de8fcd79e
       vertices: []
       indices: 
       edges: []
@@ -267,10 +267,10 @@ TextureImporter:
       name: AspiraDog ATAQUE_8
       rect:
         serializedVersion: 2
-        x: 1033
-        y: 10
-        width: 110
-        height: 100
+        x: 1037
+        y: 25
+        width: 101
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,7 +278,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e658e0befa9aec94789686c642b7fb92
+      spriteID: 5025bb7f98d70084db2458829509eed4
       vertices: []
       indices: 
       edges: []

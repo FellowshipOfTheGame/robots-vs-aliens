@@ -11,6 +11,7 @@ public class ElectricityBehaviour : MonoBehaviour
     }
 
     public void InteractWithElectricity(){
+        SFXController.PlayClip("PickEnergy");
         CounterScript.AddElectricity(score);
         Destroy(gameObject);
     }

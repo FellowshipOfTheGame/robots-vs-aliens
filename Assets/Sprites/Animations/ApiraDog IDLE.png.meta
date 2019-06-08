@@ -102,10 +102,10 @@ TextureImporter:
       name: ApiraDog IDLE_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 10
-        width: 110
-        height: 100
+        x: 17
+        y: 25
+        width: 92
+        height: 78
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,7 +113,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eadf4ba4152b5824e9e8733a2acf47ba
+      spriteID: 5904b3206669e1f408edbbac0926543d
       vertices: []
       indices: 
       edges: []
@@ -122,10 +122,10 @@ TextureImporter:
       name: ApiraDog IDLE_1
       rect:
         serializedVersion: 2
-        x: 137
-        y: 10
-        width: 110
-        height: 100
+        x: 145
+        y: 25
+        width: 92
+        height: 78
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,7 +133,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1538dc510db65c440bf8338fef29d961
+      spriteID: 6409c088d0bb8e24688216da3f17688d
       vertices: []
       indices: 
       edges: []
@@ -142,10 +142,10 @@ TextureImporter:
       name: ApiraDog IDLE_2
       rect:
         serializedVersion: 2
-        x: 267
-        y: 10
-        width: 110
-        height: 100
+        x: 266
+        y: 25
+        width: 92
+        height: 78
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,7 +153,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b629903e7b32a04993b49083af31252
+      spriteID: 2d847e3ccef961c4397b06b5767cc76e
       vertices: []
       indices: 
       edges: []
@@ -162,10 +162,10 @@ TextureImporter:
       name: ApiraDog IDLE_3
       rect:
         serializedVersion: 2
-        x: 393
-        y: 10
-        width: 110
-        height: 100
+        x: 395
+        y: 25
+        width: 92
+        height: 78
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,7 +173,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 951cd05462454274da5f48fb8f114dbd
+      spriteID: cd5638006835a1743bc802032148e6f0
       vertices: []
       indices: 
       edges: []

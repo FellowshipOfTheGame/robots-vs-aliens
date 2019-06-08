@@ -78,14 +78,14 @@ public class MusicController : MonoBehaviour
 
     public void ChangeTrackInstantly(AudioClip newTrack, float loopTime)
     {
-        if (CurrentSource == 1)
+        if (CurrentSource == 1 && Source1.clip != newTrack)
         {
             StopAllCoroutines();
             Source1.clip = newTrack;
             Source1.Play();
             StartCoroutine(LoopTrackAtTime(newTrack, Source2, Source1, loopTime));
         }
-        else if (CurrentSource == 2)
+        else if (CurrentSource == 2 && Source2.clip != newTrack)
         {
             StopAllCoroutines();
             Source2.clip = newTrack;

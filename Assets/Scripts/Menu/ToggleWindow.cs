@@ -6,6 +6,12 @@ public class ToggleWindow : MonoBehaviour
 {
     private static GameObject CurrentWindow = null;
     private GameObject OpenedWindow = null;
+    private Animator animator = null;
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     public void SetActiveWindow(GameObject newWindow){
         CurrentWindow = newWindow;
@@ -33,5 +39,10 @@ public class ToggleWindow : MonoBehaviour
     {
         OpenedWindow = null;
         gameObject?.SetActive(false);
+    }
+
+    public void PlayAnimation(string trigger)
+    {
+        animator.SetTrigger(trigger);
     }
 }
