@@ -6,11 +6,12 @@ public class EnemyCounter : MonoBehaviour
     private static TriggerVictory VictoryScript = null;
     private WaveProgressBar waveProgressBar;
     private static FixedWaveBehaviour fixedWaveBehaviour;
+    public HugeWaveIcon hugeWaveIcon;
 
     private static int EnemyCountTotal = 0;
     private static int EnemiesKilled = 0;
     private static int enemiesSpawned = 0;
-
+    
     private static float progress = 0.0f;
 
     public delegate void DelegateEnemyCounter();
@@ -21,11 +22,17 @@ public class EnemyCounter : MonoBehaviour
         get { return enemiesSpawned; }
     }
 
-    private void Awake()
+    private void Start()
     {
+        //hugeWaveIcon = GameObject.Find("HugeWaveIcon").GetComponent<HugeWaveIcon>();
+    }
+
+    void Awake()
+    {
+        hugeWaveIcon = GameObject.Find("HugeWaveIcon")?.GetComponent<HugeWaveIcon>();
         waveProgressBar = GameObject.Find("WaveProgressBar").GetComponent<WaveProgressBar>();
         fixedWaveBehaviour = GameObject.Find("WaveGenerator").GetComponent<FixedWaveBehaviour>();
-
+        
         VictoryScript = GetComponent<TriggerVictory>();        
     }
 
@@ -39,10 +46,15 @@ public class EnemyCounter : MonoBehaviour
     public void SetupWaveInfo(LevelWavesData level)
     {
         ResetCounters();
+        int hugeIndex = -1;
         foreach(FixedWaveData w in level.Waves)
         {
+            if (w.IsHuge)
+                hugeIndex = EnemyCountTotal;
             EnemyCountTotal += w.EnemiesIndexes.Length;
         }
+
+        hugeWaveIcon.SetIconPosition(hugeIndex, EnemyCountTotal);
     }
 
     public static void AddEnemyKilled()

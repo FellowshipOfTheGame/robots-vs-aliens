@@ -57,6 +57,8 @@ public class CellBehaviour : MonoBehaviour
                 RemoveScript.SelectedOff(); //TEMPORARY
                 OccupationScript.UpdateCellOccupation(true);
 
+                SFXController.PlayClip("PlaceRobot");
+
                 PointerExited();
             }
         }
@@ -69,7 +71,7 @@ public class CellBehaviour : MonoBehaviour
                 GetComponentInChildren<DestroyObject>().DestroySelf();
                 OccupationScript.UpdateCellOccupation(false);
                 RemoveScript.SelectedOff();
-
+                SFXController.PlayClip("PlaceRobot");
                 PointerExited();
             }
         }

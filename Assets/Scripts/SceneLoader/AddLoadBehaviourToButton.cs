@@ -10,6 +10,8 @@ public class AddLoadBehaviourToButton : MonoBehaviour
     public bool AddLoadScene = false;
     public string SceneName = null;
 
+    private SFXController sfxController = null;
+
 
     // Start is called before the first frame update
     void Awake()
@@ -23,7 +25,13 @@ public class AddLoadBehaviourToButton : MonoBehaviour
 
         else if (AddLoadScene)
         {
-            ThisButton.onClick.AddListener(() => LevelLoader.instance.LoadScene(SceneName));
+            ThisButton.onClick.AddListener(OnClickAction);
         }
+    }
+
+    void OnClickAction()
+    {
+        SFXController.PlayClip("SelectButton");
+        LevelLoader.instance.LoadScene(SceneName);
     }
 }

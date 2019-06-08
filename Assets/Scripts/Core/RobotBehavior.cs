@@ -14,6 +14,7 @@ public class RobotBehavior : MonoBehaviour
     [SerializeField] private Cooldown attackCooldown = null;
     [SerializeField] private Cooldown animationCooldown = null;
 
+    [SerializeField]private int robotId = 0;
 
 
     private void Awake()
@@ -50,6 +51,8 @@ public class RobotBehavior : MonoBehaviour
     {
         if (rayCollision)
         {
+            if (robotId == 0)
+                SFXController.PlayClip("RobotShot");
             myAttack.ReleaseAttack();
         }
     }

@@ -32,6 +32,10 @@ public class RemoveSelector : MonoBehaviour
     public void SwitchSelected()
     {
         RemoveSelected = !RemoveSelected;
+        if(RemoveSelected)
+            SFXController.PlayClip("SelectButton");
+        else
+            SFXController.PlayClip("BackButton");
     }
 
 }

@@ -20,6 +20,8 @@ public class FixedWaveBehaviour : MonoBehaviour
 
     private bool onHold = false;
 
+    [SerializeField] private HugeWaveIcon hugeWaveIcon;
+
     public bool OnHold
     {
         get { return onHold; }
@@ -41,6 +43,8 @@ public class FixedWaveBehaviour : MonoBehaviour
         SpawnObjectScript.objectsToSpawn = CurrentLevel.Waves[0].Objects;
 
         CounterScript.SetupWaveInfo(CurrentLevel);
+
+        hugeWaveIcon = GameObject.Find("HugeWaveIcon")?.GetComponent<HugeWaveIcon>();
 
         CooldownScript.CooldownTime = CurrentLevel.Waves[currentWave].Intervals[currentEnemy];
         //CooldownScript.CooldownTime = Random.Range(CurrentLevel.Waves[currentWave].OffsetTimeBegin,
@@ -113,6 +117,7 @@ public class FixedWaveBehaviour : MonoBehaviour
 
     public void StartWave()
     {
+        hugeWaveIcon.OnHugeWave();
         CooldownScript.CooldownTime = CurrentLevel.Waves[currentWave].Intervals[currentEnemy];
         SpawnObjectScript.objectsToSpawn = CurrentLevel.Waves[currentWave].Objects;
         CooldownScript.ResetCooldown();

@@ -33,6 +33,11 @@ public class MusicController : MonoBehaviour
 
     // --- MONOBEHAVIOUR METHODS ---
 
+    private void Awake()
+    {
+        SceneManager.sceneLoaded += AddListenerToMuteButton;
+    }
+
     private void Start()
     {
         if (Source1 == null && Source2 == null)
@@ -57,6 +62,16 @@ public class MusicController : MonoBehaviour
             Source2.mute = true;
         }
         ChangeMusicVolume(PlayerPrefs.GetFloat(PrefsVolumeString, 1));
+    }
+
+    private void AddListenerToMuteButton(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "Prototype")
+        {
+            MusicMuteToggle = Resources.FindObjectsOfTypeAll<Toggle>()[0];
+            MusicMuteToggle.onValueChanged.AddListener((bool mute) => ToggleMuteMusic(mute));
+
+        }
     }
 
     // --- PUBLIC METHODS --

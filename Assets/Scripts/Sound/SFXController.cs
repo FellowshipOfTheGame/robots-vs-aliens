@@ -20,6 +20,16 @@ public class SFXController : MonoBehaviour
     [SerializeField] private AudioClip RightClip = null;
     [SerializeField] private AudioClip WrongClip = null;
     [SerializeField] private AudioClip PageClip = null;*/
+    [SerializeField]
+    private AudioClip SelectButtonClip = null;
+    [SerializeField]
+    private AudioClip BackButtonClip = null;
+    [SerializeField]
+    private AudioClip SlidersAndCheckboxInteractionClip = null;
+    [SerializeField]
+    private AudioClip PlaceRobotClip = null;
+    [SerializeField]
+    private AudioClip RobotShotClip = null;
 
     private Toggle SFXMuteToggle = null;
 
@@ -55,16 +65,11 @@ public class SFXController : MonoBehaviour
 
     void AddListenerToMuteButton(Scene scene, LoadSceneMode mode)
     {
-        if(scene.name == "MenuFinal")
+        if(scene.name == "Prototype")
         {
-            SFXMuteToggle = Resources.FindObjectsOfTypeAll<Toggle>()[0];
+            SFXMuteToggle = Resources.FindObjectsOfTypeAll<Toggle>()[1];
             SFXMuteToggle.onValueChanged.AddListener((bool mute) => ToggleMuteSFX(mute));
 
-        }
-        else if (scene.name == "GameFinal")
-        {
-            SFXMuteToggle = Resources.FindObjectsOfTypeAll<Toggle>()[2];
-            SFXMuteToggle.onValueChanged.AddListener((bool mute) => ToggleMuteSFX(mute));
         }
     }
 
@@ -76,13 +81,20 @@ public class SFXController : MonoBehaviour
         Clips.Add("CorrectAnswer", RightClip);
         Clips.Add("WrongAnswer", WrongClip);
         Clips.Add("FlipPage", PageClip);*/
+        Clips.Add("SelectButton", SelectButtonClip);
+        Clips.Add("BackButton", BackButtonClip);
+        Clips.Add("SlidersAndCheckboxInteraction", SlidersAndCheckboxInteractionClip);
+        Clips.Add("PlaceRobot", PlaceRobotClip);
+        Clips.Add("RobotShot", RobotShotClip);
     }
 
     public static void PlayClip(string key)
     {
+        print(key);
         AudioClip clip;
         if(Clips.TryGetValue(key, out clip))
         {
+            print("Play");
             Source.PlayOneShot(clip);
         }
         else
@@ -94,6 +106,13 @@ public class SFXController : MonoBehaviour
     public static void ToggleMuteSFX(bool mute)
     {
         Source.mute = mute;
+        if (mute)
+        {
+            print("BackButton");
+            SFXController.PlayClip("BackButton");
+        }
+        else
+            SFXController.PlayClip("SelectButton");
         //PlayerPrefs.SetInt(PrefsString, mute ? 1 : 0);
     }
 
