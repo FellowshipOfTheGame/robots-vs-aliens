@@ -402,7 +402,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1378790198
 RectTransform:
   m_ObjectHideFlags: 0
@@ -489,7 +489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.42745098}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -682,18 +682,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1808311999383883377}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2052611636 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2052611637, guid: 37a4293579af2574284ced65d7d2d645,
-    type: 3}
-  m_PrefabInstance: {fileID: 1808311999383883377}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2052611635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b709df3414bb0744aa6d01d2cf173b7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2146282829
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,7 +732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.32941177}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -764,7 +752,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '[TEMP] Reset Save'
+  m_Text: Reset Save
 --- !u!222 &2146282832
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1209,6 +1197,28 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2781759448509423068, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: SourcePrefab
+      value: 
+      objectReference: {fileID: 2824242451443408920, guid: 36ae6dee755940b44ac6ac47dd2508ea,
+        type: 3}
+    - target: {fileID: 2781759448509423068, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: MusicTrack
+      value: 
+      objectReference: {fileID: 8300000, guid: c4e543c595878f94c9411ada583f5cf0, type: 3}
+    - target: {fileID: 2781759448509423068, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: LoopDuration
+      value: 148.323
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781759448509423068, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: MusicSourcePrefab
+      value: 
+      objectReference: {fileID: 2824242451443408920, guid: 36ae6dee755940b44ac6ac47dd2508ea,
+        type: 3}
     - target: {fileID: 2781759448509423043, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1281,28 +1291,6 @@ PrefabInstance:
       propertyPath: SelectButtonClip
       value: 
       objectReference: {fileID: 8300000, guid: b868b950e7235694ba185803e1eaf367, type: 3}
-    - target: {fileID: 2781759448509423068, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
-        type: 3}
-      propertyPath: SourcePrefab
-      value: 
-      objectReference: {fileID: 2824242451443408920, guid: 36ae6dee755940b44ac6ac47dd2508ea,
-        type: 3}
-    - target: {fileID: 2781759448509423068, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
-        type: 3}
-      propertyPath: MusicTrack
-      value: 
-      objectReference: {fileID: 8300000, guid: c4e543c595878f94c9411ada583f5cf0, type: 3}
-    - target: {fileID: 2781759448509423068, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
-        type: 3}
-      propertyPath: LoopDuration
-      value: 148.323
-      objectReference: {fileID: 0}
-    - target: {fileID: 2781759448509423068, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
-        type: 3}
-      propertyPath: MusicSourcePrefab
-      value: 
-      objectReference: {fileID: 2824242451443408920, guid: 36ae6dee755940b44ac6ac47dd2508ea,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0a1a711473b8fa41890ee66e1a3c5b9, type: 3}
 --- !u!1001 &3432871791252234141
