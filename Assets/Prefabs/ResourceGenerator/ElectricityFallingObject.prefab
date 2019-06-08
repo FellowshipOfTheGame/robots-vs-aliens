@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9280052728820df489b9b4c6e52b7b13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FallSpeed: 3
+  FallSpeed: 1
   MaxFallDistance: 500
 --- !u!114 &3877751080961095047
 MonoBehaviour:

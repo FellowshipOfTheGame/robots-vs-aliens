@@ -35,7 +35,6 @@ public class RobotCardCooldown : MonoBehaviour
         //melhorar essa parte vvv
         while (FillAmount > 0)
         {
-            print(FillAmount);
             TransparentFill.fillAmount = FillAmount;
             yield return null;
             FillAmount -= Time.deltaTime / cooldownDelay;

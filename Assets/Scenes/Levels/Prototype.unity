@@ -2321,6 +2321,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4197022299645439300, guid: 8890afc520f6bcc4984c946a5e7bbfc7,
+        type: 3}
+      propertyPath: cooldownTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844807181611272902, guid: 8890afc520f6bcc4984c946a5e7bbfc7,
+        type: 3}
+      propertyPath: NaturalSpawnVerticalRange
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844807181611272902, guid: 8890afc520f6bcc4984c946a5e7bbfc7,
+        type: 3}
+      propertyPath: NaturalSpawnHorizontalRange
+      value: 0.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8890afc520f6bcc4984c946a5e7bbfc7, type: 3}
 --- !u!1001 &362491810
