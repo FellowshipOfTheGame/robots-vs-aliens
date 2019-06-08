@@ -8,7 +8,7 @@ public class SetFirstActiveWindow : MonoBehaviour
 
     void Awake()
     {
-        WindowScript = GetComponent<ToggleWindow>();
+        WindowScript = transform.parent.GetComponent<ToggleWindow>();
         WindowScript.SetActiveWindow(gameObject);
     }
 }
