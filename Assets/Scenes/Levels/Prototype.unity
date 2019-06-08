@@ -13863,6 +13863,16 @@ PrefabInstance:
       propertyPath: RobotShotClip
       value: 
       objectReference: {fileID: 8300000, guid: fa1fffb1d8977a0468d4a1e4a7c79fb0, type: 3}
+    - target: {fileID: 2781759448509423069, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: BombClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 06f85a27349acc44dadd188c98a1b5ac, type: 3}
+    - target: {fileID: 2781759448509423069, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: PickEnergyClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 60ff0eb468b3b9a4b905de3feb5479d8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0a1a711473b8fa41890ee66e1a3c5b9, type: 3}
 --- !u!4 &1647470908 stripped
