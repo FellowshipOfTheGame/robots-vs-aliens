@@ -14,6 +14,7 @@ public class Explode : MonoBehaviour
 
     public void ExplodeObject()
     {
+        SFXController.PlayClip("Bomb");
         gameObject.GetComponent<SpawnObject>().Spawn(transform.position, Quaternion.identity, _Dynamic);
         Life life = GetComponent<Life>();
         life.DecreaseLife(life.getLife());

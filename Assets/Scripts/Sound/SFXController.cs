@@ -30,6 +30,10 @@ public class SFXController : MonoBehaviour
     private AudioClip PlaceRobotClip = null;
     [SerializeField]
     private AudioClip RobotShotClip = null;
+    [SerializeField]
+    private AudioClip BombClip = null;
+    [SerializeField]
+    private AudioClip PickEnergyClip = null;
 
     private Toggle SFXMuteToggle = null;
 
@@ -86,6 +90,8 @@ public class SFXController : MonoBehaviour
         Clips.Add("SlidersAndCheckboxInteraction", SlidersAndCheckboxInteractionClip);
         Clips.Add("PlaceRobot", PlaceRobotClip);
         Clips.Add("RobotShot", RobotShotClip);
+        Clips.Add("Bomb", BombClip);
+        Clips.Add("PickEnergy", PickEnergyClip);
     }
 
     public static void PlayClip(string key)

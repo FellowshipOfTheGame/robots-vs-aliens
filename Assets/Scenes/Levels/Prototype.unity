@@ -13884,6 +13884,36 @@ PrefabInstance:
       propertyPath: SelectButtonClip
       value: 
       objectReference: {fileID: 8300000, guid: b868b950e7235694ba185803e1eaf367, type: 3}
+    - target: {fileID: 2781759448509423069, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: BackButtonClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f2422e8fa13a48940a382b28c50615eb, type: 3}
+    - target: {fileID: 2781759448509423069, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: SlidersAndCheckboxInteractionClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2771b745cd66c0d4ab45832ecc33fa55, type: 3}
+    - target: {fileID: 2781759448509423069, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: PlaceRobotClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0188075a03a953c48a25bd3e3f28d6ff, type: 3}
+    - target: {fileID: 2781759448509423069, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: RobotShotClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fa1fffb1d8977a0468d4a1e4a7c79fb0, type: 3}
+    - target: {fileID: 2781759448509423069, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: BombClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 06f85a27349acc44dadd188c98a1b5ac, type: 3}
+    - target: {fileID: 2781759448509423069, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: PickEnergyClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 60ff0eb468b3b9a4b905de3feb5479d8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0a1a711473b8fa41890ee66e1a3c5b9, type: 3}
 --- !u!4 &1647470908 stripped
