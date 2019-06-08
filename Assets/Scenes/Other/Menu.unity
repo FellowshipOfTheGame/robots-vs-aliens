@@ -264,6 +264,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2bd8117e2b991d4f8a64a8023c9e709, type: 3}
+--- !u!114 &574221504 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2781759448509423068, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2781759448908135827}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa52e6538b4a9bb45bfa343aa0c8e2f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &625011776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -389,7 +401,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1378790198
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1148,6 +1160,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2781759448509423069, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: SourcePrefab
+      value: 
+      objectReference: {fileID: 1001666450753581463, guid: 778b424ec6c759748bbbe622017e00c2,
+        type: 3}
+    - target: {fileID: 2781759448509423069, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: SFXSourcePrefab
+      value: 
+      objectReference: {fileID: 1001666450753581463, guid: 778b424ec6c759748bbbe622017e00c2,
+        type: 3}
+    - target: {fileID: 2781759448509423069, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
+        type: 3}
+      propertyPath: SelectButtonClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b868b950e7235694ba185803e1eaf367, type: 3}
     - target: {fileID: 2781759448509423068, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
         type: 3}
       propertyPath: SourcePrefab
@@ -1170,23 +1199,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2824242451443408920, guid: 36ae6dee755940b44ac6ac47dd2508ea,
         type: 3}
-    - target: {fileID: 2781759448509423069, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
-        type: 3}
-      propertyPath: SourcePrefab
-      value: 
-      objectReference: {fileID: 1001666450753581463, guid: 778b424ec6c759748bbbe622017e00c2,
-        type: 3}
-    - target: {fileID: 2781759448509423069, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
-        type: 3}
-      propertyPath: SFXSourcePrefab
-      value: 
-      objectReference: {fileID: 1001666450753581463, guid: 778b424ec6c759748bbbe622017e00c2,
-        type: 3}
-    - target: {fileID: 2781759448509423069, guid: c0a1a711473b8fa41890ee66e1a3c5b9,
-        type: 3}
-      propertyPath: SelectButtonClip
-      value: 
-      objectReference: {fileID: 8300000, guid: b868b950e7235694ba185803e1eaf367, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0a1a711473b8fa41890ee66e1a3c5b9, type: 3}
 --- !u!1001 &3432871791252234141
@@ -2516,7 +2528,7 @@ PrefabInstance:
     - target: {fileID: 7397447436086821269, guid: 61befbd597b9b5840a96815382f52dfb,
         type: 3}
       propertyPath: m_Name
-      value: '@SceneLoader'
+      value: '@LevelLoader'
       objectReference: {fileID: 0}
     - target: {fileID: 7397447436086821272, guid: 61befbd597b9b5840a96815382f52dfb,
         type: 3}
@@ -2572,6 +2584,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397447436086821271, guid: 61befbd597b9b5840a96815382f52dfb,
+        type: 3}
+      propertyPath: musicController
+      value: 
+      objectReference: {fileID: 574221504}
+    - target: {fileID: 7397447436086821271, guid: 61befbd597b9b5840a96815382f52dfb,
+        type: 3}
+      propertyPath: gameMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 5e649989560fc5643af0d8c71b4cb8d4, type: 3}
+    - target: {fileID: 7397447436086821271, guid: 61befbd597b9b5840a96815382f52dfb,
+        type: 3}
+      propertyPath: gameMusicLoopTime
+      value: 96.052
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397447436086821271, guid: 61befbd597b9b5840a96815382f52dfb,
+        type: 3}
+      propertyPath: menuMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: c4e543c595878f94c9411ada583f5cf0, type: 3}
+    - target: {fileID: 7397447436086821271, guid: 61befbd597b9b5840a96815382f52dfb,
+        type: 3}
+      propertyPath: menuMusicLoopTime
+      value: 148.323
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61befbd597b9b5840a96815382f52dfb, type: 3}

@@ -1688,7 +1688,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 998896410}
   m_FillRect: {fileID: 1004517903}
   m_HandleRect: {fileID: 998896409}
@@ -10028,7 +10028,7 @@ PrefabInstance:
     - target: {fileID: 1917396976, guid: fa2ac593d333afd44aeebc423ca01f0c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 15886710e03a5e14f82ee0467e894474,
+      objectReference: {fileID: 21300000, guid: c90a667784efb33498ec0e8449c8d485,
         type: 3}
     - target: {fileID: 1917396975, guid: fa2ac593d333afd44aeebc423ca01f0c, type: 3}
       propertyPath: slider
@@ -10052,11 +10052,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1917396974, guid: fa2ac593d333afd44aeebc423ca01f0c, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 64
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1917396974, guid: fa2ac593d333afd44aeebc423ca01f0c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 64
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1917396974, guid: fa2ac593d333afd44aeebc423ca01f0c, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -10333,7 +10333,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2097577430}
   m_FillRect: {fileID: 2145365051}
   m_HandleRect: {fileID: 2097577429}
@@ -10426,18 +10426,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1313673759}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ChangeActiveWindow
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1313673759
@@ -15226,18 +15215,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1809363451}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ChangeActiveWindow
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1809363451
