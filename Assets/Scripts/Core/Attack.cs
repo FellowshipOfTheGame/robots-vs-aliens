@@ -23,7 +23,7 @@ public class Attack : MonoBehaviour
     public void ReleaseAttack()
     {
         GameObject attack = mySpawnObject.Spawn(0, transform.position, Quaternion.identity, GUIDynamic);
-
+        
         attack.GetComponent<Projectile>().damage = damage;
         if(attack.GetComponent<Movement>() != null)
             attack.GetComponent<Movement>().setParameters(speed, direction);

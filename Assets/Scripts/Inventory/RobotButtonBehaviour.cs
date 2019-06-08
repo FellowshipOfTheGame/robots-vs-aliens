@@ -66,6 +66,7 @@ public class RobotButtonBehaviour : MonoBehaviour
     {
         BorderScript.ToggleActive(true);
         //ImageComponent.sprite = PressedSprite;
+        SFXController.PlayClip("SelectButton");
     }
 
     public void MarkButtonDeselected()

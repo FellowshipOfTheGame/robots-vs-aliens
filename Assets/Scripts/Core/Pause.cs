@@ -23,6 +23,7 @@ public class Pause : MonoBehaviour
     
     public void UnpauseGame()
     {
+        SFXController.PlayClip("BackButton");
         isPaused = false;
         pauseAnimator?.SetTrigger("CloseWindow");
         Time.timeScale = 1;
