@@ -54,7 +54,8 @@ public class CellBehaviour : MonoBehaviour
                 ElectricityScript.SubtractElectricity(SelectorScript.GetSelectedCost());
                 SelectorScript.DeselectRobot();
 
-                RemoveScript.SelectedOff(); //TEMPORARY
+                print("Deselecting remove");
+                RemoveScript.SelectedOff();
                 OccupationScript.UpdateCellOccupation(true);
 
                 SFXController.PlayClip("PlaceRobot");

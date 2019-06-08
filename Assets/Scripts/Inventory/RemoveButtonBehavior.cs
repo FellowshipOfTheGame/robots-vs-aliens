@@ -5,33 +5,23 @@ using UnityEngine.UI;
 
 public class RemoveButtonBehavior : MonoBehaviour
 {
+    /* DEPRECATED
     private RemoveSelector RemoveScript;
 
-    Image ImageComponent = null;
+    private Image ImageComponent = null;
+    private Animator AnimatorComponent = null;
     [SerializeField] private MouseEvents MouseScript = null;
-    [SerializeField] private Sprite ActiveImage = null;
-    [SerializeField] private Sprite DeactiveImage = null;
+    
 
     // Start is called before the first frame update
     private void Awake()
     {
         ImageComponent = GetComponent<Image>();
+        AnimatorComponent = GetComponent<Animator>();
+
 
         if (MouseScript == null) MouseScript = FindObjectOfType<MouseEvents>();
         RemoveScript = GetComponent<RemoveSelector>();
-        MouseScript.MouseClick += ChangeImage;
     }
-
-    public void ChangeImage()
-    {
-        if (RemoveScript.isSelected())
-        {
-            ImageComponent.sprite = ActiveImage;
-        }
-        else
-        {
-            ImageComponent.sprite = DeactiveImage;
-        }
-    }
-    
+    */
 }
