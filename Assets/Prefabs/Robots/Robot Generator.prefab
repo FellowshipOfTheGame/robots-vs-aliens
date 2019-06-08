@@ -148,7 +148,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: {fileID: 0}
   animationCooldown: {fileID: 0}
-  hasAttacked: 1
 --- !u!114 &8153584033609198331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,8 +227,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NaturalSpawnHorizontalRange: 0
   NaturalSpawnVerticalRange: 0
-  RobotSpawnHorizontalRange: 0
-  RobotSpawnVerticalRange: 0
+  RobotSpawnHorizontalRange: 0.1
+  RobotSpawnVerticalRange: 0.1
   ScreenOffsetY: 0
   ScreenOffsetX: 0
 --- !u!114 &8845521067682603028
