@@ -52,7 +52,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596183066708928303}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -140,7 +140,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: f0564216f39afaa4c99c859585c31550, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -169,7 +169,8 @@ GameObject:
   - component: {fileID: 3348991936539940109}
   - component: {fileID: 3436451094774875140}
   - component: {fileID: 3829028249345113983}
-  - component: {fileID: 5587129196896733952}
+  - component: {fileID: 435279170}
+  - component: {fileID: 3438652294350795516}
   m_Layer: 0
   m_Name: Card
   m_TagString: Untagged
@@ -313,10 +314,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RobotIndex: 0
-  RobotCost: 25
-  CooldownTime: 1
-  OriginalSprite: {fileID: 21300000, guid: bad05d45af5287d4d8329acaeec77bd8, type: 3}
-  PressedSprite: {fileID: 21300000, guid: 5b7e1d058d30f404b8ac879e8b96d04f, type: 3}
+  RobotCost: 50
+  CooldownTime: 5
 --- !u!114 &3348991936539940109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,7 +328,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e30022e98869fa24aac4c78b7eec5327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TransparentFill: {fileID: 835773006547781718}
 --- !u!114 &3436451094774875140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,7 +352,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68dbae0fc158a534699de555e1e10d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5587129196896733952
+--- !u!95 &435279170
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868577014105125730}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b178f9f2c07488f4f884d0009b6c64fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3438652294350795516
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -363,10 +380,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1868577014105125730}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea1ab28b2e7a43849ad88d1b3f1d9fda, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b2e7d0efd4ea06419641261134682a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashRate: 0.5
+  animationTime: 0
 --- !u!1 &5919221116537250665
 GameObject:
   m_ObjectHideFlags: 0

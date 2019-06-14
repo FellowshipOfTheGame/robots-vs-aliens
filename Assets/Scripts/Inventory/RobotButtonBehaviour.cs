@@ -7,16 +7,12 @@ public class RobotButtonBehaviour : MonoBehaviour
 
     private RobotCardCooldown CooldownScript;
     private ToggleButtonActivation ToggleButtonScript;
-    private FlashButtonBorder BorderScript;
-    //private Image ImageComponent;
+    private Animation animationScript;
 
     [SerializeField] private int RobotIndex = 0;
     [SerializeField] private int RobotCost = 0;
     [SerializeField] private static ElectricityCounter ElectricityCounterScript = null;
     [SerializeField] private float CooldownTime = 0;
-
-    //[SerializeField] private Sprite OriginalSprite = null;
-    //[SerializeField] private Sprite PressedSprite = null;
 
     private void Awake()
     {
@@ -24,9 +20,7 @@ public class RobotButtonBehaviour : MonoBehaviour
 
         ToggleButtonScript = GetComponent<ToggleButtonActivation>();
 
-        BorderScript = GetComponent<FlashButtonBorder>();
-
-        //ImageComponent = GetComponent<Image>();
+        animationScript = GetComponent<Animation>();
 
         if (SelectorScript == null)
         {
@@ -64,15 +58,13 @@ public class RobotButtonBehaviour : MonoBehaviour
 
     public void MarkButtonSelected()
     {
-        BorderScript.ToggleActive(true);
-        //ImageComponent.sprite = PressedSprite;
+        animationScript?.PlayTriggerAnimation("Select");
         SFXController.PlayClip("SelectButton");
     }
 
     public void MarkButtonDeselected()
     {
-        BorderScript.ToggleActive(false);
-        //ImageComponent.sprite = OriginalSprite;
+        animationScript?.PlayTriggerAnimation("Deselect");
     }
 
     public void StartCooldown()

@@ -1,9 +1,17 @@
 fileFormatVersion: 2
 guid: c3407eb36ad71dc4dbb9b69beebd3c37
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: "novo bot\xE3o explosivo sel-Sheet_0"
+    21300002: "novo bot\xE3o explosivo sel-Sheet_1"
+    21300004: "novo bot\xE3o explosivo sel-Sheet_2"
+    21300006: "novo bot\xE3o explosivo sel-Sheet_3"
+    21300008: "novo bot\xE3o explosivo sel-Sheet_4"
+    21300010: "novo bot\xE3o explosivo sel-Sheet_5"
+    21300012: "novo bot\xE3o explosivo sel-Sheet_6"
+    21300014: "novo bot\xE3o explosivo sel-Sheet_7"
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -40,7 +48,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -104,7 +112,167 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "novo bot\xE3o explosivo sel-Sheet_0"
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 88
+        width: 150
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e2be9581c5fe544be741e2b0c519f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o explosivo sel-Sheet_1"
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 88
+        width: 150
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da825342da20f54bb68a89192f3c6ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o explosivo sel-Sheet_2"
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 88
+        width: 150
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5d04cf3da14e14aa269946e09d2863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o explosivo sel-Sheet_3"
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 88
+        width: 150
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e09a93b9c491a489a6c3d6e2b9ec63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o explosivo sel-Sheet_4"
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 88
+        width: 150
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a607bf66b1ad50c4da71374ec819554a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o explosivo sel-Sheet_5"
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 88
+        width: 150
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68df27bd91cd9048a1383e81c239ee5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o explosivo sel-Sheet_6"
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 88
+        width: 150
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0ef8ff06a99df4d8238e20355b486f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o explosivo sel-Sheet_7"
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 88
+        width: 150
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7eb405af08c5f468aafd2b1ab1d214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

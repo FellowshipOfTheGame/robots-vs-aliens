@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 7426256189210110443}
   - component: {fileID: 2063653849270147097}
   m_Layer: 0
-  m_Name: Base Robot
+  m_Name: Robot Tank
   m_TagString: Robot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: {fileID: 0}
   animationCooldown: {fileID: 0}
-  robotId: 0
+  robotId: 3
 --- !u!114 &8153584033609198331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,8 +157,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c14203a075ac2bc40a1c1799259f7af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _life: 300
-  _max_life: 300
+  _life: 600
+  _max_life: 600
   _state: 1
 --- !u!114 &1769205710718456128
 MonoBehaviour:
@@ -184,8 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 778c267c91917b34db4f637aed016c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectsToSpawn:
-  - {fileID: 1399694594196858405, guid: 7a5d70f9355c4b94f83c7ff4db2d6a3b, type: 3}
+  ObjectsToSpawn: []
 --- !u!114 &9147649685801727573
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3436,43 +3436,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5404710672113927036, guid: 09f5e4fc79635c94dbd18e996da9eb1e,
-        type: 3}
-      propertyPath: RobotCost
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5404710672113927036, guid: 09f5e4fc79635c94dbd18e996da9eb1e,
-        type: 3}
-      propertyPath: CooldownTime
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1868577014105125743, guid: 09f5e4fc79635c94dbd18e996da9eb1e,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 5936d28a536d58d4ca229fa6f4eb60c5,
-        type: 3}
-    - target: {fileID: 1868577014105125743, guid: 09f5e4fc79635c94dbd18e996da9eb1e,
-        type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1868577014105125743, guid: 09f5e4fc79635c94dbd18e996da9eb1e,
-        type: 3}
-      propertyPath: m_FillCenter
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1868577013712684552, guid: 09f5e4fc79635c94dbd18e996da9eb1e,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: f0564216f39afaa4c99c859585c31550,
-        type: 3}
-    - target: {fileID: 9095952296261687261, guid: 09f5e4fc79635c94dbd18e996da9eb1e,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09f5e4fc79635c94dbd18e996da9eb1e, type: 3}
 --- !u!1001 &444164509
@@ -7594,6 +7557,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 435279170, guid: 09f5e4fc79635c94dbd18e996da9eb1e, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b8dcb39e5268efc4f8710a358546fb01, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09f5e4fc79635c94dbd18e996da9eb1e, type: 3}
 --- !u!1001 &887041217
@@ -14890,6 +14857,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 435279170, guid: 09f5e4fc79635c94dbd18e996da9eb1e, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 157aa096635b7cc42aa5b54ff1b8ef41, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09f5e4fc79635c94dbd18e996da9eb1e, type: 3}
 --- !u!1 &1738910361
@@ -15518,7 +15489,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -49.999878, y: 0}
+  m_AnchoredPosition: {x: -49.999756, y: 0}
   m_SizeDelta: {x: 1, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1840423741
