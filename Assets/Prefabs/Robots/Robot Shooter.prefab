@@ -148,6 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: {fileID: 6285691565917208153}
   animationCooldown: {fileID: 2035335702828751939}
+  deathCooldown: {fileID: 0}
   robotId: 0
 --- !u!114 &8153584033609198331
 MonoBehaviour:
@@ -262,6 +263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationTime: 1.125
+  deathAnimationTime: 1
 --- !u!114 &6285691565917208153
 MonoBehaviour:
   m_ObjectHideFlags: 0

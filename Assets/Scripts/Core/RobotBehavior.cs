@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,17 +9,20 @@ public class RobotBehavior : MonoBehaviour
     private Animation animationScript = null;
     private CellOccupation occupiedCell = null;
     private BoxCollider2D myCollider = null;
+    private Life myLife = null;
 
     private bool rayCollision = false;
 
     [SerializeField] private Cooldown attackCooldown = null;
     [SerializeField] private Cooldown animationCooldown = null;
+    [SerializeField] private Cooldown deathCooldown = null;
 
     [SerializeField]private int robotId = 0;
 
 
     private void Awake()
     {
+        deathCooldown = gameObject.AddComponent<Cooldown>();
         myAttack = gameObject.GetComponent<Attack>();
         animationScript = GetComponent<Animation>();
         myCollider = GetComponent<BoxCollider2D>();
@@ -32,12 +36,20 @@ public class RobotBehavior : MonoBehaviour
             animationCooldown.OnCooldownEnded += AttackAnimation;
         }
         gameObject.GetComponent<CollisionControl>().OnCollision += BeingAttacked;
-        gameObject.GetComponent<Life>().OnDeath += Death;
+        myLife = gameObject.GetComponent<Life>();
+        myLife.OnDeath += Death;
+    }
+
+    private void Destroy()
+    {
+        occupiedCell.UpdateCellOccupation(false);
+        gameObject.GetComponent<DestroyObject>().DestroySelf();
     }
 
     //For taking damage
     private void BeingAttacked(GameObject collided)
     {
+        if (!myLife.isAlive()) return;
         //If object collided with was an alien projectile, then take damage
         if (collided != null && collided.CompareTag("AlienProjectile"))
         {
@@ -49,6 +61,7 @@ public class RobotBehavior : MonoBehaviour
     //For doing his attacks
     private void PeriodicAttack()
     {
+        if (!myLife.isAlive()) return;
         if (rayCollision)
         {
             if (robotId == 0)
@@ -59,6 +72,7 @@ public class RobotBehavior : MonoBehaviour
 
     private void AttackAnimation()
     {
+        if (!myLife.isAlive()) return;
         rayCollision = RayCollision();
         if (rayCollision)
         {
@@ -71,17 +85,17 @@ public class RobotBehavior : MonoBehaviour
     //Destroys Object when dead
     private void Death()
     {
-        occupiedCell.UpdateCellOccupation(false);
-        gameObject.GetComponent<DestroyObject>().DestroySelf();
+        myCollider.enabled = false;
+        deathCooldown.CooldownTime = animationScript.deathAnimationTime;
+        animationScript.PlayTriggerAnimation("Die");
+        deathCooldown.ResetCooldown();
+        deathCooldown.OnCooldownEnded += Destroy;
     }
 
-    bool RayCollision()
+    private bool RayCollision()
     {
-        /*Physics2D.queriesStartInColliders = false;
-        ContactFilter2D thisfilter = new ContactFilter2D();
-        thisfilter.layerMask = LayerMask.GetMask("Alien"); */
+        if (!myLife.isAlive()) return false;
         RaycastHit2D[] hitInfo = new RaycastHit2D[11];
-        //Physics2D.Raycast(transform.position, transform.right, thisfilter, hitInfo);
         Physics2D.Raycast(transform.position, transform.right, new ContactFilter2D(), hitInfo);
 
         foreach (RaycastHit2D hit in hitInfo){

@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 9147649685801727573}
   - component: {fileID: 7426256189210110443}
   - component: {fileID: 2063653849270147097}
+  - component: {fileID: 51213943089237736}
   m_Layer: 0
   m_Name: Robot Tank
   m_TagString: Robot
@@ -67,7 +68,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.81960773, a: 1}
+  m_Color: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -144,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: {fileID: 0}
   animationCooldown: {fileID: 0}
+  deathCooldown: {fileID: 0}
   robotId: 3
 --- !u!114 &8153584033609198331
 MonoBehaviour:
@@ -157,8 +159,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c14203a075ac2bc40a1c1799259f7af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _life: 600
-  _max_life: 600
+  _life: 900
+  _max_life: 900
   _state: 1
 --- !u!114 &1769205710718456128
 MonoBehaviour:
@@ -222,3 +224,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationTime: 0
+  deathAnimationTime: 1
+--- !u!95 &51213943089237736
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008611813885131627}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 617f5147d1e2f8d4a80103c5765239d9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

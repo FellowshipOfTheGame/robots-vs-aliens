@@ -6,6 +6,7 @@ public class Animation : MonoBehaviour
 {
     private Animator animator;
     public float animationTime = 0;
+    public float deathAnimationTime = 0;
     
     private void Awake()
     {

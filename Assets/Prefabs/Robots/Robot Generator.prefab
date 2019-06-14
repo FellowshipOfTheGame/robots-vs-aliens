@@ -148,6 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: {fileID: 0}
   animationCooldown: {fileID: 0}
+  deathCooldown: {fileID: 0}
   robotId: 0
 --- !u!114 &8153584033609198331
 MonoBehaviour:
@@ -273,6 +274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationTime: 0.4
+  deathAnimationTime: 1
 --- !u!95 &286140400
 Animator:
   serializedVersion: 3
