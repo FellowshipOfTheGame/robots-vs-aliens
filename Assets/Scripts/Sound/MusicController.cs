@@ -18,6 +18,7 @@ public class MusicController : MonoBehaviour
     // PRIVATE REFERENCES
     [SerializeField] private GameObject MusicSourcePrefab = null;
     private Toggle MusicMuteToggle = null;
+    private Slider MusicVolumeSlider = null;
 
     [Space(20)]
     // PRIVATE ATTRIBUTES
@@ -36,6 +37,7 @@ public class MusicController : MonoBehaviour
     private void Awake()
     {
         SceneManager.sceneLoaded += AddListenerToMuteButton;
+        SceneManager.sceneLoaded += AddListenerToVolumeSlider;
     }
 
     private void Start()
@@ -68,10 +70,24 @@ public class MusicController : MonoBehaviour
     {
         if (scene.name == "Prototype")
         {
+            MusicMuteToggle = Resources.FindObjectsOfTypeAll<Toggle>()[1];
+            print(MusicMuteToggle.name);
+            MusicMuteToggle.onValueChanged.AddListener((bool mute) => ToggleMuteMusic(mute));
+        }
+        if (scene.name == "Menu")
+        {
             MusicMuteToggle = Resources.FindObjectsOfTypeAll<Toggle>()[0];
             MusicMuteToggle.onValueChanged.AddListener((bool mute) => ToggleMuteMusic(mute));
-
         }
+    }
+
+    private void AddListenerToVolumeSlider(Scene scene, LoadSceneMode mode)
+    {
+        //if (scene.name == "Prototype")
+        //{
+            MusicVolumeSlider = Resources.FindObjectsOfTypeAll<Slider>()[1];
+            MusicVolumeSlider.onValueChanged.AddListener((float volume) => ChangeMusicVolume(volume));
+        //}
     }
 
     // --- PUBLIC METHODS --
@@ -123,6 +139,7 @@ public class MusicController : MonoBehaviour
 
     public static void ChangeMusicVolume(float volume)
     {
+        print("enter");
         Source1.volume = volume;
         Source2.volume = volume;
         //PlayerPrefs.SetFloat(PrefsVolumeString, volume);

@@ -38,6 +38,7 @@ public class SFXController : MonoBehaviour
     private AudioClip ElectricityClip = null;
 
     private Toggle SFXMuteToggle = null;
+    private Slider SFXVolumeSlider = null;
 
     // PRIVATE ATTRIBUTES
     private static Dictionary<string, AudioClip> Clips = null;
@@ -50,6 +51,7 @@ public class SFXController : MonoBehaviour
         Clips = new Dictionary<string, AudioClip>();
         FillClips();
         SceneManager.sceneLoaded += AddListenerToMuteButton;
+        SceneManager.sceneLoaded += AddListenerToVolumeSlider;
     }
 
     private void Start()
@@ -71,22 +73,33 @@ public class SFXController : MonoBehaviour
 
     void AddListenerToMuteButton(Scene scene, LoadSceneMode mode)
     {
-        if(scene.name == "Prototype")
-        {
+        //if(scene.name == "Prototype")
+        //{
             SFXMuteToggle = Resources.FindObjectsOfTypeAll<Toggle>()[1];
             SFXMuteToggle.onValueChanged.AddListener((bool mute) => ToggleMuteSFX(mute));
+        //}
+    }
 
+    private void AddListenerToVolumeSlider(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "Prototype")
+        {
+            SFXVolumeSlider = Resources.FindObjectsOfTypeAll<Slider>()[2];
+            print(SFXVolumeSlider.name);
+
+            SFXVolumeSlider.onValueChanged.AddListener((float volume) => ChangeSFXVolume(volume));
+        }
+        else if (scene.name == "Menu")
+        {
+            SFXVolumeSlider = Resources.FindObjectsOfTypeAll<Slider>()[0];
+            print(SFXVolumeSlider.name);
+
+            SFXVolumeSlider.onValueChanged.AddListener((float volume) => ChangeSFXVolume(volume));
         }
     }
 
     void FillClips()
     {
-        /*Clips.Add("PressButton", ClickClip);
-        Clips.Add("ToggleWindow", SwipeClip);
-        //Clips.Add("LoadScene", WooshClip);
-        Clips.Add("CorrectAnswer", RightClip);
-        Clips.Add("WrongAnswer", WrongClip);
-        Clips.Add("FlipPage", PageClip);*/
         Clips.Add("SelectButton", SelectButtonClip);
         Clips.Add("BackButton", BackButtonClip);
         Clips.Add("SlidersAndCheckboxInteraction", SlidersAndCheckboxInteractionClip);
@@ -99,11 +112,11 @@ public class SFXController : MonoBehaviour
 
     public static void PlayClip(string key)
     {
-        print(key);
+        //print(key);
         AudioClip clip;
         if(Clips.TryGetValue(key, out clip))
         {
-            print("Play");
+            //print("Play");
             Source.PlayOneShot(clip);
         }
         else
@@ -117,11 +130,11 @@ public class SFXController : MonoBehaviour
         Source.mute = mute;
         if (mute)
         {
-            print("BackButton");
-            SFXController.PlayClip("BackButton");
+            //print("BackButton");
+            PlayClip("BackButton");
         }
         else
-            SFXController.PlayClip("SelectButton");
+            PlayClip("SelectButton");
         //PlayerPrefs.SetInt(PrefsString, mute ? 1 : 0);
     }
 
