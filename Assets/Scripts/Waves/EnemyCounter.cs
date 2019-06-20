@@ -8,6 +8,8 @@ public class EnemyCounter : MonoBehaviour
     private static FixedWaveBehaviour fixedWaveBehaviour;
     public HugeWaveIcon hugeWaveIcon;
 
+    private static HugeWaveWindow hugeWaveWindow;
+
     private static int EnemyCountTotal = 0;
     private static int EnemiesKilled = 0;
     private static int enemiesSpawned = 0;
@@ -32,7 +34,8 @@ public class EnemyCounter : MonoBehaviour
         hugeWaveIcon = GameObject.Find("HugeWaveIcon")?.GetComponent<HugeWaveIcon>();
         waveProgressBar = GameObject.Find("WaveProgressBar").GetComponent<WaveProgressBar>();
         fixedWaveBehaviour = GameObject.Find("WaveGenerator").GetComponent<FixedWaveBehaviour>();
-        
+        hugeWaveWindow = GameObject.Find("HugeWaveWindow").GetComponent<HugeWaveWindow>();
+        hugeWaveWindow.DeactivateWindow();
         VictoryScript = GetComponent<TriggerVictory>();        
     }
 
@@ -68,7 +71,8 @@ public class EnemyCounter : MonoBehaviour
         {
             //OnEnemiesKilled?.Invoke();
             fixedWaveBehaviour.StartWave();
-            Debug.Log("A huge wave is coming!");
+            // Debug.Log("A huge wave is coming!");
+            hugeWaveWindow.ActivateWindow();
         }
     }
 
