@@ -1,0 +1,459 @@
+fileFormatVersion: 2
+guid: c4494a0fbec141e4f97cbbcf01ebee28
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1750679693641540303
+    second: tartaruga Idle Sheet_0
+  - first:
+      213: 7400662428519601236
+    second: tartaruga Idle Sheet_1
+  - first:
+      213: -4760864132376916989
+    second: tartaruga Idle Sheet_2
+  - first:
+      213: -6160000002484768613
+    second: tartaruga Idle Sheet_3
+  - first:
+      213: -3894676907095085710
+    second: tartaruga Idle Sheet_4
+  - first:
+      213: -8907346270712807503
+    second: tartaruga Idle Sheet_5
+  - first:
+      213: 7767665495726020895
+    second: tartaruga Idle Sheet_6
+  - first:
+      213: 9054576677222142998
+    second: tartaruga Idle Sheet_7
+  - first:
+      213: -7120426204862376532
+    second: tartaruga Idle Sheet_8
+  - first:
+      213: 4518015861521175079
+    second: tartaruga Idle Sheet_9
+  - first:
+      213: 4256660348957850218
+    second: tartaruga Idle Sheet_10
+  - first:
+      213: -2469589518541852135
+    second: tartaruga Idle Sheet_11
+  - first:
+      213: 4646851617299047522
+    second: tartaruga Idle Sheet_12
+  - first:
+      213: -7809207387164958722
+    second: tartaruga Idle Sheet_13
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tartaruga Idle Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1
+        width: 82
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6856af5eef8e2de438c7e7abe611ec31
+      internalID: 1750679693641540303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tartaruga Idle Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1
+        width: 82
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef42472c3a27064dba32640a111b639
+      internalID: 7400662428519601236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tartaruga Idle Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1
+        width: 84
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe1114bf6eaa9ab4180c9cefca31b214
+      internalID: -4760864132376916989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tartaruga Idle Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1
+        width: 84
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0d391381a825c4fb3db5d23c97fec7
+      internalID: -6160000002484768613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tartaruga Idle Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1
+        width: 87
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3c075916ac28e48ba2ade3f1230053
+      internalID: -3894676907095085710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tartaruga Idle Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1
+        width: 87
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46ff137e5513614c83f33cf3ffa2d08
+      internalID: -8907346270712807503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tartaruga Idle Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 1
+        width: 86
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c01e93a6bb5cf44b8949acb1b96675b
+      internalID: 7767665495726020895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tartaruga Idle Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1
+        width: 86
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d30acc34e44b2a439b1a2eb577db1dc
+      internalID: 9054576677222142998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tartaruga Idle Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 1
+        width: 87
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592561e124dd4494685f3783d41113a5
+      internalID: -7120426204862376532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tartaruga Idle Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1
+        width: 87
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144aada06d3f9de4387c06504a8d15a9
+      internalID: 4518015861521175079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tartaruga Idle Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 1
+        width: 87
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9929a6868ad9f3a4ab5e5ef47d40b035
+      internalID: 4256660348957850218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tartaruga Idle Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 1
+        width: 84
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d8c4565e7c649448a82aaf8eaea9f0
+      internalID: -2469589518541852135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tartaruga Idle Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 1
+        width: 84
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5723937b68011a844913a373f8ca1f21
+      internalID: 4646851617299047522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tartaruga Idle Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 1
+        width: 84
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df308e1ba33b6e4a9b53308bb20eda0
+      internalID: -7809207387164958722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8557bf2ccec635d4f85fa40741810682
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

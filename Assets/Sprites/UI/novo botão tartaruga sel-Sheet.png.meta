@@ -1,0 +1,459 @@
+fileFormatVersion: 2
+guid: 9f98164b4a6bd6248a5a210a1198a8d9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1885289866715377581
+    second: "novo bot\xE3o tartaruga sel-Sheet_0"
+  - first:
+      213: 1884379313753685776
+    second: "novo bot\xE3o tartaruga sel-Sheet_1"
+  - first:
+      213: 4814212562662825476
+    second: "novo bot\xE3o tartaruga sel-Sheet_2"
+  - first:
+      213: 3376362305856010234
+    second: "novo bot\xE3o tartaruga sel-Sheet_3"
+  - first:
+      213: -7883248168011620458
+    second: "novo bot\xE3o tartaruga sel-Sheet_4"
+  - first:
+      213: 2793788228011362595
+    second: "novo bot\xE3o tartaruga sel-Sheet_5"
+  - first:
+      213: -6433622121714540715
+    second: "novo bot\xE3o tartaruga sel-Sheet_6"
+  - first:
+      213: 3651456270191095456
+    second: "novo bot\xE3o tartaruga sel-Sheet_7"
+  - first:
+      213: -6299868676027952133
+    second: "novo bot\xE3o tartaruga sel-Sheet_8"
+  - first:
+      213: 3998138119584118762
+    second: "novo bot\xE3o tartaruga sel-Sheet_9"
+  - first:
+      213: 8378668046237740625
+    second: "novo bot\xE3o tartaruga sel-Sheet_10"
+  - first:
+      213: -4567433184029820505
+    second: "novo bot\xE3o tartaruga sel-Sheet_11"
+  - first:
+      213: 4797261482544355831
+    second: "novo bot\xE3o tartaruga sel-Sheet_12"
+  - first:
+      213: 3215733998369649354
+    second: "novo bot\xE3o tartaruga sel-Sheet_13"
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "novo bot\xE3o tartaruga sel-Sheet_0"
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 86
+        width: 153
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24bdfb993a946bc42afff5310e2d4750
+      internalID: -1885289866715377581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o tartaruga sel-Sheet_1"
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 86
+        width: 152
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947872c9095e6ac45b39c8d1f909bfb2
+      internalID: 1884379313753685776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o tartaruga sel-Sheet_2"
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 86
+        width: 153
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55c90193c1e1f6429dd15e6b325e1e4
+      internalID: 4814212562662825476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o tartaruga sel-Sheet_3"
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 86
+        width: 154
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9354f50282d66bc4aae89280d1142262
+      internalID: 3376362305856010234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o tartaruga sel-Sheet_4"
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 86
+        width: 152
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee4b17479a91be4f80965094a880c8e
+      internalID: -7883248168011620458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o tartaruga sel-Sheet_5"
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 86
+        width: 152
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21948e1a5f358e44b8f64ac7c11a855a
+      internalID: 2793788228011362595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o tartaruga sel-Sheet_6"
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 86
+        width: 152
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b80ca19ddf41f4b8616f52bd79ff1b
+      internalID: -6433622121714540715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o tartaruga sel-Sheet_7"
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 86
+        width: 153
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cdd901433d5d0943a06e9d1a610679f
+      internalID: 3651456270191095456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o tartaruga sel-Sheet_8"
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 86
+        width: 152
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5252c524276a48c4e869fa07f11988f1
+      internalID: -6299868676027952133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o tartaruga sel-Sheet_9"
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 86
+        width: 153
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e2c7b24af774e4b9545be210f35d22
+      internalID: 3998138119584118762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o tartaruga sel-Sheet_10"
+      rect:
+        serializedVersion: 2
+        x: 2611
+        y: 86
+        width: 154
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a72f44d62531e49bf5825742c1fe4e
+      internalID: 8378668046237740625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o tartaruga sel-Sheet_11"
+      rect:
+        serializedVersion: 2
+        x: 2868
+        y: 86
+        width: 152
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa6c2b8d0050184cb48e6072319094f
+      internalID: -4567433184029820505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o tartaruga sel-Sheet_12"
+      rect:
+        serializedVersion: 2
+        x: 3124
+        y: 86
+        width: 152
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45280d3b9798264aa1533b3a128aca0
+      internalID: 4797261482544355831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "novo bot\xE3o tartaruga sel-Sheet_13"
+      rect:
+        serializedVersion: 2
+        x: 3379
+        y: 86
+        width: 152
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df029c7f242f702449cd458441054470
+      internalID: 3215733998369649354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0393bdbf2e67a4446b323258291eb843
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
