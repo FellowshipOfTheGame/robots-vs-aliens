@@ -11,6 +11,7 @@ public class Pause : MonoBehaviour
     private void Awake()
     {
         if(isPaused) UnpauseGame();   
+        pauseAnimator.ResetTrigger("CloseWindow");
     }
 
     public void PauseGame()

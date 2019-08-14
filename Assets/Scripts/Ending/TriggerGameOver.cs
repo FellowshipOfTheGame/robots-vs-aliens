@@ -16,6 +16,7 @@ public class TriggerGameOver : MonoBehaviour
     {
         GameOverWindow.SetActive(true);
         MenuButton.SetActive(true);
-        PauseManager.PauseGame();
+        //PauseManager.PauseGame();
+        Time.timeScale = 0;
     }
 }

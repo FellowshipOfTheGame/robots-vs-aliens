@@ -43,6 +43,9 @@ public class LevelLoader : MonoBehaviour
     }
 
     public void RestartCurrentScene(){
-        SceneManager.LoadScene(CurrentSceneScript.GetCurrentSceneIndex());
+
+        string sceneName = CurrentSceneScript.GetCurrentSceneName();
+
+        LoadScene(sceneName);
     }
 }

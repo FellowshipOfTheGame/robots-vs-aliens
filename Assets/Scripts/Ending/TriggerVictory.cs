@@ -15,6 +15,7 @@ public class TriggerVictory : MonoBehaviour
         BlackScreen.SetActive(true);
         VictoryText.SetActive(true);
         MenuButton.SetActive(true);
-        PauseManager.PauseGame();
+        //PauseManager.PauseGame();
+        Time.timeScale = 0;
     }
 }

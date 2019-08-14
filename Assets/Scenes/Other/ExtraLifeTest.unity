@@ -54,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 10
+    serializedVersion: 12
     m_Resolution: 2
     m_BakeResolution: 40
     m_AtlasSize: 1024
@@ -62,6 +62,7 @@ LightmapSettings:
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
     m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
     m_Padding: 2
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
@@ -76,10 +77,16 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 0
     m_PVRFilterTypeAO: 0
-    m_PVRFilteringMode: 1
+    m_PVREnvironmentMIS: 0
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
@@ -87,7 +94,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -244,20 +252,20 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 629414057, guid: fa2ac593d333afd44aeebc423ca01f0c, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 629414057, guid: fa2ac593d333afd44aeebc423ca01f0c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 629414057, guid: fa2ac593d333afd44aeebc423ca01f0c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa2ac593d333afd44aeebc423ca01f0c, type: 3}
---- !u!114 &31720402 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 809271661644009079, guid: fa2ac593d333afd44aeebc423ca01f0c,
-    type: 3}
-  m_PrefabInstance: {fileID: 31720401}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7352945b176a51f4eaf63de0f640908a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &49476779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3018,7 +3026,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 482819636}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -3038,6 +3046,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &482819639
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3591,7 +3600,7 @@ PrefabInstance:
     - target: {fileID: 8488844242627414358, guid: 126b022d41fdd2044a387b9f5ca54c24,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8488844242627414358, guid: 126b022d41fdd2044a387b9f5ca54c24,
         type: 3}
@@ -5424,15 +5433,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.81
       objectReference: {fileID: 0}
-    - target: {fileID: 930615608963297128, guid: 079daa09a46edb94bae03c3b7b69db41,
-        type: 3}
-      propertyPath: _attackSpeed
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5623382856072011031, guid: 079daa09a46edb94bae03c3b7b69db41,
         type: 3}
       propertyPath: _speed
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 930615608963297128, guid: 079daa09a46edb94bae03c3b7b69db41,
+        type: 3}
+      propertyPath: _attackSpeed
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 079daa09a46edb94bae03c3b7b69db41, type: 3}
@@ -7015,7 +7024,7 @@ PrefabInstance:
     - target: {fileID: 8488844242627414358, guid: 126b022d41fdd2044a387b9f5ca54c24,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8488844242627414358, guid: 126b022d41fdd2044a387b9f5ca54c24,
         type: 3}
@@ -8288,6 +8297,7 @@ MonoBehaviour:
   - {fileID: 687588611}
   - {fileID: 517019567}
   - {fileID: 205565110}
+  hugeWaveIcon: {fileID: 0}
 --- !u!114 &1334182301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10115,8 +10125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94937fe067298bd45acbd47c44732565, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveProgressBar: {fileID: 31720402}
-  fixedWaveBehaviour: {fileID: 1334182300}
+  hugeWaveIcon: {fileID: 0}
 --- !u!1001 &1669224497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10346,7 +10355,7 @@ PrefabInstance:
     - target: {fileID: 8488844242627414358, guid: 126b022d41fdd2044a387b9f5ca54c24,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8488844242627414358, guid: 126b022d41fdd2044a387b9f5ca54c24,
         type: 3}
@@ -13734,7 +13743,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2044326809}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
